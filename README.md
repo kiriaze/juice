@@ -7,7 +7,7 @@ It'll get you up and going!
 It's easy to get started. Just follow the steps below.
 
 
-###1.Download
+###1. Download
 
 Download Espresso or install with bower
 

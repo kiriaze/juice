@@ -15,7 +15,7 @@ gulp.task('js', function(){
 		.pipe(sourcemaps.init())
 			.pipe(jshint())
 			.pipe(jshint.reporter('jshint-stylish'))
-			.pipe(concat('main.js'))
+			.pipe(concat('app.js'))
 			.pipe(gulp.dest(config.scripts.dest))
 			.pipe(rename({suffix: '.min'}))
 			.pipe(uglify())
