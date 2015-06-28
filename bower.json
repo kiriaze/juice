@@ -25,7 +25,6 @@
   "dependencies": {
     "jquery": ">= 2.1.0",
     "modernizr": ">= 2.7.2",
-    "sassy-animate": ">=1.0.0",
-    "s-grid": ">=1.0.0"
+    "sassy-animate": ">=1.0.0"
   }
 }

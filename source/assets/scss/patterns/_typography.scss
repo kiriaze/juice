@@ -1,0 +1,37 @@
+// file for overriding type styles easily
+
+body {
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+}
+
+@for $i from 1 through 6 {
+    h#{$i} {
+		font-weight: 300;
+    }
+}
+
+p {
+	&.lead {
+		display: block;
+		font-size: 1.3em;
+		font-weight: 400;
+		line-height: 150%;
+		margin: 0 0 3rem;
+	}
+	a {
+		font-weight: 500;
+
+		// style 1
+		// border-bottom: 1px solid lighten($dark-grey, 50);
+
+		// style 2
+		background: $light-grey;
+		padding: 0 .25rem;
+		&:hover {
+			background: $dark-grey;
+			color: white;
+		}
+	}
+}

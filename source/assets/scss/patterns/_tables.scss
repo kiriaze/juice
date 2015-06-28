@@ -1,0 +1,68 @@
+
+// Basic table
+// ---------------------------------------------------------------------------------------
+table {
+	width: 100%;
+
+	th, td {
+		padding: .5rem;
+		min-width: 175px;
+		text-align: left;
+	}
+	thead {
+		tr {
+			background-color: $white;
+		}
+	}
+	tbody {
+		tr {
+			background-color: $white;
+
+			&:nth-child(odd) {
+				background-color: $light-grey;
+			}
+
+			td a {
+				color: $red;
+
+				&:hover {
+					color: darken($red, 10%);
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	// Respond
+	// @include breakpoint($small)
+	@media (max-width: $small) {
+		th, td {
+			display: block;
+			width: 100%;
+			padding-top: 0px;
+			font-size: 0.875em;
+
+			&:first-child {
+				padding-top: .5rem;
+			}
+		}
+		thead {
+			display: none;
+		}
+	}
+}
+
+
+// First blue
+// ---------------------------------------------------------------------------------------
+table.first-blue {
+	tbody tr td:first-child {
+		width: 185px;
+		color: $blue;
+		font-size: 0.813em;
+
+		span {
+			color: $orange;
+		}
+	}
+}

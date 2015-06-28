@@ -25,15 +25,10 @@ Run Node Package Manager
 
 	$ npm install --global gulp && npm install
 
-### Installation
-
-1. Import grid into project, `@import 'grid';`.
-2. Import breakpoints mixin into project, `@import 'breakpoints'`;
-	* Simple's breakpoint mixin is the first of its kind - stupid simple and mobile first approach.
 
 ### 3. Configure
 
-Set your grid values you wish to your variables in your _base.scss, _settings.scss, or _variables.scss file. Done! ( DONT edit the _grid.scss or _breakpoints.scss. )
+Set your grid values you wish to your variables in your _settings.scss file. Done!
 
 Classes are by default, .container, .row, .columns.
 
@@ -59,7 +54,7 @@ Run Gulp
 
 ## Basic usage
 
-This is the default usage. The grid is calculated and classes are generated for you to get building quickly. ( _grid.scss & _breakpoints.scss Required. Get at https://github.com/kiriaze/s-grid )
+This is the default usage. The grid is calculated and classes are generated for you to get building quickly.
 
 ### Syntax
 1. Class Syntax
@@ -161,7 +156,7 @@ This is the default usage. The grid is calculated and classes are generated for 
 
 ## Advanced usage
 
-By setting the $advanced-usage variable in your _base.scss, _settings.scss, or _variables.scss to 'true' you can work with Espresso more semantically.
+By setting the $advanced-usage variable in your _settings.scss to 'true' you can work with Espresso more semantically.
 
 	# For mixed widths, percentage based
 

@@ -1,0 +1,10 @@
+// @include font-face(Font Name, '../fonts/FontName/FontNameBold', 600);
+// @include font-face(Another Font, '../fonts/FontName/FontNameRegular', 400);
+
+// @import url(//fonts.googleapis.com/css?family=Montserrat:400,700); // request the asset using the same protocol as the page
+
+@import '../fonts/font-awesome/font-awesome.min.css';
+@import '../fonts/foundation/foundation-icons.min.css';
+@import '../fonts/ionicons/ionicons.min.css';
+@include font-face(Entypo, '../fonts/entypo/entypo', 400);
+@include font-face(Entypo Social, '../fonts/entypo-social/entypo-social', 400);

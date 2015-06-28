@@ -1,0 +1,48 @@
+html,
+body {
+
+}
+
+html {
+
+}
+
+body{
+
+}
+
+#main {
+
+}
+
+.container {
+	// // overwrite the _grid.scss padded value
+	// padding-left: 1rem;
+	// padding-right: 1rem;
+}
+
+// [text_columns col="2"]Your text here[/text_columns]
+.text-columns {
+	@include breakpoint($small) {
+		column-count: 2;
+	}
+}
+
+.dark {
+    background-color: $dark;
+    color: $white;
+}
+
+//  if body has class has-sidebar
+.has-sidebar {
+    .primary {
+        @include breakpoint($medium) {
+            @include columns(.7);
+        }
+    }
+	#sidebar {
+        @include breakpoint($medium) {
+            @include columns(.3);
+        }
+    }
+}
