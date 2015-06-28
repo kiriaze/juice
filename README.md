@@ -1,5 +1,6 @@
 # Espresso
-A sass framework
+A gulp sass framework.
+
 It'll get you up and going!
 
 
@@ -7,14 +8,18 @@ It'll get you up and going!
 It's easy to get started. Just follow the steps below.
 
 
-### 1. Download
+### 1. Clone/Download
 
-Download Espresso or install with bower ( coming soon! )
+Clone or Download Espresso into directory.
 
-	$ bower install gulp-espresso
+	$ git clone git@github.com:kiriaze/espresso.git .
 
 
 ### 2. Install
+
+Run Bower Package Manager to install all bower dependencies.
+
+	$ bower install
 
 Run Node Package Manager
 
