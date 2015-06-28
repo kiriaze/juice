@@ -1,7 +1,22 @@
 # Espresso
 A gulp sass framework.
 
-It'll get you up and going!
+	Blazing Fast
+	Built in server
+	Live browser reloading
+	Cross Device Sync ( BrowserSync )
+	Powered by Gulp, Bower & NPM
+	Autoprefixer
+	Notifications
+	Deployment
+	Sourcemaps
+	Structure Partioned
+		Sass
+		HTML Partials
+	Performance Optimized
+		Gzip
+		Concat/Minify Everything
+		Image Optimazation ( All types )
 
 
 ## Get started
