@@ -11,7 +11,7 @@ It's easy to get started. Just follow the steps below.
 
 Download Espresso or install with bower ( coming soon! )
 
-	$ bower install espresso
+	$ bower install gulp-espresso
 
 
 ### 2. Install
