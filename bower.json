@@ -4,14 +4,16 @@
   "authors": [
     "Constantine Kiriaze <hello@kiriaze.com>"
   ],
-  "description": "Sass front end template",
+  "description": "Sass front end gulp starter kit",
   "main": "gulpfile.js",
   "keywords": [
     "sass",
     "css",
+    "bower",
+    "gulp",
     "frontend"
   ],
-  "license": "MIT",
+  "license": "GNU",
   "homepage": "https://github.com/kiriaze/espresso",
   "ignore": [
     "**/.*",
@@ -23,7 +25,7 @@
   "dependencies": {
     "jquery": ">= 2.1.0",
     "modernizr": ">= 2.7.2",
-    "fastclick": ">=0.6.11",
-    "sassy-animate": ">=1.0.0"
+    "sassy-animate": ">=1.0.0",
+    "s-grid": ">=1.0.0"
   }
 }
