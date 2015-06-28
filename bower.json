@@ -25,6 +25,7 @@
   "dependencies": {
     "jquery": ">= 2.1.0",
     "modernizr": ">= 2.7.2",
-    "sassy-animate": ">=1.0.0"
+    "sassy-animate": ">=1.0.0",
+    "bourbon": "~4.2.3"
   }
 }

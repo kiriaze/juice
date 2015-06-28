@@ -24,7 +24,7 @@ section {
     &.cover-bg {
         display: block;
         position: relative;
-        background-image: url("http://33.media.tumblr.com/e6bd92a5103c9a534c02c970318f41e0/tumblr_ndm3v3lkQV1st5lhmo1_1280.jpg");
+        background-image: url("http://placehold.it/1200x450");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -47,7 +47,7 @@ section {
         }
     }
 
-	&.stripe:nth-child(even) {
+	&.stripe:nth-of-type(even) {
 		background-color: #f5f6f7;
 	}
 

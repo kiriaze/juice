@@ -5,10 +5,10 @@
 //
 
 // Site Global Dimensions
-$tiny:							em(480); // 30em
-$small:							em(768); // 45em
-$medium:						em(960); // 60em
-$large:							em(1280); // 80em
+$tiny:							30em; // 480px
+$small:							45em; // 768px
+$medium:						60em; // 960px
+$large:							80em; // 1280px
 
 // Base Typography Values
 $rem-base:						16px !default;
@@ -102,8 +102,8 @@ $light-grey:                    #f5f5f5;
 $dark-grey:                     #333;
 
 // theme colors
-$theme-color:                   $blue;
-$accent-color:                  darken($theme-color, 10); // That is, 10% darker than the theme-color.
+$primary-color:                   $blue;
+$accent-color:                  darken($primary-color, 10); // That is, 10% darker than the theme-color.
 $secondary-color:               $navy;
 $tertiary-color:                $accent-color;
 

@@ -60,18 +60,33 @@ $gridDebug:			false !default;
 
 
 //-------------------------------------------------------
+// CLEARFIX
+//-------------------------------------------------------
+@mixin clearfix {
+	&::after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+}
+
+
+//-------------------------------------------------------
 // GRID MIXINS
 //-------------------------------------------------------
 
 @mixin set-gutter($gutter) {
+
+	@include clearfix();
+
 	@include breakpoint($small) {
 
 		margin-left: -$gutter/2;
 		margin-right: -$gutter/2;
 		padding-left: $gutter/2;
 
-		@include clearfix();
 	}
+
 }
 
 // Centered container element

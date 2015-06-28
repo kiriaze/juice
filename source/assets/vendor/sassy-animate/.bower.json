@@ -1,0 +1,22 @@
+{
+  "name": "sassy-animate",
+  "version": "1.0.1",
+  "main": "_animate.scss",
+  "ignore": [
+    ".bowerrc",
+    ".gitignore",
+    "bower.json",
+    "package.json",
+    "README.md"
+  ],
+  "homepage": "https://github.com/kiriaze/animate.scss",
+  "_release": "1.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.1",
+    "commit": "16a6eba38edd52cbcbc91fa48b974c214f663d80"
+  },
+  "_source": "git://github.com/kiriaze/animate.scss.git",
+  "_target": ">=1.0.0",
+  "_originalSource": "sassy-animate"
+}

@@ -6,7 +6,7 @@
 }
 .image-filters {
 	&.grayscale {
-		@include filter(grayscale(50%));
+		filter: grayscale(0.5);
 	}
 	&.sepia {
 		filter: sepia(0.5);
@@ -19,6 +19,6 @@
 		filter: contrast(1.5);
 	}
 	&.saturate {
-		@include filter(grayscale(1.5));
+		filter: grayscale(1.5);
 	}
 }

@@ -1,68 +1,20 @@
-
-// Basic table
-// ---------------------------------------------------------------------------------------
 table {
-	width: 100%;
-
-	th, td {
-		padding: .5rem;
-		min-width: 175px;
-		text-align: left;
-	}
-	thead {
-		tr {
-			background-color: $white;
-		}
-	}
-	tbody {
-		tr {
-			background-color: $white;
-
-			&:nth-child(odd) {
-				background-color: $light-grey;
-			}
-
-			td a {
-				color: $red;
-
-				&:hover {
-					color: darken($red, 10%);
-					text-decoration: underline;
-				}
-			}
-		}
-	}
-
-	// Respond
-	// @include breakpoint($small)
-	@media (max-width: $small) {
-		th, td {
-			display: block;
-			width: 100%;
-			padding-top: 0px;
-			font-size: 0.875em;
-
-			&:first-child {
-				padding-top: .5rem;
-			}
-		}
-		thead {
-			display: none;
-		}
-	}
+	margin-bottom: 2.5rem;
 }
 
+th,
+td {
+	padding: 12px 15px;
+	text-align: left;
+	border-bottom: 1px solid #E1E1E1;
+}
 
-// First blue
-// ---------------------------------------------------------------------------------------
-table.first-blue {
-	tbody tr td:first-child {
-		width: 185px;
-		color: $blue;
-		font-size: 0.813em;
+th:first-child,
+td:first-child {
+	padding-left: 0;
+}
 
-		span {
-			color: $orange;
-		}
-	}
+th:last-child,
+td:last-child {
+	padding-right: 0;
 }
