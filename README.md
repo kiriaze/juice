@@ -3,43 +3,81 @@ A sass framework
 It'll get you up and going!
 
 
-##Get started
+## Get started
 It's easy to get started. Just follow the steps below.
 
 
-###1. Download
+### 1. Download
 
 Download Espresso or install with bower ( coming soon! )
 
 	$ bower install espresso
 
 
-###2. Install
+### 2. Install
 
 Run Node Package Manager
 
 	$ npm install --global gulp && npm install
 
+### Installation
 
-###3. Configure
+1. Import grid into project, `@import 'grid';`.
+2. Import breakpoints mixin into project, `@import 'breakpoints'`;
+	* Simple's breakpoint mixin is the first of its kind - stupid simple and mobile first approach.
 
-Enter the pixel grid values you wish in _variables.scss file. Done!
+### 3. Configure
 
-	$columns: 12;
-    $column-width: 65px;
-    $gutter-width: 20px;
+Set your grid values you wish to your variables in your _base.scss, _settings.scss, or _variables.scss file. Done! ( DONT edit the _grid.scss or _breakpoints.scss. )
+
+Classes are by default, .container, .row, .columns.
+
+	$gutter: 			3% !default;
+	$docWidth: 			100% !default;
+
+	// this sets your class names
+	$container-class:	"container" !default; // optional
+	$row-class:			"row" !default;
+	$column-class:		"columns" !default;
+	$max-columns:		12 !default;
+
+	// Grid check
+	$gridDebug:			false !default; // If true, styles grid/columns for easy visibily while testing
 
 
-###4. Build
+### 4. Build
 
 Run Gulp
 
 	$ gulp
 
 
-##Basic usage
+## Basic usage
 
 This is the default usage. The grid is calculated and classes are generated for you to get building quickly. ( _grid.scss & _breakpoints.scss Required. Get at https://github.com/kiriaze/s-grid )
+
+### Syntax
+1. Class Syntax
+```
+.columns-{percentage, double digit} for mixed columns
+	.columns-70, .columns-30 = totaling to 100
+
+.columns-{single digit number} for equal coloumns
+	.columns-1
+	.columns-2, .columns-2
+	.columns-4, .columns-4, .columns-4, .columns-4
+```
+
+2. Gutter Classes
+
+```
+.no-gutter {
+	@include set-gutter(0);
+}
+.reset-gutter {
+	@include set-gutter($gutter);
+}
+```
 
 	<section>
 
@@ -87,100 +125,88 @@ This is the default usage. The grid is calculated and classes are generated for 
 
 	</section>
 
+	<div class="container"> // optional - for fixed with breakpoints
 
-##Advanced usage
+		<div class="row"> // required
 
-By setting the $advanced-usage variable in _variables.scss to 'true' you can work with Espresso more semantically.
+			<div class="columns-2">
 
-### Installation
+	        	<div class="row">  // Nesting
 
-1. Import grid into project, `@import 'grid';`.
-2. Import breakpoints mixin into project, `@import 'breakpoints'`;
-	* Simple's breakpoint mixin is the first of its kind - stupid simple and mobile first approach.
+					<div class="columns-2">
 
-### Settings
-1. Classes are by default, .container, .row, .columns.
-2. Variable Settings
+					</div>
 
-```
-$gutter: 			3% !default;
-$docWidth: 			100% !default;
+	                <div class="columns-2">
 
-// this sets your class names
-$container-class:	"container" !default; // optional
-$row-class:			"row" !default;
-$column-class:		"columns" !default;
-$max-columns:		12 !default;
+	                </div>
 
-// Grid check
-$gridDebug:			false !default; // If true, styles grid/columns for easy visibily while testing
-```
+			    </div>
 
-### Syntax
-1. Class Syntax
-```
-.columns-{percentage, double digit} for mixed columns
-	.columns-70, .columns-30 = totaling to 100
+	        </div>
 
-.columns-{single digit number} for equal coloumns
-	.columns-1
-	.columns-2, .columns-2
-	.columns-4, .columns-4, .columns-4, .columns-4
-```
+			<div class="columns-2">
 
-2. Gutter Classes
+			</div>
 
-```
-.no-gutter {
-	@include set-gutter(0);
-}
-.reset-gutter {
-	@include set-gutter($gutter);
-}
-```
+		</div>
 
-### Usage
-```
-<div class="container"> // optional - for fixed with breakpoints
-	<div class="row"> // required
-		<div class="columns-2"> // required
-        	<div class="row">  // Nesting
-				<div class="columns-2"></div>
-                <div class="columns-2"></div>
-		    </div>
-        </div>
-		<div class="columns-2"></div> // required
 	</div>
-</div>
 
-# For mixed widths, percentage based
-<div class="row">
-	<div class="columns-30"></div> // default classes
-	<div class="customClass-4"></div> // custom classes
-	<div data-columns=".3"></div> // Using data attributes
-</div>
 
-# For equal widths
-<div class="row">
-	<div class="columns-3"></div> // default classes
-	<div class="customClass-3"></div> // custom classes
-	<div data-columns="3"></div> // Using data attributes
-</div>
+## Advanced usage
 
-# Scss
-# @include container-fixed($gutter: $gutter, $padded: false);
-# @include columns($num, $display: float, $gutter: $gutter);
-# @include grid($display: float, $gutter: $gutter);
-.example-wrapper {
-	@include grid();
-	.example-column {
-		// note: including columns within breakpoint mixin is required.
-		@include breakpoint($small) {
-    		@include columns(2);
-    	}
+By setting the $advanced-usage variable in your _base.scss, _settings.scss, or _variables.scss to 'true' you can work with Espresso more semantically.
+
+	# For mixed widths, percentage based
+
+	<div class="row">
+
+		<div class="columns-30"> // default classes
+
+		</div>
+
+		<div class="customClass-4"> // custom classes
+
+		</div>
+
+		<div data-columns=".3"> // Using data attributes
+
+		</div>
+
+	</div>
+
+	# For equal widths
+
+	<div class="row">
+		<div class="columns-3"> // default classes
+
+		</div>
+
+		<div class="customClass-3"> // custom classes
+
+		</div>
+
+		<div data-columns="3"> // Using data attributes
+
+		</div>
+
+	</div>
+
+	# Scss
+	# @include container-fixed($gutter: $gutter, $padded: false);
+	# @include columns($num, $display: float, $gutter: $gutter);
+	# @include grid($display: float, $gutter: $gutter);
+
+	.example-wrapper {
+		@include grid();
+		.example-column {
+			// note: including columns within breakpoint mixin is required.
+			@include breakpoint($small) {
+	    		@include columns(2);
+	    	}
+		}
 	}
-}
-```
 
 
 ## License
