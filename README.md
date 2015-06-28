@@ -211,4 +211,4 @@ By setting the $advanced-usage variable in your _base.scss, _settings.scss, or _
 
 ## License
 
-GNU GENERAL PUBLIC LICENSE
+Espresso is licensed under the GPL v2 license. (http://opensource.org/licenses/GPL-2.0)

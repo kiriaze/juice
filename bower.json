@@ -13,7 +13,7 @@
     "gulp",
     "frontend"
   ],
-  "license": "GNU",
+  "license": "GPL",
   "homepage": "https://github.com/kiriaze/espresso",
   "ignore": [
     "**/.*",
