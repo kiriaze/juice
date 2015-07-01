@@ -1,10 +1,8 @@
 var config       = require('../config'),
 	gulp         = require('gulp'),
 	fileinclude  = require('gulp-file-include'),
-	minifyHTML   = require('gulp-minify-html'),
 	rename       = require('gulp-rename'),
-	path         = require('path'),
-	notify       = require('gulp-notify');
+	path         = require('path');
 
 // fileinclude: grab partials from templates and render out html files
 gulp.task('fileinclude', function() {
@@ -16,6 +14,5 @@ gulp.task('fileinclude', function() {
 		.pipe(rename({
 			extname: ".html"
 		}))
-		.pipe(gulp.dest(config.dist.root))
-		.pipe(notify({ message: 'Includes: included' }));
+		.pipe(gulp.dest(config.dist.root));
 });

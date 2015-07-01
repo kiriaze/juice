@@ -77,13 +77,13 @@ $gridDebug:			false !default;
 
 @mixin set-gutter($gutter) {
 
-	@include clearfix();
-
 	@include breakpoint($small) {
 
 		margin-left: -$gutter/2;
 		margin-right: -$gutter/2;
 		padding-left: $gutter/2;
+
+		@include clearfix();
 
 	}
 
@@ -105,21 +105,10 @@ $gridDebug:			false !default;
 	@include clearfix();
 }
 
-@mixin grid( $display: float, $gutter: $gutter ) {
+@mixin grid( $gutter: $gutter ) {
 
 	box-sizing: border-box;
-
-	@if( $display == 'ib' ) {
-		font-size: 0px;
-		text-align: justify;
-		&:after {
-			content: '';
-			display: inline-block;
-			width: 100%;
-		}
-	} @else {
-		@include set-gutter($gutter);
-	}
+	@include set-gutter($gutter);
 }
 
 @mixin column() {
@@ -129,7 +118,7 @@ $gridDebug:			false !default;
 	width: 100%;
 }
 
-@mixin columns($num, $display: float, $gutter: $gutter) {
+@mixin columns($num, $gutter: $gutter) {
 
 	@include column();
 
@@ -156,23 +145,11 @@ $gridDebug:			false !default;
 
 	}
 
-	@if( $display == 'ib' ) {
+	float: left;
+	margin-right: $gutter/2;
 
-		display: inline-block;
-		vertical-align: top;
-	    position: relative;
-	    text-align: left; // reset
-		font-size: initial;
-
-	} @else {
-
-		float: left;
-		margin-right: $gutter/2;
-
-		.no-gutter & {
-			margin-right: 0;
-		}
-
+	.no-gutter & {
+		margin-right: 0;
 	}
 
 }
@@ -237,6 +214,22 @@ $gridDebug:			false !default;
 [data-layout='grid'] {
 
 	@include grid();
+
+	// for image/text vertical alignment
+	&.valign {
+		font-size: 0px;
+		text-align: justify;
+		&:after {
+			content: '';
+			display: inline-block;
+			width: 100%;
+		}
+		[class*="columns-"] {
+			float: none;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
 
 	@if( $gridDebug == true ) {
 		background: $black; // testing purposes

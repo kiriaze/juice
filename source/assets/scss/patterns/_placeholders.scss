@@ -14,23 +14,6 @@
     transform: translate3d(0,0,0);
 }
 
-/*  Vertical Align
-============================================ */
-%valign {
-    // Vertically center elements, ie9+
-    // set height on parent, currently done with js
-    // Target elements individually
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-
-
-    // Target container - in near future... look at _grid.scss
-    // display: flex;
-    // align-items: center;
-    // flex-flow: row wrap;
-}
-
 %ib {
     display: inline-block;
     vertical-align: top;

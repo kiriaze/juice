@@ -30,14 +30,6 @@
 	color: #222;
 }
 
-.icon-list {
-	i {
-		padding: 1rem;
-		text-decoration: none;
-		@include font-size(22);
-	}
-}
-
 // hack for gutters in grid/row of full width sections
 section {
 	overflow: hidden;
@@ -47,119 +39,12 @@ section {
 	transition: $transition;
 }
 
-#header {
-	padding: 2rem 0;
-	.logo {
-		float: left;
-	}
-	#nav {
-		float: right;
-		li {
-			display: inline-block;
-			margin: 0 0 0 1rem;
-			text-transform: lowercase;
-			a {
-				&:after {
-					content: '.';
-				}
-			}
-		}
-	}
-}
-
-.mfp-content {
-	p {
-		margin-bottom: 0;
-	}
-}
-
-.social-icons {
-	text-align: center;
-	margin: 2rem 0 0;
-	li {
-		display: inline-block;
-		margin-right: 2.5rem;
-		margin-bottom: 0;
-		&:last-child {
-			margin: 0;
-		}
-	}
-}
-
-#footer {
-	padding: 2rem 0;
-	.made-with {
-		text-align: center;
-		margin-bottom: 0;
-	}
-}
-
-.callout-icon {
-	padding: 1rem;
-	border-radius: 50%;
-	width: 50px;
-	height: 50px;
-	margin: 1rem 0;
-	display: inline-block;
-	color: $white;
-}
-
-.modal-member {
-	.close {
-		margin: 0;
-	}
-}
-
-.btn {
-	border: 2px solid;
-	padding: 0.7rem 1rem;
-	line-height: 1;
-	font-size: 0.7rem;
-	font-weight: 400;
-	margin: 0 1rem 1rem 0;
-	display: inline-block;
-	i {
-		margin-right: .5rem;
-	}
-	&:focus {
-		outline: 0;
-	}
-	&:hover,
-	&.solid {
-		background: $primary-color;
-		border-color: $primary-color;
-		color: $white;
-	}
-	&.solid {
-		&:hover {
-			background: darken($primary-color, 20);
-			border-color: darken($primary-color, 20);
-		}
-	}
-}
-
-.download-options {
-	[class*='#{$column-class}-'],
-	[data-columns] {
-		padding: 0 1rem;
-	}
-}
-
 // grid page styles
-.grid-page {
+.example-grid {
 
-	// // testing purposes
-	// [class~='#{$row-class}'],
-	// [data-layout='grid'] {
-	// 	background: $black;
-	// }
-
-	// testing purposes
 	[class*='#{$column-class}-'],
 	[data-columns] {
-		// background: $primary-color;
-		// color: white;
-		background: $yellow;
+		background: $yellow; // $aqua
 		margin-top: 0.5rem;
 		margin-bottom: 0.5rem;
 		font-weight: 600;
@@ -173,38 +58,19 @@ section {
 		}
 	}
 
-	#simple-grid {
-		[class*='#{$column-class}-'],
-		[data-columns] {
-			@include breakpoint($small) {
-				padding-left: 0;
-				padding-right: 0;
-			}
-		}
-	}
-
 }
 
-// grid ib
-.ib {
-	@include grid(ib);
-	li {
-		width: 100%;
+#footer {
+	border-top: 1px solid #f5f6f7;
+	padding: 5rem 0;
+	.created-by {
 
-		// testing purposes
-		// background: $primary-color;
-		// color: white;
-		background: $yellow;
-		padding: 1.5rem 0;
-		margin-top: 0rem;
-		margin-bottom: 1rem;
-		font-weight: 600;
-		text-align: center;
-		font-size: 1rem;
-
-		@include breakpoint($small) {
-			@include columns(6, ib, $gutter: 2%);
-			text-align: center;
+	}
+	.footer-meta {
+		list-style-type: none;
+		text-align: right;
+		a {
+			margin-left: 1rem;
 		}
 	}
 }

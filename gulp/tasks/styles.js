@@ -25,5 +25,5 @@ gulp.task('css', function(){
 		.pipe(gulp.dest(config.styles.dest))
 
 		// Notify us that the task was completed
-		.pipe(notify({ message: 'CSS task complete' }));
+		// .pipe(notify({ message: 'CSS task complete' }));
 });

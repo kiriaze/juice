@@ -3,6 +3,8 @@
 var gulp 	= require('gulp'),
 	rsync	= require('gulp-rsync');
 
+// Usage:
+
 gulp.task('deploy', ['prod'], function() {
 
 	// return gulp.src(['./source/**'])

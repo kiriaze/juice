@@ -23,5 +23,5 @@ gulp.task('js', function(){
 		.pipe(gulp.dest(config.scripts.dest))
 
 		// Notify us that the task was completed
-		.pipe(notify({ message: 'Javascript task complete' }));
+		// .pipe(notify({ message: 'Javascript task complete' }));
 });

@@ -22,17 +22,3 @@ gulp.task('images', function() {
 		.pipe(gulpif(browserSync.active, browserSync.reload({ stream: true, once: true })));
 
 });
-
-// gulp.task('images', function () {
-// 	return gulp.src(config.images.src)
-// 		.pipe(cache(imagemin({
-// 			optimizationLevel: 3,
-// 			progressive: true,
-// 			svgoPlugins: [{removeViewBox: false}],
-// 			use: [pngquant({quality: '65-80', speed: 4}), jpegtran(), optipng({optimizationLevel: 3}), gifsicle()],
-// 			interlaced: true
-// 		})))
-// 		.pipe(svgo()())
-// 		.pipe(gulp.dest(config.images.dest))
-// 		.pipe(notify({ message: 'Image task complete' }));
-// });

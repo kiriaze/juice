@@ -24,14 +24,11 @@ p {
 		font-weight: 500;
 
 		// style 1
-		// border-bottom: 1px solid lighten($dark-grey, 50);
+		border-bottom: 1px solid lighten($dark-grey, 50);
 
-		// style 2
-		background: $light-grey;
-		padding: 0 .25rem;
 		&:hover {
-			background: $dark-grey;
-			color: white;
+			color: $dark-grey;
+			border-color: $dark-grey;
 		}
 	}
 }

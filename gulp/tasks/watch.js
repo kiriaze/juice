@@ -13,9 +13,6 @@ gulp.task('watch', ['browser-sync'], function() {
 	// watch task for gulp-file-include
 	gulp.watch(path.join('./source/', '**/*.html'), ['fileinclude']);
 
-	// Watch HTML files
-	gulp.watch("./public/*.html", ['html'], reload);
-
 	// Watch Sass files
 	gulp.watch(config.styles.src, ['css'], reload);
 
