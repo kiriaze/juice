@@ -6,7 +6,7 @@ var config       = require('../config'),
 
 // fileinclude: grab partials from templates and render out html files
 gulp.task('fileinclude', function() {
-	return gulp.src(path.join('./source/', '*.html'))
+	return gulp.src('./source/*.html')
 		.pipe(fileinclude())
 		.pipe(rename({
 			extname: ""

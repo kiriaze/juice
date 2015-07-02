@@ -1,0 +1,12 @@
+{
+  "name": "sassy-animate",
+  "version": "1.0.0",
+  "main": "_animate.scss",
+  "ignore": [
+        ".bowerrc",
+        ".gitignore",
+        "bower.json",
+        "package.json",
+        "README.md"
+    ]
+}

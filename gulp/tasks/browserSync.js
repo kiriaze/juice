@@ -8,7 +8,11 @@ var gulp        = require('gulp');
 gulp.task('browser-sync', function() {
 	browserSync.init(['./public/**/*'], {
 		server: {
-			baseDir: "./public"
-		}
+			baseDir: './public',
+		},
+		// Can't have both server and proxy, pick one.
+		// proxy: {
+		// 	target: 'http://localhost:' + config.serverport
+		// }
 	});
 });
