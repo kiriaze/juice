@@ -25,18 +25,19 @@
 	padding-bottom: 0;
 }
 
-
-.gist-file pre {
-	color: #222;
-}
-
-// hack for gutters in grid/row of full width sections
-section {
-	overflow: hidden;
+.dark {
+    background-color: $dark;
+    color: $white;
 }
 
 .container {
 	transition: $transition;
+}
+
+// Espresso gh-pages styles
+
+.gist-file pre {
+	color: #222;
 }
 
 // grid page styles

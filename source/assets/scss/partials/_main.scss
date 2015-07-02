@@ -28,12 +28,8 @@ body{
 	}
 }
 
-.dark {
-    background-color: $dark;
-    color: $white;
-}
-
-//  if body has class has-sidebar
+//  if body has class has-sidebar, ex. from wordpress body_class()
+//  and showing how to use the columns() mixin properly within breakpoints
 .has-sidebar {
     .primary {
         @include breakpoint($medium) {

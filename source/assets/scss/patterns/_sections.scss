@@ -3,6 +3,9 @@ section {
     padding-top: 3rem;
     padding-bottom: 3rem;
 
+    // hack for gutters in grid/row of full width sections
+	overflow: hidden;
+
     @include breakpoint($small) {
         padding-top: 5rem;
         padding-bottom: 5rem;
