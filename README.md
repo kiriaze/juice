@@ -1,4 +1,4 @@
-# Espresso
+# Juice
 A simple, flexible and easy-to-customise front-end boilerplate and workflow system for deploying awesome web experiences quickly and efficiently.
 
 Built with Gulp, Bower & NPM to preprocess, optimize, preview and deploy as effeciently as possible.
@@ -44,9 +44,9 @@ If you require Node, go to [nodejs.org](https://nodejs.org) and click on the big
 
 ### 1. Clone/Download
 
-Clone or Download Espresso into directory.
+Clone or Download Juice into directory.
 
-	$ git clone git@github.com:kiriaze/espresso.git .
+	$ git clone git@github.com:kiriaze/juice.git .
 
 
 ### 2. Install
@@ -192,7 +192,7 @@ This is the default usage. The grid is calculated and classes are generated for 
 
 ## Advanced usage
 
-By setting the $advanced-usage variable in your _settings.scss to 'true' you can work with Espresso more semantically.
+By setting the $advanced-usage variable in your _settings.scss to 'true' you can work with Juice more semantically.
 
 	# For mixed widths, percentage based
 
@@ -247,4 +247,4 @@ By setting the $advanced-usage variable in your _settings.scss to 'true' you can
 
 ## License
 
-Espresso is licensed under the GPL v2 license. (http://opensource.org/licenses/GPL-2.0)
+Juice is licensed under the GPL v2 license. (http://opensource.org/licenses/GPL-2.0)

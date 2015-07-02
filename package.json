@@ -1,11 +1,11 @@
 {
-  "name": "espresso",
+  "name": "juice",
   "version": "1.0.0",
   "description": "A Sass front end template",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kiriaze/espresso.git"
+    "url": "https://github.com/kiriaze/juice.git"
   },
   "keywords": [
     "css",
@@ -16,7 +16,7 @@
   "author": "kiriaze",
   "license": "GPL",
   "bugs": {
-    "url": "https://github.com/kiriaze/espresso/issues"
+    "url": "https://github.com/kiriaze/juice/issues"
   },
   "devDependencies": {
     "browser-sync": "^2.6.5",

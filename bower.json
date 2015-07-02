@@ -1,5 +1,5 @@
 {
-  "name": "espresso",
+  "name": "juice",
   "version": "1.0.0",
   "authors": [
     "Constantine Kiriaze <hello@kiriaze.com>"
@@ -14,7 +14,7 @@
     "frontend"
   ],
   "license": "GPL",
-  "homepage": "https://github.com/kiriaze/espresso",
+  "homepage": "https://github.com/kiriaze/juice",
   "ignore": [
     "**/.*",
     "node_modules",
