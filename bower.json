@@ -19,9 +19,15 @@
     "**/.*",
     "node_modules",
     "bower_components",
+    "assets/vendor",
     "test",
     "tests"
   ],
+  "overrides": {
+    "modernizr": {
+      "main": "modernizr.js"
+    }
+  },
   "dependencies": {
     "jquery": ">= 2.1.0",
     "modernizr": ">= 2.7.2",
