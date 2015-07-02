@@ -13,16 +13,21 @@ Features:
 	Cross Device Sync ( BrowserSync )
 	Autoprefixer
 	Notifications
-	Deployment
+	Deployment (server and gh-pages)
 	Sourcemaps
+	Pagespeed
+	SEO
 	Structure Partioned
 		Sass
 		HTML Partials
 	Performance Optimized
 		Gzip
-		Concat/Minify Everything
+		Concat/Minify Everything (css/js/html)
+		Clean up unused css
 		Image Optimazation ( All types )
+		Fonts
 	Powered by Gulp, Bower & NPM
+
 
 ## Get started
 It's easy to get started. Just follow the steps below.
