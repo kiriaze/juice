@@ -3,3 +3,4 @@ npm-debug*
 .DS_STORE
 public/
 bower_components/
+vendor/
