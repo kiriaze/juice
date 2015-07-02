@@ -9,9 +9,6 @@ gulp.task('fileinclude', function() {
 	return gulp.src('./source/*.html')
 		.pipe(fileinclude())
 		.pipe(rename({
-			extname: ""
-		}))
-		.pipe(rename({
 			extname: ".html"
 		}))
 		.pipe(gulp.dest(config.dist.root));

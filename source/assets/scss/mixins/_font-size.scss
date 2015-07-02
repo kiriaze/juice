@@ -4,6 +4,10 @@
     @return $num / ($num * 0 + 1);
 }
 
+@function em($size, $context: $rem-base) {
+	@return ($size / $context) * 1em;
+}
+
 /*  Font Size (px, em, rem)
 ============================================ */
 @mixin font-size($size, $rem: true, $vw: false) {
