@@ -24,7 +24,7 @@ module.exports = {
 	'vendorjs':   'source/assets/js/vendor/**/*.js',
 
 	'images': {
-		'src' : 'source/assets/images/**/*.{png,jpg,jpeg,gif,svg}',
+		'src' : 'source/assets/images/**/*.{png,jpg,jpeg,gif,svg,ico}',
 		'dest': 'public/assets/images'
 	},
 
