@@ -6,8 +6,8 @@ var gulp        = require('gulp'),
 gulp.task('default', ['clean'], function() {
 	runSequence(
 		'fileinclude',
-		['css', 'js', 'images', 'watch'],
 		'html',
+		['css', 'js', 'images', 'watch'],
 		'info'
 	);
 });
