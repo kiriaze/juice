@@ -1,14 +1,14 @@
 'use strict';
 
-var config     = require('../config'),
-	gulp       = require('gulp'),
-	jshint     = require('gulp-jshint'),
-	uglify     = require('gulp-uglify'),
-	sourcemaps = require('gulp-sourcemaps'),
-	concat     = require('gulp-concat'),
-	rename     = require('gulp-rename'),
-	mainBowerFiles = require('main-bower-files'),
-	order 		   = require('gulp-order');
+var config     		= require('../config'),
+	gulp       		= require('gulp'),
+	jshint     		= require('gulp-jshint'),
+	uglify     		= require('gulp-uglify'),
+	sourcemaps 		= require('gulp-sourcemaps'),
+	concat     		= require('gulp-concat'),
+	rename     		= require('gulp-rename'),
+	mainBowerFiles 	= require('main-bower-files'),
+	order 		    = require('gulp-order');
 
 // minify, concat, uglify, sourcemap, rename JS
 gulp.task('js', function(){
