@@ -5,7 +5,7 @@ Built with Gulp, Bower & NPM to preprocess, optimize, preview and deploy as effe
 
 It currently supports Chrome, Firefox, Safari, Opera & IE 9+, also supports major phone devices too.
 
-Juice follow the SOMA philosophy which parallels the smaccs, oocss, an bem philosophy - but imo better.
+Juice follow the SOMA philosophy which parallels the smaccs, oocss, an bem philosophies - but imo much simpler and intuitive.
 
 ```
 S imple
