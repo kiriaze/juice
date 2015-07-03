@@ -23,7 +23,7 @@ gulp.task('css', function(){
 			.pipe(uncss({
 				html: ['public/**/*.html']
 			}))
-			.pipe(minifyCSS())
+			.pipe(minifyCSS({processImport: false})) // processImport - whether to process @import rules
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(config.styles.dest))
 });
