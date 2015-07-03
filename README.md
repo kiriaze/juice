@@ -5,7 +5,43 @@ Built with Gulp, Bower & NPM to preprocess, optimize, preview and deploy as effe
 
 It currently supports Chrome, Firefox, Safari, Opera & IE 9+, also supports major phone devices too.
 
-Features:
+Juice follow the SOMA philosophy which parallels the smaccs, oocss, an bem philosophy - but imo better.
+
+```
+S imple
+O bject Oriented
+M odular
+A rchitecture
+```
+
+* No underscores, camelcasing, or double hyphens - umm did people forget proper naming conventions specific to each language?
+	* Although I would prefer using camelcasing over double hypens
+* Scss only, less sucks donkey dick.
+* Minimal ID's, primarily for main elements, e.g. header,nav, main, footer, and for js manipulation.
+* Placeholders galore. ( % incase you didn't know )
+* Prefix free. ( let your compiler handle that jazz )
+* Tabs people, make code readable.
+* No super nesting, 3 levels deep - max.
+* Space out your code. Example:
+```
+	// css
+	.some-element {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+    // js
+	if ( $( '.some-element' ).length ) {
+		console.log('foo');
+	}
+
+	// php
+	if ( isset( $someElement ) ) {
+    	print_r($someElement);
+	}
+```
+
+It features:
 
 	Blazing Fast
 	Built in server
@@ -31,7 +67,6 @@ Features:
 
 ## Get started
 It's easy to get started. Just follow the steps below.
-
 
 ### Prerequisites
 
