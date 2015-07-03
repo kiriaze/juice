@@ -4,11 +4,11 @@
 //
 //
 
-// Site Global Dimensions
-$tiny:							30em; // 480px
-$small:							45em; // 768px
-$medium:						60em; // 960px
-$large:							80em; // 1280px
+// Site Global Dimensions - Issue: ems are messing up if parent element is set to a font-size, cascades to child container and affects width. Weird.
+$tiny:							480px; // 30em
+$small:							768px; // 45em
+$medium:						960px; // 60em
+$large:							1280px; // 80em
 
 // Base Typography Values
 $rem-base:						16px !default;

@@ -39,26 +39,9 @@
 	color: #222;
 }
 
-.juice-bg {
-	background-color: $primary-color;
-	color: white;
-	a {
-		color: white;
-		border-color: white;
-	}
-}
-
 #nav {
-	font-weight: 800;
-	text-transform: uppercase;
+	font-weight: 600;
 	font-size: 0.8rem;
-	letter-spacing: 1px;
-	a {
-		color: $gray;
-		&:hover {
-			color: $red;
-		}
-	}
 }
 
 // grid page styles
@@ -86,6 +69,22 @@
 
 }
 
+.juice-bg {
+	background-color: $primary-color;
+	color: white;
+	a {
+		color: white;
+		border-color: white;
+	}
+	&.example-grid {
+		[class*='#{$column-class}-'],
+		[data-columns] {
+			background: $white;
+			color: #222;
+		}
+	}
+}
+
 .circle {
 	border-radius: 50%;
 	width: 200px;
@@ -96,6 +95,8 @@
 #footer {
 	border-top: 1px solid #f5f6f7;
 	padding: 5rem 0;
+	font-weight: 600;
+	font-size: 0.8rem;
 	.created-by {
 
 	}
