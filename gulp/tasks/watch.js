@@ -17,7 +17,7 @@ gulp.task('watch', ['browser-sync'], function() {
 	gulp.watch('./public/**/*.html', ['html'], reload);
 
 	// Watch Sass files
-	gulp.watch(config.styles.src, ['css'], reload);
+	gulp.watch(config.styles.src, ['uncss', 'css'], reload);
 
 	// Watch JS files
 	gulp.watch(config.scripts.src, ['js'], reload);

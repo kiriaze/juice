@@ -12,7 +12,7 @@ module.exports = {
 	'strategy'  : 'mobile',
 
 	'styles': {
-		'src' : 'source/assets/scss/**/*.scss',
+		'src' : 'source/assets/scss',
 		'dest': 'public/assets/css'
 	},
 

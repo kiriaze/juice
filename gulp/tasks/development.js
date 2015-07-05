@@ -7,7 +7,7 @@ gulp.task('default', ['clean'], function() {
 	runSequence(
 		'fileinclude',
 		'html',
-		['css', 'vendor', 'js', 'images', 'watch'],
+		['uncss', 'css', 'vendor', 'js', 'images', 'watch'],
 		'info'
 	);
 });

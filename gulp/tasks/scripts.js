@@ -6,9 +6,7 @@ var config     		= require('../config'),
 	uglify     		= require('gulp-uglify'),
 	sourcemaps 		= require('gulp-sourcemaps'),
 	concat     		= require('gulp-concat'),
-	rename     		= require('gulp-rename'),
-	mainBowerFiles 	= require('main-bower-files'),
-	order 		    = require('gulp-order');
+	rename     		= require('gulp-rename');
 
 // minify, concat, uglify, sourcemap, rename JS
 gulp.task('js', function(){
@@ -20,8 +18,7 @@ gulp.task('js', function(){
 			.pipe(uglify())
 			.pipe(concat('app.js'))
 			.pipe(rename({suffix: '.min'}))
-			.pipe(gulp.dest(config.scripts.dest))
-		.pipe(sourcemaps.write())
+		.pipe(sourcemaps.write('./')) // writing relative to gulp.dest path
 		.pipe(gulp.dest(config.scripts.dest))
 
 });

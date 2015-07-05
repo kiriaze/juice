@@ -3,27 +3,20 @@
 var config       = require('../config'),
 	gulp         = require('gulp'),
 	sass         = require('gulp-sass'),
-	concat       = require('gulp-concat'),
-	minifyCSS    = require('gulp-minify-css'),
-	gulpif       = require('gulp-if'),
 	rename       = require('gulp-rename'),
-	browserSync  = require('browser-sync'),
 	autoprefixer = require('gulp-autoprefixer'),
-	sourcemaps   = require('gulp-sourcemaps'),
-	uncss		 = require('gulp-uncss');
+	sourcemaps   = require('gulp-sourcemaps');
 
 // minify, sourcemap, autoprefix, rename CSS
 gulp.task('css', function(){
-	return gulp.src(config.styles.src)
+	// targets single file instead of dir since gulp runs better
+	return gulp.src(config.styles.src + '/main.scss')
 		.pipe(sourcemaps.init())
-			.pipe(sass())
 			.pipe(autoprefixer('last 2 versions'))
-			.pipe(rename({suffix: '.min'}))
-			.pipe(gulp.dest(config.styles.dest))
-			.pipe(uncss({
-				html: ['public/**/*.html']
+			.pipe(sass({
+				outputStyle: 'compressed'
 			}))
-			.pipe(minifyCSS({processImport: false})) // processImport - whether to process @import rules
-		.pipe(sourcemaps.write())
+			.pipe(rename({suffix: '.min'}))
+		.pipe(sourcemaps.write('./')) // writing relative to gulp.dest path
 		.pipe(gulp.dest(config.styles.dest))
 });
