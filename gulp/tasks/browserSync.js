@@ -6,9 +6,9 @@ var config      = require('../config'),
 
 // Initialize browser-sync which starts a static server also allows for browsers to reload on filesave
 gulp.task('browser-sync', function() {
-	browserSync.init(['./public/**/*'], {
+	browserSync.init(['./dist/**/*'], {
 		server: {
-			baseDir: './public',
+			baseDir: './dist',
 		},
 		port: config.serverport
 		// Can't have both server and proxy, pick one.

@@ -12,35 +12,35 @@ module.exports = {
 	'strategy'  : 'mobile',
 
 	'styles': {
-		'src' : 'source/assets/scss',
-		'dest': 'public/assets/css'
+		'src' : 'src/assets/scss',
+		'dest': 'dist/assets/css'
 	},
 
 	'scripts': {
-		'src' : 'source/assets/js/**/*.js',
-		'dest': 'public/assets/js'
+		'src' : 'src/assets/js/**/*.js',
+		'dest': 'dist/assets/js'
 	},
 
-	'vendorjs':   'source/assets/js/vendor/**/*.js',
+	'vendorjs':   'src/assets/js/vendor/**/*.js',
 
 	'images': {
-		'src' : 'source/assets/images/**/*.{png,jpg,jpeg,gif,svg,ico}',
-		'dest': 'public/assets/images'
+		'src' : 'src/assets/images/**/*.{png,jpg,jpeg,gif,svg,ico}',
+		'dest': 'dist/assets/images'
 	},
 
 	'fonts': {
-		'src' : ['source/assets/fonts/**/*'],
-		'dest': 'public/assets/fonts'
+		'src' : ['src/assets/fonts/**/*'],
+		'dest': 'dist/assets/fonts'
 	},
 
 	'gzip': {
-		'src': 'source/**/*.{html,xml,json,css,js,js.map}',
-		'dest': 'public/',
+		'src': 'src/**/*.{html,xml,json,css,js,js.map}',
+		'dest': 'dist/',
 		'options': {}
 	},
 
 	'dist': {
-		'root'  : 'public'
+		'root'  : 'dist'
 	}
 
 };

@@ -4,7 +4,7 @@ var config       = require('../config'),
 
 // minify html
 gulp.task('html', function() {
-	return gulp.src('./public/*.html')
+	return gulp.src('./dist/*.html')
 		.pipe(minifyHTML({
 			quotes: true
 		}))

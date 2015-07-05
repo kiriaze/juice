@@ -18,13 +18,14 @@ gulp.task('vendor', function(){
 	console.log('bower files: ', mainFiles);
 
 	return gulp.src(mainFiles, {
-		base: './source/assets/vendor'
+		base: './src/assets/vendor'
 	})
-		.pipe(order([
-			'**/**/modernizr.js',
-            '**/**/*.js'
-		]))
-		.pipe(uglify())
-		.pipe(concat('vendor.min.js'))
-		.pipe(gulp.dest(config.scripts.dest))
+
+	.pipe(order([
+		'**/**/modernizr.js',
+        '**/**/*.js'
+	]))
+	.pipe(uglify())
+	.pipe(concat('vendor.min.js'))
+	.pipe(gulp.dest(config.scripts.dest))
 });

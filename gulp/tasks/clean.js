@@ -6,7 +6,5 @@ var config = require('../config'),
 	del    = require('del');
 
 gulp.task('clean', function(cb) {
-
 	del([config.dist.root], cb);
-
 });

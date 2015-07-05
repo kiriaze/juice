@@ -7,6 +7,6 @@ var config      = require('../config'),
 // output size in console
 gulp.task('info', function() {
 	// You can pass as many relative urls as you want
-	return gulp.src('public/*/**')
+	return gulp.src('dist/*/**')
 		.pipe(size())
 });

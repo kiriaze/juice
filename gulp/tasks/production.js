@@ -12,7 +12,7 @@ gulp.task('prod', ['clean'], function(cb) {
 	runSequence(
 		'fileinclude',
 		'html',
-		['css', 'js', 'vendor', 'images', 'watch'],
+		['uncss', 'css', 'js', 'vendor', 'images', 'watch'],
 		'gzip',
 		'info',
 		'browser-sync',

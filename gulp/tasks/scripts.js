@@ -10,7 +10,6 @@ var config     		= require('../config'),
 
 // minify, concat, uglify, sourcemap, rename JS
 gulp.task('js', function(){
-
 	return gulp.src(config.scripts.src)
 		.pipe(sourcemaps.init())
 			.pipe(jshint())
@@ -20,5 +19,4 @@ gulp.task('js', function(){
 			.pipe(rename({suffix: '.min'}))
 		.pipe(sourcemaps.write('./')) // writing relative to gulp.dest path
 		.pipe(gulp.dest(config.scripts.dest))
-
 });

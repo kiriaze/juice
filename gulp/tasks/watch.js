@@ -11,10 +11,10 @@ var config        = require('../config'),
 gulp.task('watch', ['browser-sync'], function() {
 
 	// watch task for gulp-file-include
-	gulp.watch('./source/**/*.html', ['fileinclude'], reload);
+	gulp.watch('./src/**/*.html', ['fileinclude'], reload);
 
-	// reminify html in public dir
-	gulp.watch('./public/**/*.html', ['html'], reload);
+	// reminify html in dist dir
+	gulp.watch('./dist/**/*.html', ['html'], reload);
 
 	// Watch Sass files
 	gulp.watch(config.styles.src, ['uncss', 'css'], reload);
