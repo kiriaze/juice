@@ -133,5 +133,3 @@ permalink: /type/
 	</div><!-- /container -->
 
 </section>
-
-{% include footer.html %}

@@ -187,5 +187,3 @@ permalink: /grid/
 		</li>
 	</ul>
 </section>
-
-{% include footer.html %}
