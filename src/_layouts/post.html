@@ -4,17 +4,17 @@ layout: default
 
 <section class="hero">
 	<div class="container">
-		<h1>The Post.</h1>
-		<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+		<h1>{{ page.title }}</h1>
+		<h5>
+			{% if page.author %}{{ page.author }}{% endif %}
+			{{ page.date | date: "%b %-d, %Y" }}
+		</h5>
 		{% include header.html %}
 	</div>
 </section>
 
 <section>
 	<div class="container">
-		{{ page.title }}
-		{% if page.author %}{{ page.author }}{% endif %}
-		{{ page.date | date: "%b %-d, %Y" }}
 		{% if page.image %}
 	    	<img src="/img/{{ page.image }}">
 	    {% endif %}
