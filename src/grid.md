@@ -1,10 +1,14 @@
-@@include('partials/head.html')
+---
+layout: default
+title: grid
+permalink: /grid/
+---
 
 <section class="hero">
 	<div class="container">
 		<h1>The Grid.</h1>
 		<h5>A human friendly, semantic, hybrid grid framework <br>utilizing floats, extends and data attributes.</h5>
-		@@include('partials/header.html')
+		{% include header.html %}
 	</div>
 </section>
 
@@ -184,6 +188,4 @@
 	</ul>
 </section>
 
-@@include('partials/footer.html')
-
-@@include('partials/foot.html')
+{% include footer.html %}

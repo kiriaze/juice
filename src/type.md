@@ -1,11 +1,14 @@
-@@include('partials/head.html')
-
+---
+layout: default
+title: type
+permalink: /type/
+---
 
 <section class="hero">
 	<div class="container">
 		<h1>Typography.</h1>
 		<h5>Basic typography styles.</h5>
-		@@include('partials/header.html')
+		{% include header.html %}
 	</div>
 </section>
 
@@ -131,6 +134,4 @@
 
 </section>
 
-@@include('partials/footer.html')
-
-@@include('partials/foot.html')
+{% include footer.html %}

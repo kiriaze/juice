@@ -39,6 +39,25 @@ module.exports = {
 		'options': {}
 	},
 
+	'uncss': {
+		'ignore' : [
+			'/.class-1.class-2/',
+			'/.class-3.class-2/'
+		]
+	},
+
+	'jekyll': {
+		'development': {
+			'src':    'src',
+			'dest':   'dist',
+			'config': '_config.yml'
+		}
+	},
+
+	'src' : {
+		'root' : 'src'
+	},
+
 	'dist': {
 		'root'  : 'dist'
 	}

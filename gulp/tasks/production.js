@@ -10,9 +10,10 @@ gulp.task('prod', ['clean'], function(cb) {
 	global.isProd = true;
 
 	runSequence(
-		'fileinclude',
+		'jekyll',
 		'html',
-		['uncss', 'css', 'js', 'vendor', 'images', 'watch'],
+		['css', 'js', 'vendor', 'images'],
+		'uncss',
 		'gzip',
 		'info',
 		'browser-sync',

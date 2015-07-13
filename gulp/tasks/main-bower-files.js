@@ -18,7 +18,7 @@ gulp.task('vendor', function(){
 	console.log('bower files: ', mainFiles);
 
 	return gulp.src(mainFiles, {
-		base: './src/assets/vendor'
+		base: config.src.root + '/assets/vendor'
 	})
 
 	.pipe(order([

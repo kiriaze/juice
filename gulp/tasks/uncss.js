@@ -1,12 +1,20 @@
 'use strict';
 
-var gulp        = require('gulp'),
+var config      = require('../config'),
+	gulp        = require('gulp'),
 	uncss		= require('gulp-uncss');
 
+// use regex for ignoring classes
+// that are being added dynamically to css
+// or write this comment above your desired css
+// /* uncss:ignore */
+var uncssIgnoreClass = [config.uncss.ignore];
+
 gulp.task('uncss', function() {
-    return gulp.src('./dist/assets/css/*.css')
+    return gulp.src(config.dist.root + '/assets/css/*.css')
 		.pipe(uncss({
-			html: ['dist/**/*.html']
+			html: [config.dist.root + '/**/*.html'],
+			ignore: uncssIgnoreClass
 		}))
-        .pipe( gulp.dest('./dist/assets/css') )
+        .pipe( gulp.dest(config.dist.root + '/assets/css') )
 });

@@ -8,21 +8,21 @@ var config        = require('../config'),
 
 
 // Watch these files for changes and run the task on update
-gulp.task('watch', ['browser-sync'], function() {
-
-	// watch task for gulp-file-include
-	gulp.watch('./src/**/*.html', ['fileinclude'], reload);
-
-	// reminify html in dist dir
-	gulp.watch('./dist/**/*.html', ['html'], reload);
+gulp.task('watch', function() {
 
 	// Watch Sass files
-	gulp.watch(config.styles.src, ['uncss', 'css'], reload);
+	gulp.watch(config.styles.src + '/**/*.scss', ['uncss', 'css'], reload);
 
 	// Watch JS files
 	gulp.watch(config.scripts.src, ['js'], reload);
 
 	// Watch image files
 	gulp.watch(config.images.src, ['images'], reload);
+
+	// jekyll build
+	gulp.watch([
+		config.src.root + '/**/*.html',
+		config.src.root + '/**/*.md'
+	], ['jekyll-rebuild'], reload);
 
 });

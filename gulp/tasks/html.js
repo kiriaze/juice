@@ -3,8 +3,8 @@ var config       = require('../config'),
 	minifyHTML   = require('gulp-minify-html');
 
 // minify html
-gulp.task('html', function() {
-	return gulp.src('./dist/*.html')
+gulp.task('html', ['jekyll'], function() {
+	return gulp.src(config.dist.root + '/*.html')
 		.pipe(minifyHTML({
 			quotes: true
 		}))

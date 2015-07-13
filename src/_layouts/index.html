@@ -1,4 +1,6 @@
-@@include('partials/head.html')
+---
+layout: default
+---
 
 <section class="hero">
 
@@ -11,7 +13,7 @@
 				A gulp, bower &amp; sass powered <br> front-end framework system.
 			</h5>
 
-			@@include('partials/header.html')
+			{% include header.html %}
 
 		</div>
 
@@ -298,8 +300,3 @@ $ gulp
 	</div>
 
 </section>
-
-
-@@include('partials/footer.html')
-
-@@include('partials/foot.html')
