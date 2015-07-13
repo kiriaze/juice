@@ -1,4 +1,4 @@
 ---
-layout: index
-title: home page
+layout: frontpage
+title: "Home"
 ---

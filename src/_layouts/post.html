@@ -2,10 +2,25 @@
 layout: default
 ---
 
+<section class="hero">
+	<div class="container">
+		<h1>The Post.</h1>
+		<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+		{% include header.html %}
+	</div>
+</section>
+
 <section>
-  <div class="outer">
-    <div class="container">
-      {{content}}
-    </div>
-  </div>
+	<div class="container">
+		{{ page.title }}
+		{% if page.author %}{{ page.author }}{% endif %}
+		{{ page.date | date: "%b %-d, %Y" }}
+		{% if page.image %}
+	    	<img src="/img/{{ page.image }}">
+	    {% endif %}
+		<article class="post__content">
+	      {{ content }}
+	    </article>
+	    {% include disqus.html disqus_identifier=page.disqus_identifier %}
+	</div>
 </section>

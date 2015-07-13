@@ -1,19 +1,13 @@
-<!-- Capture and store a URL -->
-{% capture location %}{{ page.url | split:'/' }}{% endcapture %}
-
 <header id="header">
 	<nav id="nav">
 
-        {% for page in site.pages %}
-
-          <!-- Compare the page title to the URL -->
-          {% assign current = page.title | downcase %}
-
-          {% if page.title %}
-			<a {% if location == current %} class="current" {% else %} class="" {% endif %} href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-
-        {% endfor %}
+	    {% for link in site.navigation %}
+	        {% assign current = nil %}
+	        {% if page.url contains link.url %}
+	            {% assign current = 'current' %}
+	        {% endif %}
+			<a href="{{ link.url }}" class="{{ current }}">{{ link.title }}</a>
+	    {% endfor %}
 
         <a href="https://github.com/kiriaze/juice/archive/master.zip">Download.</a>
 

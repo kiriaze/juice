@@ -11,10 +11,13 @@ category_dir: /
 # Note - if you enable this, and attempt to view your site locally you have to use the baseurl in your local path.
 # Example, you must use http://localhost:4000/path/to/blog
 # baseurl: /path/to/blog
-baseurl: /juice
+# baseurl: /juice # for github pages, uncomment this line, and recomment for local dev env
+baseurl: ""
 
 twitter_username: kiriaze
 paginate: 3
+# Pagination path › Important for blog page in /blog/ to work
+paginate_path: blog/page:num
 
 # Build settings
 markdown: kramdown
@@ -30,3 +33,32 @@ destination: ./dist
 
 relative_permalinks: false
 highlighter: true # syntax highlighting
+
+navigation:
+ - title: Home
+   url: /index.html
+ - title: Grid
+   url: /grid
+ - title: Type
+   url: /type
+ - title: Blog
+   url: /blog
+
+# Default settings
+defaults:
+  -
+    scope:
+      path: "" 				# an empty string here means all files in the project
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      show_meta: true   # Show metadata beneath all posts
+      category: conferences
+      comments: true
+      author: "your_author_name"
+      layout: "post"

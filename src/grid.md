@@ -1,6 +1,6 @@
 ---
 layout: default
-title: grid
+title: Grid
 permalink: /grid/
 ---
 

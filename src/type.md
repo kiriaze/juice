@@ -1,6 +1,6 @@
 ---
 layout: default
-title: type
+title: Type
 permalink: /type/
 ---
 

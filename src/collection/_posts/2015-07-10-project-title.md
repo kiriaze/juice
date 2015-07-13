@@ -1,5 +1,5 @@
 ---
-title: Collection Post Item
+title: Project Title
 author: Constantine Kiriaze
 ---
 
