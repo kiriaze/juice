@@ -8,12 +8,12 @@ desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus aper
 {% for collection in site.my-collection limit:3 %}
 <article>
 	<h2>
-		<a href="{{ collection.url }}">{{ collection.title }}</a>
+		<a href="{{ collection.url | prepend: site.baseurl }}">{{ collection.title }}</a>
 	</h2>
 	<span class="date">{{ collection.date | date: "%b %d, %Y" }}</span>
 	<span class="author">{{ collection.author }}</span>
 	{{ collection.excerpt }}
-	<a href="{{ collection.url }}/" class="">Read more</a>
+	<a href="{{ collection.url | prepend: site.baseurl }}" class="">Read more</a>
 </article>
 {% endfor %}
 
