@@ -1,4 +1,4 @@
-# Site settings
+# Site settings - reference http://ben.balter.com/2015/02/20/jekyll-collections/
 title: Testing title
 email: ckiriaze@gmail.com
 description: A blog about my favorite web conferences.
@@ -12,7 +12,6 @@ category_dir: /
 # Example, you must use http://localhost:4000/path/to/blog
 # baseurl: /path/to/blog
 # baseurl: /juice # for github pages, uncomment this line, and recomment for local dev env
-baseurl: ""
 
 twitter_username: kiriaze
 paginate: 3
@@ -21,7 +20,7 @@ paginate_path: blog/page:num
 
 # Build settings
 markdown: kramdown
-permalink: /blog/:category/:title
+permalink: /blog/:categories/:title
 
 exclude: ['node_modules', 'gulpfile.js', 'package.json', 'assets']
 # keep jekyll from removing compiled css dir
@@ -43,6 +42,14 @@ navigation:
    url: /type
  - title: Blog
    url: /blog
+ - title: My Collection
+   url: /my-collection
+
+collections:
+  my-collection: # name of collection
+    output: true
+    permalink: /my-collection/:path/
+    # That way, _my-collection/item.md is outputted as my-collection/item/index.html when the site is built and would be accessable as example.com/my-collection/item/. The other advantage, is, because the data is now structured and machine readable (rather than in plain text), you could also use the jsonify filter to output that same information as an API for use elsewhere.
 
 # Default settings
 defaults:
@@ -57,8 +64,13 @@ defaults:
       path: ""
       type: "posts"
     values:
-      show_meta: true   # Show metadata beneath all posts
-      category: conferences
+      category: default category
       comments: true
       author: "your_author_name"
       layout: "post"
+  -
+    scope:
+      path: "" 				# an empty string here means all files in the project
+      type: "my-collection"
+    values:
+      layout: "my-collection"

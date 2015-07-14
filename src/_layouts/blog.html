@@ -5,7 +5,9 @@ layout: default
 <section class="hero">
 	<div class="container">
 		<h1>The Blog.</h1>
-		<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+		<h5>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</h5>
 		{% include header.html %}
 	</div>
 </section>
@@ -20,6 +22,9 @@ layout: default
 			</h2>
 			<span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
 			<span class="author">{{ post.author }}</span>
+			<span class="category">
+				{{ post.categories }}
+			</span>
 			{{ post.excerpt }}
 			<a href="/{{ post.url }}/" class="">Read more</a>
 		</article>

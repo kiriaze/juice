@@ -6,7 +6,7 @@
 	        {% if page.url contains link.url %}
 	            {% assign current = 'current' %}
 	        {% endif %}
-			<a href="{{ link.url }}" class="{{ current }}">{{ link.title }}</a>
+			<a href="{{ link.url | prepend: site.baseurl }}" class="{{ current }}">{{ link.title }}</a>
 	    {% endfor %}
 
         <a href="https://github.com/kiriaze/juice/archive/master.zip">Download.</a>
