@@ -42,6 +42,9 @@
 #nav {
 	font-weight: 600;
 	font-size: 0.8rem;
+	a {
+		margin-right: 1rem;
+	}
 }
 
 // grid page styles
@@ -69,6 +72,24 @@
 
 }
 
+.hero {
+	border-bottom: 1px solid #eee;
+}
+
+article {
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+	border-bottom: 1px solid #eee;
+}
+
+input[type="search"] {
+	padding: 0.8rem 1rem;
+	border: 0;
+	&:focus {
+		border: 0;
+	}
+}
+
 .juice-bg {
 	background-color: $primary-color;
 	color: white;
@@ -93,7 +114,7 @@
 }
 
 #footer {
-	border-top: 1px solid #f5f6f7;
+	border-top: 1px solid #eee;
 	padding: 5rem 0;
 	font-weight: 600;
 	font-size: 0.8rem;

@@ -1,5 +1,5 @@
 # Site settings - reference http://ben.balter.com/2015/02/20/jekyll-collections/
-title: Testing title
+title: Juice
 email: ckiriaze@gmail.com
 description: A blog about my favorite web conferences.
 
@@ -11,7 +11,7 @@ category_dir: /
 # Note - if you enable this, and attempt to view your site locally you have to use the baseurl in your local path.
 # Example, you must use http://localhost:4000/path/to/blog
 # baseurl: /path/to/blog
-baseurl: /juice # for github pages, uncomment this line, and recomment for local dev env
+# baseurl: /juice # for github pages, uncomment this line, and recomment for local dev env
 
 twitter_username: kiriaze
 paginate: 3
@@ -64,7 +64,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      category: default category
+      category: default-category
       comments: true
       author: "your_author_name"
       layout: "post"
@@ -74,3 +74,4 @@ defaults:
       type: "my-collection"
     values:
       layout: "my-collection"
+      comments: true

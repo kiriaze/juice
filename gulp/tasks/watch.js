@@ -11,7 +11,7 @@ var config        = require('../config'),
 gulp.task('watch', function() {
 
 	// Watch Sass files
-	gulp.watch(config.styles.src + '/**/*.scss', ['uncss', 'css'], reload);
+	gulp.watch(config.styles.src + '/**/*.scss', ['css'], reload);
 
 	// Watch JS files
 	gulp.watch(config.scripts.src, ['js'], reload);

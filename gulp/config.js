@@ -5,10 +5,10 @@ module.exports = {
 	'serverport': 3000,
 
 	// URL TO YOUR SITEMAP.XML
-	'sitemapURL': 'http://path-to-sitemap.com/sitemap.xml',
+	'sitemapURL': 'http://domain.com/sitemap.xml',
 
 	// Google pagespeed
-	'URL'       : 'http://EXAMPLE.com',
+	'URL'       : 'http://domain.com',
 	'strategy'  : 'mobile',
 
 	'styles': {

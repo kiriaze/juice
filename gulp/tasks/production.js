@@ -15,6 +15,8 @@ gulp.task('prod', ['clean'], function(cb) {
 		['css', 'js', 'vendor', 'images'],
 		'uncss',
 		'gzip',
+		'seo',
+		'sitemap',
 		'info',
 		'browser-sync',
 		cb

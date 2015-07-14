@@ -10,6 +10,7 @@ gulp.task('default', ['clean', 'browser-sync'], function() {
 		// 'html', // for minification, reloads page 2x
 		['uncss', 'css', 'vendor', 'js', 'images'],
 		'watch',
+		'sitemap',
 		'info'
 	);
 });
