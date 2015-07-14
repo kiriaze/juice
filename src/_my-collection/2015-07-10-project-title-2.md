@@ -1,10 +1,10 @@
 ---
 title: Project Title 2
 date: today
-author: Constantine Kiriaze
+author: John Doe
 collection: my-collection
 categories: branding
-desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus aperiam, voluptate officia illo odio eius obcaecati fugiat ad, dolore doloremque nisi ratione enim, libero sint quod, quas nemo tenetur rerum.
+excerpt: What text editor to use? Sass or plain old CSS? What on earth is Compass?
 ---
 
 Converge assembles some of the best speakers in the industry to inform and inspire you! It's for the love of the web and the love of our community. This year's event includes a full schedule of keynotes, sessions, and workshops.

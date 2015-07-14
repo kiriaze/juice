@@ -25,7 +25,9 @@ layout: default
 			<span class="category">
 				{{ post.categories }}
 			</span>
-			{{ post.excerpt }}
+			<p>
+				{{ post.excerpt }}
+			</p>
 			<a href="{{ post.url | prepend: site.baseurl }}" class="">Read more</a>
 		</article>
 		{% endfor %}

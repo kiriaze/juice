@@ -12,7 +12,12 @@ desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus aper
 	</h2>
 	<span class="date">{{ collection.date | date: "%b %d, %Y" }}</span>
 	<span class="author">{{ collection.author }}</span>
-	{{ collection.excerpt }}
+	<span class="category">
+		{{ collection.categories }}
+	</span>
+	<p>
+		{{ collection.excerpt }}
+	</p>
 	<a href="{{ collection.url | prepend: site.baseurl }}" class="">Read more</a>
 </article>
 {% endfor %}
