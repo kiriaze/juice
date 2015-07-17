@@ -32,7 +32,7 @@ permalink: /type/
 
 		<br>
 
-		<article id="components" class="line"><div class="contain-tight">
+		<article>
 
 			<h3>Post Article</h3>
 

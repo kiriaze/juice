@@ -282,6 +282,16 @@ By setting the $advanced-usage variable in your _settings.scss to 'true' you can
 	}
 
 
+## Todos and Notes
+
+cloudflare
+	A record pointing from ghpages to domain
+leave gzip alone for now within gulp
+update CNAME to reflect domain.com within gh-pages branch
+uncss disabled
+method to restart gulp when a gulp file is updated
+removed html minification, issues, let cloudflare/github handle that ish
+
 ## License
 
 Juice is licensed under the GPL v2 license. (http://opensource.org/licenses/GPL-2.0)

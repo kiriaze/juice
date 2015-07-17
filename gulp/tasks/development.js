@@ -6,9 +6,10 @@ var gulp        = require('gulp'),
 // wait for clean and browser-sync before running sequence
 gulp.task('default', ['clean', 'browser-sync'], function() {
 	runSequence(
-		'jekyll',
-		// 'html', // for minification, reloads page 2x
-		['uncss', 'css', 'vendor', 'js', 'images'],
+		// 'uncss', // currently disabled due to lack of dynamically generated classes through js, too many to manually upkeep in ignore array
+		'js',
+		'images',
+		'fonts',
 		'watch',
 		'sitemap',
 		'info'

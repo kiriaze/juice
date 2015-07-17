@@ -5,10 +5,10 @@ module.exports = {
 	'serverport': 3000,
 
 	// URL TO YOUR SITEMAP.XML
-	'sitemapURL': 'http://domain.com/sitemap.xml',
+	'sitemapURL': 'http://kiriaze.com/sitemap.xml',
 
 	// Google pagespeed
-	'URL'       : 'http://domain.com',
+	'URL'       : 'http://kiriaze.com',
 	'strategy'  : 'mobile',
 
 	'styles': {
@@ -21,7 +21,7 @@ module.exports = {
 		'dest': 'dist/assets/js'
 	},
 
-	'vendorjs':   'src/assets/js/vendor/**/*.js',
+	'vendorjs': 'src/assets/js/vendor/**/*.js',
 
 	'images': {
 		'src' : 'src/assets/images/**/*.{png,jpg,jpeg,gif,svg,ico}',
@@ -29,14 +29,16 @@ module.exports = {
 	},
 
 	'fonts': {
-		'src' : ['src/assets/fonts/**/*'],
+		'src' : 'src/assets/fonts/**/*',
 		'dest': 'dist/assets/fonts'
 	},
 
 	'gzip': {
 		'src': 'src/**/*.{html,xml,json,css,js,js.map}',
 		'dest': 'dist/',
-		'options': {}
+		'options': {
+
+		}
 	},
 
 	'uncss': {
