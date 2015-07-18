@@ -20,11 +20,29 @@ layout: default
 			<h2>
 				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 			</h2>
-			<span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
-			<span class="author">{{ post.author }}</span>
-			<span class="category">
-				{{ post.categories }}
-			</span>
+			<div class="post-meta">
+				By
+				<span class="author">
+					{% if page.author %}
+					{{ page.author }}
+					{% else %}
+					{{ site.owner.name }}
+					{% endif %}
+				</span>
+				on
+				<!-- 1.30.2015 -->
+				<span class="date">
+					{{ post.date | date: "%b %d, %Y" }}
+				</span>
+				{% if post.categories.size > 0 %}
+				 under
+				<span class="categories">
+					{% for category in post.categories %}
+						<a href="{{ site.url }}/categories/#{{ category }}" title="Pages categorized in {{ category }}" class="category"><span class="term">{{ category }}</span></a>{% unless forloop.last %},{% endunless %}{% if forloop.last %}.{% endif %}
+					{% endfor %}
+				</span>
+				{% endif %}
+			</div>
 			<p>
 				{{ post.excerpt }}
 			</p>
