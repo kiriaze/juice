@@ -215,23 +215,6 @@ $gridDebug:			false !default;
 
 	@include grid();
 
-	// for image/text vertical alignment
-	&.valign {
-		font-size: 0px;
-		text-align: justify;
-		&:after {
-			content: '';
-			display: inline-block;
-			width: 100%;
-		}
-		[class*="columns-"] {
-			float: none;
-			display: inline-block;
-			vertical-align: middle;
-			text-align: initial;
-		}
-	}
-
 	@if( $gridDebug == true ) {
 		background: $black; // testing purposes
 	}

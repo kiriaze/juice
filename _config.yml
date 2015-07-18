@@ -1,11 +1,31 @@
-# Site settings - reference http://ben.balter.com/2015/02/20/jekyll-collections/
+# Site settings
 title: Juice
-email: ckiriaze@gmail.com
 description: A blog about my favorite web conferences.
 
-# The directory for category index pages. Change it to something else if
-# for example you want links like /categories/category1 instead of /category1
-category_dir: /
+disqus_shortname: webconfs
+
+reading_time:     true
+words_per_minute: 200
+
+search:           true
+
+# Owner/author information
+owner:
+  name:           Your Name
+  avatar:         avatar.jpg
+  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
+  email:          ckiriaze@gmail.com
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:        kiriaze
+  facebook:
+  github:
+  stackexchange:
+  linkedin:
+  instagram:
+  flickr:
+  tumblr:
+  # google plus id, include the '+', eg +mmistakes
+  google_plus:    +yourid
 
 # Uncomment if you are planning to run the blog in a subdirectory
 # Note - if you enable this, and attempt to view your site locally you have to use the baseurl in your local path.
@@ -13,37 +33,59 @@ category_dir: /
 # baseurl: /path/to/blog
 # baseurl: /juice # for github pages, uncomment this line, and recomment for local dev env
 
-twitter_username: kiriaze
-paginate: 3
+# Your site's domain goes here (eg: //kiriaze.github.io, http://kiriaze.com, etc)
+# When testing locally leave blank or use http://localhost:4000
+# url:              //kiriaze.github.io
+
+# The directory for category index pages. Change it to something else if
+# for example you want links like /categories/category1 instead of /category1
+category_dir: /
+relative_permalinks: false
+permalink:   /blog/:categories/:title
+
+# Amount of posts to show on home page
+paginate: 5
 # Pagination path › Important for blog page in /blog/ to work
 paginate_path: blog/page:num
 
 # Build settings
-markdown: kramdown
-permalink: /blog/:categories/:title
-
-exclude: ['node_modules', 'gulpfile.js', 'package.json', 'assets']
-# keep jekyll from removing compiled css dir
-keep_files: ['assets']
-
-# Src/Dest are also outlined in config.js
-source: ./src
-destination: ./dist
-
-relative_permalinks: false
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/New_York
+future:      true
 highlighter: true # syntax highlighting
+markdown:    kramdown
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: true
+
+  coderay:
+    coderay_line_numbers: nil
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
 
 navigation:
  - title: Home
-   url: /index.html
+   url:   /index.html
  - title: Grid
-   url: /grid
+   url:   /grid
  - title: Type
-   url: /type
+   url:   /type
  - title: Blog
-   url: /blog
+   url:   /blog
  - title: My Collection
-   url: /my-collection
+   url:   /my-collection
 
 collections:
   my-collection: # name of collection
@@ -64,9 +106,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      category: default-category
       comments: true
-      author: "your_author_name"
       layout: "post"
   -
     scope:
@@ -75,3 +115,11 @@ defaults:
     values:
       layout: "my-collection"
       comments: true
+
+exclude: ['node_modules', 'gulpfile.js', 'package.json', 'assets']
+# keep jekyll from removing compiled css dir
+keep_files: ['assets']
+
+# Src/Dest are also outlined in config.js
+source: ./src
+destination: ./dist

@@ -5,22 +5,41 @@
 	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+	{% if page.tags %}
+	<meta name="keywords" content="{{ page.tags | join: ', ' }}">
+	{% endif %}
+
 	<!--Mobile Meta-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="og:description" content="">
-	<meta name="og:url" content="">
-	<meta name="og:image" content="">
-	<meta name="og:type" content="">
-	<meta name="og:site_name" content="">
+	<!-- Open Graph -->
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+	<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+	<meta property="og:site_name" content="{{ site.title }}">
 
-	<meta name="twitter:title" content="">
-	<meta name="twitter:description" content="">
-	<meta name="twitter:url" content="">
-	<meta name="twitter:image" content="">
-	<meta name="twitter:card" content="">
-	<meta name="twitter:site" content="">
-	<meta name="twitter:creator" content="">
+	<!-- Twitter Cards -->
+	{% if site.owner.twitter %}
+		{% if page.image.feature %}
+			<meta name="twitter:card" content="summary_large_image">
+			<meta name="twitter:image" content="{{ site.url }}/assets/images/{{ page.image.feature }}">
+		{% else %}
+			<meta name="twitter:card" content="summary">
+			<meta name="twitter:image" content="{% if page.image.thumb %}{{ site.url }}/assets/images/{{ page.image.thumb }}{% else %}{{ site.url }}/assets/images/{{ site.logo }}{% endif %}">
+		{% endif %}
+		<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+		<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+		<meta name="twitter:creator" content="@{{ site.owner.twitter }}">
+	{% endif %}
+
+	{% if site.google_verify %}
+	<meta name="google-site-verification" content="{{ site.google_verify }}">
+	{% endif %}
+	{% if site.bing_verify %}
+	<meta name="msvalidate.01" content="{{ site.bing_verify }}">
+	{% endif %}
 
 	<!--Favicon-->
 	<link rel="icon" type="image/png" href="{{ "/favicon.ico" | prepend: site.baseurl }}">

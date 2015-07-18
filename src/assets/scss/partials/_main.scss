@@ -42,3 +42,9 @@ body{
         }
     }
 }
+
+// attach to parent of desired container
+// e.g. .columns-2 .content {}
+.valign {
+	@extend %valign;
+}
