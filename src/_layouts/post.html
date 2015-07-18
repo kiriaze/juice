@@ -41,7 +41,7 @@ layout: default
 			<span class="entry-tags">
 			Tags:
 			{% for tag in page.tags %}
-				<a href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}" class="tag"><span class="term">{{ tag }}</span></a>{% unless forloop.last %},{% endunless %}{% if forloop.last %}.{% endif %}{% endfor %}
+				<a href="{{ site.url | prepend: site.baseurl }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}" class="tag"><span class="term">{{ tag }}</span></a>{% unless forloop.last %},{% endunless %}{% if forloop.last %}.{% endif %}{% endfor %}
 			</span>
 			{% endif %}
 
@@ -49,7 +49,7 @@ layout: default
 			<span class="entry-categories">
 			Cats:
 			{% for category in page.categories %}
-				<a href="{{ site.url }}/categories/#{{ category }}" title="Pages categorized in {{ category }}" class="category"><span class="term">{{ category }}</span></a>{% unless forloop.last %},{% endunless %}{% if forloop.last %}.{% endif %}{% endfor %}</span>
+				<a href="{{ site.url | prepend: site.baseurl }}/categories/#{{ category }}" title="Pages categorized in {{ category }}" class="category"><span class="term">{{ category }}</span></a>{% unless forloop.last %},{% endunless %}{% if forloop.last %}.{% endif %}{% endfor %}</span>
 			{% endif %}
 
 			{% if page.modified %}

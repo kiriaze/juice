@@ -38,7 +38,7 @@ layout: default
 				 under
 				<span class="categories">
 					{% for category in post.categories %}
-						<a href="{{ site.url }}/categories/#{{ category }}" title="Pages categorized in {{ category }}" class="category"><span class="term">{{ category }}</span></a>{% unless forloop.last %},{% endunless %}{% if forloop.last %}.{% endif %}
+						<a href="{{ site.url | prepend: site.baseurl }}/categories/#{{ category }}" title="Pages categorized in {{ category }}" class="category"><span class="term">{{ category }}</span></a>{% unless forloop.last %},{% endunless %}{% if forloop.last %}.{% endif %}
 					{% endfor %}
 				</span>
 				{% endif %}
