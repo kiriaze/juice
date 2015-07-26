@@ -10,11 +10,15 @@ desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus aper
 	<h2>
 		<a href="{{ collection.url | prepend: site.baseurl }}">{{ collection.title }}</a>
 	</h2>
-	<span class="date">{{ collection.date | date: "%b %d, %Y" }}</span>
-	<span class="author">{{ collection.author }}</span>
-	<span class="category">
-		{{ collection.categories }}
-	</span>
+	<div class="post-meta">
+		<span class="author">{{ collection.author }}</span>
+		<span class="date">{{ collection.date | date: "%b %d, %Y" }}</span>
+		<span class="categories">
+			{% for category in collection.categories %}
+				<a href="{{ site.url | prepend: site.baseurl }}/categories/#{{ category }}" title="Pages categorized in {{ category }}" class="category"><span class="term">{{ category }}</span></a>{% unless forloop.last %},{% endunless %}{% if forloop.last %}.{% endif %}
+			{% endfor %}
+		</span>
+	</div>
 	<p>
 		{{ collection.excerpt }}
 	</p>

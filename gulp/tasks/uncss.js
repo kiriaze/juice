@@ -14,7 +14,8 @@ gulp.task('uncss', function() {
     return gulp.src(config.dist.root + '/assets/css/*.css')
 		.pipe(uncss({
 			html: [config.dist.root + '/**/*.html'],
-			ignore: uncssIgnoreClass
+			ignore: uncssIgnoreClass,
+			ignoreSheets: [/fonts.googleapis/]
 		}))
         .pipe( gulp.dest(config.dist.root + '/assets/css') )
 });

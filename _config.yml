@@ -13,7 +13,6 @@ search:           true
 owner:
   name:           Constantine Kiriaze
   avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
   email:          ckiriaze@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        kiriaze
@@ -61,6 +60,7 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   use_coderay: true
+  input: GFM # github flavored markdown
 
   coderay:
     coderay_line_numbers: nil
@@ -118,7 +118,7 @@ defaults:
 
 exclude: ['node_modules', 'gulpfile.js', 'package.json', 'assets']
 # keep jekyll from removing compiled css dir
-keep_files: ['assets']
+keep_files: ['assets', 'sitemap.xml']
 
 # Src/Dest are also outlined in config.js
 source: ./src

@@ -9,6 +9,7 @@ gulp.task('default', ['clean', 'browser-sync'], function() {
 		// 'uncss', // currently disabled due to lack of dynamically generated classes through js, too many to manually upkeep in ignore array
 		'js',
 		'images',
+		'video',
 		'fonts',
 		'watch',
 		'sitemap',

@@ -93,7 +93,7 @@ permalink: /grid/
 
 <section class="example-grid stripe">
 	<div class="container">
-		<h2>Vertical Split. .valign & .no-gutter inline-block.</h2>
+		<h2>Vertical Split. .valign & .no-gutter flexbox.</h2>
 		<div class="row valign no-gutter">
 			<div class="columns-2">
 				<h2>Article</h2>
