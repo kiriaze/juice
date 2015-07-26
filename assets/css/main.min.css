@@ -4085,11 +4085,12 @@ ol.CodeRay li {
   font-size: 0.8rem; }
   #nav a {
     display: block;
-    line-height: 2; }
+    line-height: 38px;
+    margin: 10px 0; }
     @media (min-width: 480px) {
       #nav a {
         display: inline;
-        margin-right: 1rem; } }
+        margin: 0 1rem 0 0; } }
 
 .example-grid [class*="columns-"],
 .example-grid [data-columns] {
@@ -4153,11 +4154,13 @@ input[type="search"] {
   #footer .created-by,
   #footer .footer-meta a {
     display: block;
-    line-height: 2; }
+    line-height: 38px;
+    margin: 10px 0; }
     @media (min-width: 480px) {
       #footer .created-by,
       #footer .footer-meta a {
-        display: inline; } }
+        display: inline;
+        margin: 0; } }
   @media (min-width: 480px) {
     #footer .created-by {
       text-align: left;
