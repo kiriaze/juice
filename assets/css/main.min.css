@@ -4084,7 +4084,12 @@ ol.CodeRay li {
   font-weight: 600;
   font-size: 0.8rem; }
   #nav a {
-    margin-right: 1rem; }
+    display: block;
+    line-height: 2; }
+    @media (min-width: 480px) {
+      #nav a {
+        display: inline;
+        margin-right: 1rem; } }
 
 .example-grid [class*="columns-"],
 .example-grid [data-columns] {
@@ -4145,13 +4150,43 @@ input[type="search"] {
   font-weight: 600;
   font-size: 0.8rem;
   text-align: center; }
-  #footer .created-by {
-    text-align: left; }
-  #footer .footer-meta {
-    list-style-type: none;
-    text-align: right; }
-    #footer .footer-meta a {
-      margin-left: 1rem; }
+  #footer .created-by,
+  #footer .footer-meta a {
+    display: block;
+    line-height: 2; }
+    @media (min-width: 480px) {
+      #footer .created-by,
+      #footer .footer-meta a {
+        display: inline; } }
+  @media (min-width: 480px) {
+    #footer .created-by {
+      text-align: left;
+      box-sizing: border-box;
+      position: relative;
+      min-height: 1px;
+      width: 100%;
+      width: 48.5%;
+      float: left;
+      margin-right: 1.5%; }
+      .no-gutter #footer .created-by {
+        width: 50%; }
+      .no-gutter #footer .created-by {
+        margin-right: 0; }
+    #footer .footer-meta {
+      text-align: right;
+      box-sizing: border-box;
+      position: relative;
+      min-height: 1px;
+      width: 100%;
+      width: 48.5%;
+      float: left;
+      margin-right: 1.5%; }
+      .no-gutter #footer .footer-meta {
+        width: 50%; }
+      .no-gutter #footer .footer-meta {
+        margin-right: 0; }
+      #footer .footer-meta a {
+        margin-left: 1rem; } }
 
 @media (min-width: 768px) {
   .text-columns {
