@@ -16,8 +16,8 @@ module.exports = {
 	// branch by default is gh-pages. set to master for username.github.io
 	// set source to what dir you want to push to github
 	'githubPages': {
-		'remoteUrl'	: 'git@github.com:kiriaze/juice.git',
-		'branch'	: 'gh-pages',
+		'remoteUrl'	: '',
+		'branch'	: '',
 		'source'	: 'dist/**/*'
 	},
 
@@ -66,8 +66,8 @@ module.exports = {
 
 	'uncss': {
 		'ignore' : [
-			'/.class-1.class-2/',
-			'/.class-3.class-2/'
+			'#search-input',
+			'#results-container'
 		]
 	},
 

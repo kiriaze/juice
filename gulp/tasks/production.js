@@ -10,7 +10,7 @@ gulp.task('prod', ['clean', 'browser-sync'], function(cb) {
 	global.isProd = true;
 
 	runSequence(
-		// 'uncss', // currently disabled due to lack of dynamically generated classes through js, too many to manually upkeep in ignore array
+		'uncss',
 		'js',
 		'images',
 		'video',

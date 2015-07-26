@@ -18,10 +18,7 @@ gulp.task('css', function(){
 
 	return gulp.src(files)
 		.pipe(plugins.sourcemaps.init())
-			.pipe(plugins.sass({
-				errLogToConsole: true,
-				outputStyle: 'compressed'
-			}))
+			.pipe(plugins.sass())
 			.on('error', onError)
 			.pipe(plugins.autoprefixer('last 2 versions'))
 			.pipe(plugins.concat('main.css'))

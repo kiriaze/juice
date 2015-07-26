@@ -7,7 +7,9 @@
 
 	var SHORTNAME = window.THEMENAME;
 
-	var $window = $(window);
+	var $window      = $(window),
+		$body        = $(document.body),
+		$html        = $(document.documentElement);
 
 	SHORTNAME.init = function(){
 
