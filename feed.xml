@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Juice</title>
+    <description>A blog about my favorite web conferences.</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 26 Jul 2015 15:28:15 -0400</pubDate>
+    <lastBuildDate>Sun, 26 Jul 2015 15:28:15 -0400</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Treehouse Meetups</title>
+        <description>&lt;p&gt;Treehouse is excited to announce new locations for Treehouse Meetups! Treehouse Meetups are events for Treehouse students, friends and anyone with an interest or passion for the web. Whether you’re beginner or advanced, everyone is welcome!&lt;/p&gt;
+
+&lt;p&gt;There are now Treehouse Meetups in &lt;a href=&quot;http://www.meetup.com/Treehouse-Chicago-Meetup/&quot;&gt;Chicago&lt;/a&gt;, &lt;a href=&quot;http://www.meetup.com/Treehouse-NYC/&quot;&gt;New York&lt;/a&gt;, &lt;a href=&quot;http://www.meetup.com/Treehouse-Portland/&quot;&gt;Portland&lt;/a&gt;, and &lt;a href=&quot;http://www.meetup.com/TeamTreehouse/&quot;&gt;Orlando&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Join your closest community to stay up-to-date with upcoming Treehouse Meetup news. If there isn’t a Treehouse Meetup next to you yet, don’t worry! Treehouse plans to continue to expand to new locations in the upcoming months.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 May 2015 00:00:00 -0400</pubDate>
+        <link>/blog/uncategorized/meetups/treehouse-meetups</link>
+        <guid isPermaLink="true">/blog/uncategorized/meetups/treehouse-meetups</guid>
+        
+        
+        <category>uncategorized</category>
+        
+        <category>meetups</category>
+        
+      </item>
+    
+      <item>
+        <title>Camp Sass</title>
+        <description>&lt;p&gt;Camp Sass is a one-day, one-track Sass conference held in Atlanta, GA. It’s hosted by Hampton Catlin, the inventor of Sass!&lt;/p&gt;
+
+&lt;p&gt;At this year’s conference, I had lots of fun, learned a ton, and met many talented web designers and developers.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 Apr 2015 05:45:36 -0400</pubDate>
+        <link>/blog/uncategorized/welcome-to-jekyll</link>
+        <guid isPermaLink="true">/blog/uncategorized/welcome-to-jekyll</guid>
+        
+        
+        <category>uncategorized</category>
+        
+      </item>
+    
+      <item>
+        <title>SassConf</title>
+        <description>&lt;p&gt;SassConf is an awesome conference for front-end developers and designers who love Sass and are passionate about building a better, more beautiful web.&lt;/p&gt;
+
+&lt;p&gt;This year, the conference is in Austin, Texas!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 25 Apr 2015 00:00:00 -0400</pubDate>
+        <link>/blog/uncategorized/sass-conf</link>
+        <guid isPermaLink="true">/blog/uncategorized/sass-conf</guid>
+        
+        
+        <category>uncategorized</category>
+        
+      </item>
+    
+      <item>
+        <title>CSS Summit</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://environmentsforhumans.com/2015/css-summit/&quot;&gt;CSS Summit&lt;/a&gt; brings together some of the web’s most notable experts for an all-new, three-day online conference. This year’s event includes a live CSS and Sass conference, as well as an SVG, Sass, and advanced CSS track.&lt;/p&gt;
+
+&lt;p&gt;I’m also speaking about Sass on day two!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 15 Apr 2015 00:00:00 -0400</pubDate>
+        <link>/blog/uncategorized/css-summit</link>
+        <guid isPermaLink="true">/blog/uncategorized/css-summit</guid>
+        
+        
+        <category>uncategorized</category>
+        
+      </item>
+    
+      <item>
+        <title>Front-end Design Conf</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://frontenddesignconference.com/&quot;&gt;Front-End Design Conference&lt;/a&gt; is an awesome conference for web professionals who love their community, the web, and learning. It’s a 2-day conference held every year in St. Petersburg, Fl.  This year’s list of speakers is impressive. Some of them are Chris Coyier, James White, Sophie Shepherd, and more!&lt;/p&gt;
+
+&lt;p&gt;The day before the main conference, they’re also running several full-day workshops on web animation, SMACSS, and frontend tooling.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 10 Apr 2015 00:00:00 -0400</pubDate>
+        <link>/blog/uncategorized/front-end-conf</link>
+        <guid isPermaLink="true">/blog/uncategorized/front-end-conf</guid>
+        
+        
+        <category>uncategorized</category>
+        
+      </item>
+    
+      <item>
+        <title>Converge</title>
+        <description>&lt;p&gt;Converge assembles some of the best speakers in the industry to inform and inspire you! It’s for the love of the web and the love of our community. This year’s event includes a full schedule of keynotes, sessions, and workshops.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://convergese.com/&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 10 Apr 2015 00:00:00 -0400</pubDate>
+        <link>/blog/uncategorized/converge</link>
+        <guid isPermaLink="true">/blog/uncategorized/converge</guid>
+        
+        
+        <category>uncategorized</category>
+        
+      </item>
+    
+      <item>
+        <title>Post with a Background Image</title>
+        <description>&lt;p&gt;Here be a sample post with a custom background image. To utilize this “feature” just add the following YAML to a post’s front matter.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;image:
+  background: filename.png&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This little bit of YAML makes the assumption that your background image asset is in the &lt;code&gt;/images&lt;/code&gt; folder. If you place it somewhere else or are hotlinking from the web, just include the full http(s):// URL. Either way you should have a background image that is tiled.&lt;/p&gt;
+
+&lt;p&gt;If you want to set a background image for the entire site just add &lt;code&gt;background: filename.png&lt;/code&gt; to your &lt;code&gt;_config.yml&lt;/code&gt; and BOOM — background images on every page!&lt;/p&gt;
+
+&lt;div xmlns:cc=&quot;http://creativecommons.org/ns#&quot; xmlns:dct=&quot;http://purl.org/dc/terms/&quot; about=&quot;http://subtlepatterns.com&quot; class=&quot;notice&quot;&gt;Background images from &lt;span property=&quot;dct:title&quot;&gt;Subtle Patterns&lt;/span&gt; (&lt;a rel=&quot;cc:attributionURL&quot; property=&quot;cc:attributionName&quot; href=&quot;http://subtlepatterns.com&quot;&gt;Subtle Patterns&lt;/a&gt;) / &lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-sa/3.0/&quot;&gt;CC BY-SA 3.0&lt;/a&gt;&lt;/div&gt;
+</description>
+        <pubDate>Sat, 26 Oct 2013 00:00:00 -0400</pubDate>
+        <link>/blog/background-image</link>
+        <guid isPermaLink="true">/blog/background-image</guid>
+        
+        <category>sample post</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Syntax Highlighting Post</title>
+        <description>&lt;p&gt;Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;pygments-code-blocks&quot;&gt;Pygments Code Blocks&lt;/h3&gt;
+
+&lt;p&gt;To modify styling and highlight colors edit &lt;code&gt;/_sass/_pygments.scss&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;#container {
+    float: left;
+    margin: 0 -240px 0 0;
+    width: 100%;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&amp;lt;nav class=&amp;quot;pagination&amp;quot; role=&amp;quot;navigation&amp;quot;&amp;gt;
+    {% if page.previous %}
+        &amp;lt;a href=&amp;quot;{{ site.url }}{{ page.previous.url }}&amp;quot; class=&amp;quot;btn&amp;quot; title=&amp;quot;{{ page.previous.title }}&amp;quot;&amp;gt;Previous article&amp;lt;/a&amp;gt;
+    {% endif %}
+    {% if page.next %}
+        &amp;lt;a href=&amp;quot;{{ site.url }}{{ page.next.url }}&amp;quot; class=&amp;quot;btn&amp;quot; title=&amp;quot;{{ page.next.title }}&amp;quot;&amp;gt;Next article&amp;lt;/a&amp;gt;
+    {% endif %}
+&amp;lt;/nav&amp;gt;&amp;lt;!-- /.pagination --&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;module Jekyll
+  class TagIndex &amp;lt; Page
+    def initialize(site, base, dir, tag)
+      @site = site
+      @base = base
+      @dir = dir
+      @name = &amp;#39;index.html&amp;#39;
+      self.process(@name)
+      self.read_yaml(File.join(base, &amp;#39;_layouts&amp;#39;), &amp;#39;tag_index.html&amp;#39;)
+      self.data[&amp;#39;tag&amp;#39;] = tag
+      tag_title_prefix = site.config[&amp;#39;tag_title_prefix&amp;#39;] || &amp;#39;Tagged: &amp;#39;
+      tag_title_suffix = site.config[&amp;#39;tag_title_suffix&amp;#39;] || &amp;#39;&amp;amp;#8211;&amp;#39;
+      self.data[&amp;#39;title&amp;#39;] = &amp;quot;#{tag_title_prefix}#{tag}&amp;quot;
+      self.data[&amp;#39;description&amp;#39;] = &amp;quot;An archive of posts tagged #{tag}.&amp;quot;
+    end
+  end
+end&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;standard-code-block&quot;&gt;Standard Code Block&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;nav class=&quot;pagination&quot; role=&quot;navigation&quot;&amp;gt;
+    {% if page.previous %}
+        &amp;lt;a href=&quot;{{ site.url }}{{ page.previous.url }}&quot; class=&quot;btn&quot; title=&quot;{{ page.previous.title }}&quot;&amp;gt;Previous article&amp;lt;/a&amp;gt;
+    {% endif %}
+    {% if page.next %}
+        &amp;lt;a href=&quot;{{ site.url }}{{ page.next.url }}&quot; class=&quot;btn&quot; title=&quot;{{ page.next.title }}&quot;&amp;gt;Next article&amp;lt;/a&amp;gt;
+    {% endif %}
+&amp;lt;/nav&amp;gt;&amp;lt;!-- /.pagination --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;fenced-code-blocks&quot;&gt;Fenced Code Blocks&lt;/h3&gt;
+
+&lt;p&gt;To modify styling and highlight colors edit &lt;code&gt;/_sass/_coderay.scss&lt;/code&gt;. Line numbers and a few other things can be modified in &lt;code&gt;_config.yml&lt;/code&gt;. Consult &lt;a href=&quot;http://jekyllrb.com/docs/configuration/&quot;&gt;Jekyll’s documentation&lt;/a&gt; for more information.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;id&quot;&gt;#container&lt;/span&gt; {
+    &lt;span class=&quot;key&quot;&gt;float&lt;/span&gt;: &lt;span class=&quot;value&quot;&gt;left&lt;/span&gt;;
+    &lt;span class=&quot;key&quot;&gt;margin&lt;/span&gt;: &lt;span class=&quot;float&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;float&quot;&gt;-240px&lt;/span&gt; &lt;span class=&quot;float&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;float&quot;&gt;0&lt;/span&gt;;
+    &lt;span class=&quot;key&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;float&quot;&gt;100%&lt;/span&gt;;
+}
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;nav&lt;/span&gt; &lt;span class=&quot;attribute-name&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;pagination&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;attribute-name&quot;&gt;role&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;navigation&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;gt;&lt;/span&gt;
+    {% if page.previous %}
+        &lt;span class=&quot;tag&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;attribute-name&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;{{ site.url }}{{ page.previous.url }}&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;attribute-name&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;btn&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;attribute-name&quot;&gt;title&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;{{ page.previous.title }}&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;gt;&lt;/span&gt;Previous article&lt;span class=&quot;tag&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    {% endif %}
+    {% if page.next %}
+        &lt;span class=&quot;tag&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;attribute-name&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;{{ site.url }}{{ page.next.url }}&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;attribute-name&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;btn&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;attribute-name&quot;&gt;title&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;{{ page.next.title }}&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;gt;&lt;/span&gt;Next article&lt;span class=&quot;tag&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+    {% endif %}
+&lt;span class=&quot;tag&quot;&gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- /.pagination --&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;keyword&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;Jekyll&lt;/span&gt;
+  &lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;TagIndex&lt;/span&gt; &amp;lt; &lt;span class=&quot;constant&quot;&gt;Page&lt;/span&gt;
+    &lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;initialize&lt;/span&gt;(site, base, dir, tag)
+      &lt;span class=&quot;instance-variable&quot;&gt;@site&lt;/span&gt; = site
+      &lt;span class=&quot;instance-variable&quot;&gt;@base&lt;/span&gt; = base
+      &lt;span class=&quot;instance-variable&quot;&gt;@dir&lt;/span&gt; = dir
+      &lt;span class=&quot;instance-variable&quot;&gt;@name&lt;/span&gt; = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;index.html&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+      &lt;span class=&quot;predefined-constant&quot;&gt;self&lt;/span&gt;.process(&lt;span class=&quot;instance-variable&quot;&gt;@name&lt;/span&gt;)
+      &lt;span class=&quot;predefined-constant&quot;&gt;self&lt;/span&gt;.read_yaml(&lt;span class=&quot;constant&quot;&gt;File&lt;/span&gt;.join(base, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;_layouts&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;), &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;tag_index.html&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;)
+      &lt;span class=&quot;predefined-constant&quot;&gt;self&lt;/span&gt;.data[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;] = tag
+      tag_title_prefix = site.config[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;tag_title_prefix&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;] || &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Tagged: &lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+      tag_title_suffix = site.config[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;tag_title_suffix&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;] || &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;&amp;amp;#8211;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+      &lt;span class=&quot;predefined-constant&quot;&gt;self&lt;/span&gt;.data[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;] = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;inline&quot;&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;#{&lt;/span&gt;tag_title_prefix&lt;span class=&quot;inline-delimiter&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;inline&quot;&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;#{&lt;/span&gt;tag&lt;span class=&quot;inline-delimiter&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
+      &lt;span class=&quot;predefined-constant&quot;&gt;self&lt;/span&gt;.data[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;] = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;An archive of posts tagged &lt;/span&gt;&lt;span class=&quot;inline&quot;&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;#{&lt;/span&gt;tag&lt;span class=&quot;inline-delimiter&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;github-gist-embed&quot;&gt;GitHub Gist Embed&lt;/h3&gt;
+
+&lt;p&gt;An example of a Gist embed below.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/mmistakes/6589546.js&quot;&gt; &lt;/script&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Syntax_highlighting&quot;&gt;http://en.wikipedia.org/wiki/Syntax_highlighting&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 16 Aug 2013 00:00:00 -0400</pubDate>
+        <link>/blog/code-highlighting-post</link>
+        <guid isPermaLink="true">/blog/code-highlighting-post</guid>
+        
+        <category>sample post</category>
+        
+        <category>code</category>
+        
+        <category>highlighting</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Sample Link Post</title>
+        <description>&lt;p&gt;This theme supports &lt;strong&gt;link posts&lt;/strong&gt;, made famous by John Gruber. To use, just add &lt;code&gt;link: http://url-you-want-linked&lt;/code&gt; to the post’s YAML front matter and you’re done.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 12 Aug 2013 00:00:00 -0400</pubDate>
+        <link>/blog/sample-link-post</link>
+        <guid isPermaLink="true">/blog/sample-link-post</guid>
+        
+        <category>sample post</category>
+        
+        <category>link post</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>A Post with a Video</title>
+        <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/SU3kYxJmWuQ&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
+
+&lt;p&gt;Video embeds are responsive and scale with the width of the main content block with the help of &lt;a href=&quot;http://fitvidsjs.com/&quot;&gt;FitVids&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Not sure if this only effects Kramdown or if it’s an issue with Markdown in general. But adding YouTube video embeds causes errors when building your Jekyll site. To fix add a space between the &lt;code&gt;&amp;lt;iframe&amp;gt;&lt;/code&gt; tags and remove &lt;code&gt;allowfullscreen&lt;/code&gt;. Example below:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&amp;lt;iframe width=&amp;quot;560&amp;quot; height=&amp;quot;315&amp;quot; src=&amp;quot;//www.youtube.com/embed/SU3kYxJmWuQ&amp;quot; frameborder=&amp;quot;0&amp;quot;&amp;gt; &amp;lt;/iframe&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+        <pubDate>Tue, 25 Jun 2013 00:00:00 -0400</pubDate>
+        <link>/blog/video-post</link>
+        <guid isPermaLink="true">/blog/video-post</guid>
+        
+        <category>sample post</category>
+        
+        <category>video</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
