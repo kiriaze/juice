@@ -16,8 +16,8 @@ module.exports = {
 	// branch by default is gh-pages. set to master for username.github.io
 	// set source to what dir you want to push to github
 	'githubPages': {
-		'remoteUrl'	: '',
-		'branch'	: '',
+		'remoteUrl'	: 'git@github.com:kiriaze/juice.git',
+		'branch'	: 'gh-pages',
 		'source'	: 'dist/**/*'
 	},
 
