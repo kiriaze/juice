@@ -1,11 +1,5 @@
 // file for overriding type styles easily
 
-body {
-	font-family: "proxima-nova", sans-serif;
-	font-weight: 400;
-	-webkit-font-smoothing: antialiased;
-}
-
 @for $i from 1 through 6 {
     h#{$i} {
 		font-weight: 300;

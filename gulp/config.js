@@ -17,7 +17,7 @@ module.exports = {
 	// set source to what dir you want to push to github
 	'githubPages': {
 		'remoteUrl'	: '',
-		'branch'	: 'master',
+		'branch'	: '',
 		'source'	: 'dist/**/*'
 	},
 
