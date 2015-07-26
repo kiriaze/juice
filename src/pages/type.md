@@ -1,16 +1,12 @@
 ---
 layout: default
 title: Type
+heading: Typography.
+subheading: Basic typography styles.
 permalink: /type/
 ---
 
-<section class="hero">
-	<div class="container">
-		<h1>Typography.</h1>
-		<h5>Basic typography styles.</h5>
-		{% include header.html %}
-	</div>
-</section>
+{% include header.html %}
 
 <section class="stripe">
 

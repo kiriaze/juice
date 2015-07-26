@@ -1,16 +1,12 @@
 ---
 layout: default
 title: Grid
+heading: The Grid.
+subheading: A human friendly, semantic, hybrid grid framework utilizing floats, extends and data attributes.
 permalink: /grid/
 ---
 
-<section class="hero">
-	<div class="container">
-		<h1>The Grid.</h1>
-		<h5>A human friendly, semantic, hybrid grid framework <br>utilizing floats, extends and data attributes.</h5>
-		{% include header.html %}
-	</div>
-</section>
+{% include header.html %}
 
 <section class="example-grid text-align-center juice-bg">
 	<div class="container">

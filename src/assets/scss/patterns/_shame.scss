@@ -43,7 +43,13 @@
 	font-weight: 600;
 	font-size: 0.8rem;
 	a {
-		margin-right: 1rem;
+		display: block;
+		line-height: 38px;
+  		margin: 10px 0;
+		@include breakpoint($tiny) {
+			display: inline;
+			margin: 0 1rem 0 0;
+		}
 	}
 }
 
@@ -107,8 +113,10 @@ input[type="search"] {
 }
 
 .circle {
+	background: $light-grey;
 	border-radius: 50%;
-	width: 200px;
+	width: 100px;
+	height: 100px;
 	display: block;
 	margin: 0 auto;
 }
@@ -119,14 +127,27 @@ input[type="search"] {
 	font-weight: 600;
 	font-size: 0.8rem;
 	text-align: center;
-	.created-by {
-		text-align: left;
+	.created-by,
+	.footer-meta a {
+		display: block;
+		line-height: 38px;
+		margin: 10px 0;
+		@include breakpoint($tiny) {
+			display: inline;
+			margin: 0;
+		}
 	}
-	.footer-meta {
-		list-style-type: none;
-		text-align: right;
-		a {
-			margin-left: 1rem;
+	@include breakpoint($tiny) {
+		.created-by {
+			text-align: left;
+			@include columns(2);
+		}
+		.footer-meta {
+			text-align: right;
+			@include columns(2);
+			a {
+				margin-left: 1rem;
+			}
 		}
 	}
 }

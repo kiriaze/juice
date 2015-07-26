@@ -1,15 +1,45 @@
-<header id="header">
-	<nav id="nav">
+<section class="hero">
+	<div class="container">
 
-	    {% for link in site.navigation %}
-	        {% assign current = nil %}
-	        {% if page.url contains link.url %}
-	            {% assign current = 'current' %}
-	        {% endif %}
-			<a href="{{ link.url | prepend: site.baseurl }}" class="{{ current }}">{{ link.title }}</a>
-	    {% endfor %}
+		<h1>
+		{% if page.heading %}
+			{{ page.heading }}
+		{% else %}
+			{{ page.title }}
+		{% endif %}
+		</h1>
+		<h5>
+		{% if page.subheading %}
+			{{ page.subheading }}
+		{% else %}
+			By
+			{% if page.author %}
+			{{ page.author }}
+			{% else %}
+			{{ site.owner.name }}
+			{% endif %}
+			on
+			{{ page.date | date: "%b %-d, %Y" }}
+			under
+			{{ page.categories | join: ', ' }}.
+		{% endif %}
+		</h5>
 
-        <a href="https://github.com/kiriaze/juice/archive/master.zip">Download.</a>
+		<header id="header">
+			<nav id="nav">
 
-	</nav>
-</header>
+			    {% for link in site.navigation %}
+			        {% assign current = nil %}
+			        {% if page.url contains link.url %}
+			            {% assign current = 'current' %}
+			        {% endif %}
+					<a href="{{ link.url | prepend: site.baseurl }}" class="{{ current }}">{{ link.title }}</a>
+			    {% endfor %}
+
+		        <a href="https://github.com/kiriaze/juice/archive/master.zip">Download.</a>
+
+			</nav>
+		</header>
+
+	</div>
+</section>

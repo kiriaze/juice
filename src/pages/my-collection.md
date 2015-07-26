@@ -2,7 +2,8 @@
 layout: page
 title: My Collection
 permalink: /my-collection/
-desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus aperiam, voluptate officia illo odio eius obcaecati fugiat ad, dolore doloremque nisi ratione enim, libero sint quod, quas nemo tenetur rerum.
+heading: My Collection.
+subheading: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus aperiam, voluptate officia illo odio eius obcaecati fugiat ad, dolore doloremque nisi ratione enim, libero sint quod, quas nemo tenetur rerum.
 ---
 
 {% for collection in site.my-collection limit:3 %}

@@ -19,5 +19,5 @@ gulp.task('uncss', function() {
 			ignoreSheets: [/fonts.googleapis/]
 		}))
 		.pipe(csso()) // re compress after uncss
-        .pipe( gulp.dest(config.dist.root + '/assets/css') )
+        .pipe( gulp.dest(config.src.root + '/_includes') ) // placed in _includes dir for @include in head.html
 });
