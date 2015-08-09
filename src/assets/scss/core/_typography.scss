@@ -216,7 +216,7 @@ $map: (
 	#{$header} {
 		@include font-size($size);
 		@include breakpoint($medium) {
-			@include font-size($size + 10);
+			@include font-size($size + $size/6);
 		}
 	}
 }

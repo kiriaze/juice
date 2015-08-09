@@ -19,14 +19,14 @@ permalink: /type/
 		<h5>h5. The Quick Corrupt Politician Jumps Over The Lazy Society</h5>
 		<h6>h6. The Quick Corrupt Politician Jumps Over The Lazy Society</h6>
 
-		<br>
+		<hr>
 
 		<blockquote>
 			<p>Measures proper resources social worker Ford Foundation maximize humanitarian. Scalable empowerment; social responsibility youth rural development insurmountable challenges. Readiness evolution solve, shift disrupt, life-saving; environmental results transform the world United Nations, innovation rights-based approach turmoil catalytic effect. Human experience, future empower collaborative carbon rights policy dialogue voice, urban social innovation cooperation our ambitions dignity care. Immunize, Martin Luther King Jr. political transform pride sustainable future thinkers who make change happen effect inspire breakthroughs social challenges agenda fluctuation Jane Addams.</p>
 			<cite>John Doe</cite>
 		</blockquote>
 
-		<br>
+		<hr>
 
 		<article>
 
@@ -45,7 +45,7 @@ permalink: /type/
 		<div class="row">
 
 			<div class="columns-4">
-				<h4>Unordered List</h4>
+				<h6>Unordered List</h6>
 				<ul>
 					<li>List item 1</li>
 					<li>List item 2</li>
@@ -54,7 +54,7 @@ permalink: /type/
 			</div>
 
 			<div class="columns-4">
-				<h4>Ordered List</h4>
+				<h6>Ordered List</h6>
 				<ol>
 					<li>List item 1</li>
 					<li>List item 2</li>
@@ -63,7 +63,7 @@ permalink: /type/
 			</div>
 
 			<div class="columns-4">
-				<h4>Custom Class</h4>
+				<h6>Custom Class</h6>
 				<ul class="check">
 					<li>List item 1</li>
 					<li>List item 2</li>
@@ -72,7 +72,7 @@ permalink: /type/
 			</div>
 
 			<div class="columns-4">
-				<h4>List Style Class</h4>
+				<h6>List Style Class</h6>
 				<ul class="list-style-fa-star">
 					<li>List item 1</li>
 					<li>List item 2</li>
@@ -95,7 +95,7 @@ permalink: /type/
 
 			<div class="columns-2">
 
-				<h3>Tables</h3>
+				<h4>Tables</h4>
 
 				<table class="first-blue">
 
