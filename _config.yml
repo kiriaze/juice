@@ -1,13 +1,15 @@
 # Site settings
 title: Juice
-description: An awesome web framework.
+description: An awesome front end web framework.
 
-disqus_shortname: webconfs
+disqus_shortname: default
 
 reading_time:     true
 words_per_minute: 200
 
 search:           true
+
+simpleforms:      green
 
 # Owner/author information
 owner:

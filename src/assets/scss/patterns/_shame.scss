@@ -1,30 +1,3 @@
-.padding-top-large {
-	padding-top: 2rem;
-	@include breakpoint($small) {
-    	padding-top: 5rem;
-	}
-}
-
-.padding-bottom-large {
-	padding-bottom: 2rem;
-    @include breakpoint($small) {
-    	padding-bottom: 5rem;
-	}
-}
-
-.no-padding-top {
-    padding-top: 0;
-}
-
-.no-padding-bottom {
-    padding-bottom: 0;
-}
-
-.no-padding {
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
 .dark {
     background-color: $dark;
     color: $white;
@@ -37,6 +10,78 @@
 // Juice gh-pages styles
 .gist-file pre {
 	color: #222;
+}
+
+.bg-image {
+	color: white;
+	img {
+		@extend .fadeIn;
+		@extend %absolute-center;
+	}
+}
+
+// alternate button styles
+a.button {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 0;
+	color: #171a1c;
+	border: 1px solid rgba(23,26,28,.4);
+	background: transparent;
+	padding: 15px 25px;
+	font-size: 10px;
+	font-family: 'Montserrat',sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	line-height: 1;
+	transition: all 0.3s;
+	&:before {
+		-webkit-backface-visibility: hidden;
+		content: "";
+		display: block;
+		position: absolute;
+		z-index: -1;
+		top: 100%;
+		left: -1px;
+		bottom: 0px;
+		right: -1px;
+		background: #171a1c;
+		transition: top 0.3s;
+	}
+	&.dark {
+		color: #fff;
+		border: 1px solid rgba(255,255,255,.6);
+		background: transparent;
+		&:before {
+			background: #fff;
+		}
+	}
+	&:hover,
+	&:active {
+		color: #fff;
+		border: 1px solid #171a1c;
+		&.dark {
+			color: #171a1c;
+			border: 1px solid #fff;
+		}
+		&:before {
+			top: -1px;
+		}
+	}
+	@include breakpoint($medium) {
+		padding: 18px 30px;
+		font-size: 11px;
+	}
+	@include breakpoint($large) {
+		padding: 20px 45px;
+		font-size: 11px;
+	}
+	i {
+		padding-right: 5px;
+	}
 }
 
 #nav {
@@ -119,6 +164,9 @@ input[type="search"] {
 	height: 100px;
 	display: block;
 	margin: 0 auto;
+	.stripe:nth-child(even) {
+		background: white;
+	}
 }
 
 #footer {

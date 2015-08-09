@@ -53,15 +53,12 @@ textarea {
 }
 
 hr {
-	border: none;
-	clear: both;
-	margin: 44px auto 54px;
-	width: 65%;
-	border-bottom: 5px solid $light-grey;
-	display: inline-block;
-	left: 50%;
-	margin-left: -32.5%;
-	position: relative;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
 abbr, acronym {

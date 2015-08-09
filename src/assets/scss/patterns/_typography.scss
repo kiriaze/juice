@@ -24,3 +24,19 @@ p {
 		}
 	}
 }
+
+
+hr {
+	display: inline-block;
+	border: none;
+	clear: both;
+	margin: 44px auto 54px;
+	margin-left: -32.5%;
+	position: relative;
+	width: 65%;
+	left: 50%;
+	border-bottom: 5px solid $light-grey;
+	.stripe:nth-child(even) & {
+		border-color: white;
+	}
+}

@@ -1,4 +1,4 @@
-var config  = require('../config'),
+var config  = require('../../config'),
 	gulp 	= require('gulp'),
 	rsync	= require('gulp-rsync');
 

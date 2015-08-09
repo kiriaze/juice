@@ -1,6 +1,6 @@
 'use strict';
 
-var config 		  = require('../config'),
+var config 		  = require('../../config'),
 	gulp          = require('gulp'),
 	cp            = require('child_process'),
 	browserSync   = require('browser-sync'),

@@ -1,4 +1,8 @@
-<section class="hero">
+{% if page.image %}
+{% assign classes = 'cover-bg bg-image' %}
+{% endif %}
+
+<section class="hero {{ classes }}" data-background="{{ page.image }}">
 	<div class="container">
 
 		<h1>

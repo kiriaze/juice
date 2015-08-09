@@ -1,6 +1,6 @@
 'use strict';
 
-var config       = require('../config'),
+var config       = require('../../config'),
 	changed      = require('gulp-changed'),
 	gulp         = require('gulp'),
 	imagemin     = require('gulp-imagemin'),
