@@ -1,2 +1,229 @@
-<!doctype html> <html class="no-js" lang="en"> <head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title>Project Title 1</title> <meta name="description" content="An awesome web framework.">  <meta name="viewport" content="width=device-width,initial-scale=1">  <meta name="twitter:card" content="summary"> <meta name="twitter:image" content="/assets/images/"> <meta name="twitter:title" content="Project Title 1"> <meta name="twitter:description" content="An awesome web framework."> <meta name="twitter:creator" content="@kiriaze">  <link rel="icon" type="image/png" href="/juice/favicon.ico"> <!--[if (gte IE 6)&(lte IE 8)]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script><![endif]-->     <style>body,html{padding:0;vertical-align:baseline}body,div,html,iframe,span{margin:0;border:0;font:inherit}div,iframe,span{font-size:100%}div,h1,h2,h3,h4,h5,h6,iframe,p,span{padding:0;vertical-align:baseline}blockquote,h1,h2,h3,h4,h5,h6,p,pre{border:0;font:inherit}a,blockquote,cite,pre{font-size:100%;vertical-align:baseline}a,cite{margin:0;padding:0}a,cite,code{border:0;font:inherit}code,em{vertical-align:baseline}em{margin:0;font-size:100%}em,img{padding:0;border:0;font:inherit}img,strong{margin:0;font-size:100%}strong{vertical-align:baseline}strong,sup{padding:0;border:0;font:inherit}li,ol,sup,ul{margin:0}form,li,ol,table,tbody,thead,tr,ul{padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}tbody,td,th,thead,tr{margin:0}article,td,th{border:0;font-size:100%;font:inherit;vertical-align:baseline}aside{margin:0;padding:0}aside,figure{border:0;font-size:100%;font:inherit;vertical-align:baseline}figcaption,figure,footer,header,nav{padding:0}figcaption,footer,header,main,nav,section,time{margin:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}main,time{padding:0}article,aside,figcaption,figure,footer,header,main,nav,section{display:block}table{border-collapse:collapse;border-spacing:0}body,html{height:100%}blockquote{quotes:none}blockquote:after,blockquote:before{content:'';content:none}@media print{*{background:0 0!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href)")"}a[href^="#"]:after{content:""}blockquote,pre{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}img,tr{page-break-inside:avoid}img{max-width:100%!important}@page{margin:.5cm}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}}[class~=container]{position:relative;overflow:hidden;margin-right:auto;margin-left:auto;padding-left:1.5%;padding-right:1.5%}[class~=container]::after{clear:both;content:"";display:table}@media (min-width:768px){[class~=container]{width:768px}}@media (min-width:960px){[class~=container]{width:960px}}@media (min-width:1280px){[class~=container]{width:1280px}}[class~=row],[data-layout=grid]{box-sizing:border-box}@media (min-width:768px){[class~=row],[data-layout=grid]{margin-left:-1.5%;margin-right:-1.5%;padding-left:1.5%}[class~=row]::after,[data-layout=grid]::after{clear:both;content:"";display:table}}@media (min-width:768px){.no-gutter{margin-left:0;margin-right:0;padding-left:0}.no-gutter::after{clear:both;content:"";display:table}}.columns-2{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-2{box-sizing:border-box;position:relative;min-height:1px;width:48.5%;float:left;margin-right:1.5%}.no-gutter .columns-2{width:50%;margin-right:0}}.columns-3{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-3{box-sizing:border-box;position:relative;min-height:1px;width:31.83333%;float:left;margin-right:1.5%}.no-gutter .columns-3{width:33.33333%;margin-right:0}}.columns-4{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-4{box-sizing:border-box;position:relative;min-height:1px;width:23.5%;float:left;margin-right:1.5%}}.columns-6{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-6{box-sizing:border-box;position:relative;min-height:1px;width:15.16667%;float:left;margin-right:1.5%}}@media (min-width:768px){.columns-10{box-sizing:border-box;position:relative;min-height:1px;width:8.5%;float:left;margin-right:1.5%}}.columns-12{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-12{box-sizing:border-box;position:relative;min-height:1px;width:6.83333%;float:left;margin-right:1.5%}}.columns-10{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-10{box-sizing:border-box;position:relative;min-height:1px;width:8.5%;float:left;margin-right:1.5%}}.columns-20{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-20{box-sizing:border-box;position:relative;min-height:1px;width:18.5%;float:left;margin-right:1.5%}}.columns-30,[data-columns='.3']{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-30,[data-columns='.3']{box-sizing:border-box;position:relative;min-height:1px;width:28.5%;float:left;margin-right:1.5%}}.columns-40,[data-columns='.4']{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-40,[data-columns='.4']{box-sizing:border-box;position:relative;min-height:1px;width:38.5%;float:left;margin-right:1.5%}}.columns-70{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-70{box-sizing:border-box;position:relative;min-height:1px;width:68.5%;float:left;margin-right:1.5%}}*,:after,:before{box-sizing:border-box}html,input{color:#333}::-moz-selection{background:#FF4136;color:#fff;text-shadow:none}::selection{background:#FF4136;color:#fff;text-shadow:none}hr{border:none;clear:both;width:65%;border-bottom:5px solid #f5f5f5;display:inline-block;left:50%;margin:44px auto 54px -32.5%;position:relative}img{vertical-align:middle;interpolation-mode:bicubic;max-width:100%;height:auto}pre{font-family:Monaco;padding:.5em 1em;margin:0 0 1rem;border-radius:2px}pre,pre code{overflow-x:scroll}pre code{border:none;word-wrap:initial;background-color:transparent}code{font-size:.75rem;line-height:1.5;margin:0 2px;padding:0 5px;border:1px solid #eaeaea;background-color:#f7f7f7}body,html{font-size:100%}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;text-rendering:optimizeLegibility}body{line-height:1;font-family:"Open Sans",helvetica,sans-serif;color:#333;-webkit-font-smooth:always;-webkit-font-smoothing:antialiased;text-shadow:0 1px 0 rgba(0,0,0,.01);background:#fff;overflow-scrolling:touch;-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-text-size-adjust:none;-ms-text-size-adjust:none;text-size-adjust:none}[class*=text-align-]{text-align:center}@media (min-width:960px){.text-align-left{text-align:left!important}.text-align-center{text-align:center!important}}h1,h2,h3,h4,h5,h6{font-family:"Open Sans","Open Sans",helvetica,sans-serif;font-style:normal;font-stretch:normal;word-wrap:break-word;word-break:break-word;line-height:1.25;margin:.2rem 0 1rem}h1{font-size:2.5rem}h2{font-size:2.125rem}h3{font-size:1.875rem}h4{font-size:1.625rem}h5{font-size:1.375rem}h6,p{font-size:1rem}p{font-family:"Open Sans",helvetica,sans-serif;line-height:1.8;margin:0 0 1rem;word-wrap:break-word}a{text-decoration:none;line-height:inherit;outline:0;color:#FF4136;-webkit-transition:all .35s cubic-bezier(.2,.4,.1,1);transition:all .35s cubic-bezier(.2,.4,.1,1)}a:hover{color:#333}sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;top:-.5em}strong{font-weight:700}em{font-style:italic}ol,ul{font-size:initial}ol li,ul li{line-height:1.6;margin-bottom:.5rem}ul{list-style:none inside}ol{list-style:decimal inside}ol li{margin-left:.5rem}blockquote{font-family:"Open Sans",helvetica,sans-serif;letter-spacing:2px;font-weight:400;border-left:3px solid;padding:2%;margin:2%}blockquote p{font-size:1.3125rem}blockquote cite{font-size:initial;padding-top:2%;display:block}@media (min-width:768px){.valign{display:-ms-flexbox;display:-webkit-flex;display:-webkit-box;display:flex;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;align-items:center}}h1,h2,h3,h4,h5,h6{font-weight:300}p a{font-weight:500;border-bottom:1px solid #b3b3b3}p a:hover{color:#333;border-color:#333}section{background:#fff;padding:3rem 0;overflow:hidden}@media (min-width:768px){section{padding-top:5rem;padding-bottom:5rem}}section.stripe:nth-of-type(even){background-color:#f5f6f7}ul li:before{display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:400;line-height:1;font-smoothing:antialiased;osx-font-smoothing:grayscale}ul.check li:before{content:"\f00c";padding-right:5px}table{margin:0 0 2.5rem}td,th{padding:12px 15px;text-align:left;border-bottom:1px solid #E1E1E1}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}input{margin-bottom:1.5rem}figure,form{margin:0 0 2.5rem}input[type=search]{background-color:#fff;border:1px solid #D1D1D1;box-shadow:none;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none}input[type=search]:focus{border:1px solid #FF4136;outline:0}.highlight{margin-bottom:1.5em;font-size:.75rem;color:#d0d0d0;border:1px solid #38404b;background-color:#272822}.highlight pre{position:relative;margin:0;padding:1em;color:#fff;overflow-x:scroll}.highlight pre code{background:0 0;border:none;white-space:nowrap}.gist .highlight{color:#000;border:none}.gist .gist-file{border:none}.gist .gist-data{border:none!important;overflow:hidden!important}.gist .highlight{background:#fff}.CodeRay{font-family:Monaco;font-size:.75rem;line-height:1.5;color:#d0d0d0;margin-bottom:1.5em;border-radius:3px;word-wrap:normal}.CodeRay .code pre{margin:0;padding:1em;background-color:#272822;border:1px solid #38404b}.CodeRay .code{width:100%}.CodeRay .code pre{overflow:auto}.CodeRay .instance-variable,.CodeRay .key{color:#f8f8f2}.CodeRay .attribute-name{color:#a6e22e}.CodeRay .float{color:#ff658b}.CodeRay .string{color:#2dc900}.CodeRay .keyword{color:#66d9ef}.CodeRay .class,.CodeRay .function{color:#a6e22e}.CodeRay .constant,.CodeRay .tag{color:#f92672}.CodeRay .predefined-constant{color:#ff84e4}.CodeRay .comment{color:#75715e}.CodeRay .content,.CodeRay .delimiter,.CodeRay .inline{color:#e6db74}.container{-webkit-transition:all .35s cubic-bezier(.2,.4,.1,1);transition:all .35s cubic-bezier(.2,.4,.1,1)}#nav{font-weight:600;font-size:.8rem}#nav a{display:block;line-height:38px;margin:10px 0}@media (min-width:480px){#nav a{display:inline;margin:0 1rem 0 0}}.example-grid [class*=columns-],.example-grid [data-columns]{background:#FF4136;color:#fff;margin-top:.5rem;margin-bottom:.5rem;font-weight:600;line-height:1.5;padding:1.5rem 0}@media (min-width:768px){.example-grid [class*=columns-],.example-grid [data-columns]{padding:1.5rem}}.example-grid [class*=columns-] p,.example-grid [data-columns] p{font-weight:400}.example-grid [class*=columns-] h2{margin:0}.hero,article{border-bottom:1px solid #eee}article{margin:0 0 2rem;padding:0 0 2rem}input[type=search]{padding:.8rem 1rem;border:0}input[type=search]:focus{border:0}.juice-bg{background-color:#FF4136;color:#fff}.juice-bg a{color:#fff;border-color:#fff}.juice-bg.example-grid [class*=columns-]{background:#fff;color:#222}.circle{background:#f5f5f5;border-radius:50%;width:100px;height:100px;display:block;margin:0 auto}#footer{border-top:1px solid #eee;padding:5rem 0;font-weight:600;font-size:.8rem;text-align:center}#footer .created-by,#footer .footer-meta a{display:block;line-height:38px;margin:10px 0}@media (min-width:480px){#footer .created-by,#footer .footer-meta a{display:inline;margin:0}}@media (min-width:480px){#footer .created-by{text-align:left}#footer .created-by,#footer .footer-meta{box-sizing:border-box;position:relative;min-height:1px;width:48.5%;float:left;margin-right:1.5%}#footer .footer-meta{text-align:right}#footer .footer-meta a{margin-left:1rem}}@media (min-width:768px){.island{padding:3rem 5rem}}@media (min-width:960px){.island{padding:3rem 7rem}}@media (min-width:1280px){.island{padding:3rem 15rem}}</style><link rel="canonical" href="/juice/my-collection/2015-07-10-project-title/"> <link rel="alternate" type="application/rss+xml" title="Juice" href="/juice/feed.xml"> </head> <body> <main id="main"> <section class="hero"> <div class="container"> <h1> Project Title 1 </h1> <h5> By John Doe on under . </h5> <header id="header"> <nav id="nav"> <a href="/juice/index.html" class="">Home</a> <a href="/juice/grid" class="">Grid</a> <a href="/juice/type" class="">Type</a> <a href="/juice/blog" class="">Blog</a> <a href="/juice/my-collection" class="current">My Collection</a> <a href="https://github.com/kiriaze/juice/archive/master.zip">Download.</a> </nav> </header> </div> </section> <section> <div class="container"> <article> <p>Converge assembles some of the best speakers in the industry to inform and inspire you! It’s for the love of the web and the love of our community. This year’s event includes a full schedule of keynotes, sessions, and workshops.</p> <p><a href="http://convergese.com/">Check it out!</a></p> </article> <div id="disqus_thread"></div> <script type="text/javascript">var disqus_shortname="webconfs",disqus_identifier="/my-collection/2015-07-10-project-title/";!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//"+disqus_shortname+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)}(),function(){var e=document.createElement("script");e.async=!0,e.type="text/javascript",e.src="//"+disqus_shortname+".disqus.com/count.js",(document.getElementsByTagName("HEAD")[0]||document.getElementsByTagName("BODY")[0]).appendChild(e)}();</script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript> </div> </section> </main> <section class="juice-bg"> <div class="container text-align-center"> <div class="row"> <h2>Start building with Juice.</h2> <p> <a href="https://github.com/kiriaze/juice/archive/master.zip">Download</a> or <a href="https://github.com/kiriaze/juice">View on Github</a> </p> <p>Issues can be reported <a href="https://github.com/kiriaze/juice/issues">here</a>.</p> </div> <div class="row">  <div id="search-container"> <input type="search" id="search-input" placeholder="Search..."> <ul id="results-container"></ul> </div> </div> </div> </section> <footer id="footer"> <div class="container"> <div class="row"> <span class="created-by"> Juice created by <a href="http://twitter.com/kiriaze">@kiriaze</a>. </span> <span class="footer-meta"> <a href="https://github.com/kiriaze/juice/blob/master/LICENSE.md">License</a> <a href="http://twitter.com/kiriaze">@kiriaze</a> <a href="https://github.com/kiriaze/juice">Github Source</a> </span> </div> </div> </footer> <script src="/juice/assets/js/app.min.js"></script><script type="text/javascript">var searchInput=document.getElementById("search-input");"undefined"!=typeof searchInput&&null!=searchInput&&SimpleJekyllSearch({searchInput:document.getElementById("search-input"),resultsContainer:document.getElementById("results-container"),json:"/juice/search.json",searchResultTemplate:'<li><a href="{url}" title="{desc}">{title}</a></li>',noResultsText:"No results found",limit:10,fuzzy:!0,exclude:[]});</script></body></html>
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Project Title 1</title>
+	<meta name="description" content="An awesome front end web framework.">
+
+	
+
+	<!--Mobile Meta-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+
+	
+		<!-- Twitter Cards -->
+		
+			<meta name="twitter:card" content="summary">
+			<meta name="twitter:image" content="/assets/images/">
+		
+		<meta name="twitter:title" content="Project Title 1">
+		<meta name="twitter:description" content="An awesome front end web framework.">
+		<meta name="twitter:creator" content="@kiriaze">
+	
+
+	
+	
+
+	<!--Favicon-->
+	<link rel="icon" type="image/png" href="/favicon.ico">
+
+	<!--[if (gte IE 6)&(lte IE 8)]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+	<![endif]-->
+
+	<!-- <script type="text/javascript" src="//use.typekit.net/dmh1abo.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+ -->
+
+	<!-- CSS - comment out when production build is ran -->
+	<link rel="stylesheet" href="/assets/css/main.min.css">
+	<!-- uncss'd stylesheet below, uncomment when prod build is run -->
+	<!-- <style>html,body{padding:0;vertical-align:baseline}html,body,div,span,iframe{margin:0;border:0;font:inherit}div,span,iframe{font-size:100%}div,span,iframe,h1,h2,h3,h4,h5,h6,p{padding:0;vertical-align:baseline}h1,h2,h3,h4,h5,h6,p,blockquote,pre{border:0;font:inherit}blockquote,pre,a,cite{font-size:100%;vertical-align:baseline}a,cite{margin:0;padding:0}a,cite,code{border:0;font:inherit}code,em{vertical-align:baseline}em{margin:0;font-size:100%}em,img{padding:0;border:0;font:inherit}img,strong{margin:0;font-size:100%}strong{vertical-align:baseline}strong,sup{padding:0;border:0;font:inherit}sup,ol,ul,li{margin:0}ol,ul,li,form,table,tbody,thead,tr{padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}tbody,thead,tr,th,td{margin:0}th,td,article{border:0;font-size:100%;font:inherit;vertical-align:baseline}aside{margin:0;padding:0}aside,figure{border:0;font-size:100%;font:inherit;vertical-align:baseline}figure,figcaption,footer,header,nav{padding:0}figcaption,footer,header,nav,section,main,time{margin:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}main,time{padding:0}article,aside,figcaption,figure,footer,header,nav,section,main{display:block}table{border-collapse:collapse;border-spacing:0}html,body{height:100%}blockquote{quotes:none}blockquote:before,blockquote:after{content:'';content:none}@media print{*{background:transparent!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href)")"}a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100%!important}@page{margin:.5cm}p,h2,h3{orphans:3;widows:3}h2,h3{page-break-after:avoid}}[class~="container"]{position:relative;overflow:hidden;margin-right:auto;margin-left:auto;padding-left:1.5%;padding-right:1.5%}[class~="container"]::after{clear:both;content:"";display:table}@media (min-width:768px){[class~="container"]{width:768px}}@media (min-width:960px){[class~="container"]{width:960px}}@media (min-width:1280px){[class~="container"]{width:1280px}}[class~="row"],[data-layout='grid']{box-sizing:border-box}@media (min-width:768px){[class~="row"],[data-layout='grid']{margin-left:-1.5%;margin-right:-1.5%;padding-left:1.5%}[class~="row"]::after,[data-layout='grid']::after{clear:both;content:"";display:table}}@media (min-width:768px){.no-gutter{margin-left:0;margin-right:0;padding-left:0}.no-gutter::after{clear:both;content:"";display:table}}.columns-2{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-2{box-sizing:border-box;position:relative;min-height:1px;width:48.5%;float:left;margin-right:1.5%}.no-gutter .columns-2{width:50%;margin-right:0}}.columns-3{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-3{box-sizing:border-box;position:relative;min-height:1px;width:31.83333%;float:left;margin-right:1.5%}.no-gutter .columns-3{width:33.33333%;margin-right:0}}.columns-4{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-4{box-sizing:border-box;position:relative;min-height:1px;width:23.5%;float:left;margin-right:1.5%}}.columns-6{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-6{box-sizing:border-box;position:relative;min-height:1px;width:15.16667%;float:left;margin-right:1.5%}}@media (min-width:768px){.columns-10{box-sizing:border-box;position:relative;min-height:1px;width:8.5%;float:left;margin-right:1.5%}}.columns-12{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-12{box-sizing:border-box;position:relative;min-height:1px;width:6.83333%;float:left;margin-right:1.5%}}.columns-10{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-10{box-sizing:border-box;position:relative;min-height:1px;width:8.5%;float:left;margin-right:1.5%}}.columns-20{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-20{box-sizing:border-box;position:relative;min-height:1px;width:18.5%;float:left;margin-right:1.5%}}[data-columns='.3'],.columns-30{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){[data-columns='.3'],.columns-30{box-sizing:border-box;position:relative;min-height:1px;width:28.5%;float:left;margin-right:1.5%}}[data-columns='.4'],.columns-40{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){[data-columns='.4'],.columns-40{box-sizing:border-box;position:relative;min-height:1px;width:38.5%;float:left;margin-right:1.5%}}.columns-70{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-70{box-sizing:border-box;position:relative;min-height:1px;width:68.5%;float:left;margin-right:1.5%}}*,*:after,*:before{box-sizing:border-box}html,input{color:#333}::-moz-selection{background:#FF4136;color:#fff;text-shadow:none}::selection{background:#FF4136;color:#fff;text-shadow:none}hr{border:none;clear:both;width:65%;border-bottom:5px solid #f5f5f5;display:inline-block;left:50%;margin:44px auto 54px -32.5%;position:relative}img{vertical-align:middle;interpolation-mode:bicubic;max-width:100%;height:auto}pre{font-family:Monaco;padding:.5em 1em;margin:0 0 1rem;border-radius:2px}pre,pre code{overflow-x:scroll}pre code{border:none;word-wrap:initial;background-color:transparent}code{font-size:.75rem;line-height:1.5;margin:0 2px;padding:0 5px;border:1px solid #eaeaea;background-color:#f7f7f7}html,body{font-size:100%}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;text-rendering:optimizeLegibility}body{line-height:1;font-family:"Open Sans",helvetica,sans-serif;color:#333;-webkit-font-smooth:always;-webkit-font-smoothing:antialiased;text-shadow:0 1px 0 rgba(0,0,0,.01);background:#fff;overflow-scrolling:touch;-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-text-size-adjust:none;-ms-text-size-adjust:none;text-size-adjust:none}[class*='text-align-']{text-align:center}@media (min-width:960px){.text-align-left{text-align:left!important}.text-align-center{text-align:center!important}}h1,h2,h3,h4,h5,h6{font-family:"Open Sans","Open Sans",helvetica,sans-serif;font-style:normal;font-stretch:normal;word-wrap:break-word;word-break:break-word;line-height:1.25;margin:.2rem 0 1rem}h1{font-size:2.5rem}h2{font-size:2.125rem}h3{font-size:1.875rem}h4{font-size:1.625rem}h5{font-size:1.375rem}h6,p{font-size:1rem}p{font-family:"Open Sans",helvetica,sans-serif;line-height:1.8;margin:0 0 1rem;word-wrap:break-word}a{text-decoration:none;line-height:inherit;outline:0;color:#FF4136;-webkit-transition:all .35s cubic-bezier(.2,.4,.1,1);transition:all .35s cubic-bezier(.2,.4,.1,1)}a:hover{color:#333}sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;top:-.5em}strong{font-weight:700}em{font-style:italic}ul,ol{font-size:initial}ul li,ol li{line-height:1.6;margin-bottom:.5rem}ul{list-style:none inside}ol{list-style:decimal inside}ol li{margin-left:.5rem}blockquote{font-family:"Open Sans",helvetica,sans-serif;letter-spacing:2px;font-weight:400;border-left:3px solid;padding:2%;margin:2%}blockquote p{font-size:1.3125rem}blockquote cite{font-size:initial;padding-top:2%;display:block}@media (min-width:768px){.valign{display:-ms-flexbox;display:-webkit-flex;display:-webkit-box;display:flex;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;align-items:center}}h1,h2,h3,h4,h5,h6{font-weight:300}p a{font-weight:500;border-bottom:1px solid #b3b3b3}p a:hover{color:#333;border-color:#333}section{background:#fff;padding:3rem 0;overflow:hidden}@media (min-width:768px){section{padding-top:5rem;padding-bottom:5rem}}section.stripe:nth-of-type(even){background-color:#f5f6f7}ul li:before{display:inline-block;font-family:'FontAwesome';font-style:normal;font-weight:400;line-height:1;font-smoothing:antialiased;osx-font-smoothing:grayscale}ul.check li:before{content:"\f00c";padding-right:5px}table{margin:0 0 2.5rem}th,td{padding:12px 15px;text-align:left;border-bottom:1px solid #E1E1E1}th:first-child,td:first-child{padding-left:0}th:last-child,td:last-child{padding-right:0}input{margin-bottom:1.5rem}figure,form{margin:0 0 2.5rem}input[type="search"]{background-color:#fff;border:1px solid #D1D1D1;box-shadow:none;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none}input[type="search"]:focus{border:1px solid #FF4136;outline:0}.highlight{margin-bottom:1.5em;font-size:.75rem;color:#d0d0d0;border:1px solid #38404b;background-color:#272822}.highlight pre{position:relative;margin:0;padding:1em;color:#fff;overflow-x:scroll}.highlight pre code{background:0 0;border:none;white-space:nowrap}.gist .highlight{color:#000;border:none}.gist .gist-file{border:none}.gist .gist-data{border:none!important;overflow:hidden!important}.gist .highlight{background:#fff}.CodeRay{font-family:Monaco;font-size:.75rem;line-height:1.5;color:#d0d0d0;margin-bottom:1.5em;border-radius:3px;word-wrap:normal}.CodeRay .code pre{margin:0;padding:1em;background-color:#272822;border:1px solid #38404b}.CodeRay .code{width:100%}.CodeRay .code pre{overflow:auto}.CodeRay .key,.CodeRay .instance-variable{color:#f8f8f2}.CodeRay .attribute-name{color:#a6e22e}.CodeRay .float{color:#ff658b}.CodeRay .string{color:#2dc900}.CodeRay .keyword{color:#66d9ef}.CodeRay .function,.CodeRay .class{color:#a6e22e}.CodeRay .constant,.CodeRay .tag{color:#f92672}.CodeRay .predefined-constant{color:#ff84e4}.CodeRay .comment{color:#75715e}.CodeRay .content,.CodeRay .delimiter,.CodeRay .inline{color:#e6db74}.container{-webkit-transition:all .35s cubic-bezier(.2,.4,.1,1);transition:all .35s cubic-bezier(.2,.4,.1,1)}#nav{font-weight:600;font-size:.8rem}#nav a{display:block;line-height:38px;margin:10px 0}@media (min-width:480px){#nav a{display:inline;margin:0 1rem 0 0}}.example-grid [class*="columns-"],.example-grid [data-columns]{background:#FF4136;color:#fff;margin-top:.5rem;margin-bottom:.5rem;font-weight:600;line-height:1.5;padding:1.5rem 0}@media (min-width:768px){.example-grid [class*="columns-"],.example-grid [data-columns]{padding:1.5rem}}.example-grid [class*="columns-"] p,.example-grid [data-columns] p{font-weight:400}.example-grid [class*="columns-"] h2{margin:0}.hero,article{border-bottom:1px solid #eee}article{margin:0 0 2rem;padding:0 0 2rem}input[type="search"]{padding:.8rem 1rem;border:0}input[type="search"]:focus{border:0}.juice-bg{background-color:#FF4136;color:#fff}.juice-bg a{color:#fff;border-color:#fff}.juice-bg.example-grid [class*="columns-"]{background:#fff;color:#222}.circle{background:#f5f5f5;border-radius:50%;width:100px;height:100px;display:block;margin:0 auto}#footer{border-top:1px solid #eee;padding:5rem 0;font-weight:600;font-size:.8rem;text-align:center}#footer .created-by,#footer .footer-meta a{display:block;line-height:38px;margin:10px 0}@media (min-width:480px){#footer .created-by,#footer .footer-meta a{display:inline;margin:0}}@media (min-width:480px){#footer .created-by{text-align:left}#footer .created-by,#footer .footer-meta{box-sizing:border-box;position:relative;min-height:1px;width:48.5%;float:left;margin-right:1.5%}#footer .footer-meta{text-align:right}#footer .footer-meta a{margin-left:1rem}}@media (min-width:768px){.island{padding:3rem 5rem}}@media (min-width:960px){.island{padding:3rem 7rem}}@media (min-width:1280px){.island{padding:3rem 15rem}}</style> -->
+
+	<link rel="canonical" href="/my-collection/2015-07-10-project-title/">
+	<link rel="alternate" type="application/rss+xml" title="Juice" href="/feed.xml" />
+
+</head>
+
+	<body data-simpleforms-color="green">
+		<main id="main">
+			
+
+<section class="hero " data-background="">
+	<div class="container">
+
+		<h1>
+		
+			Project Title 1
+		
+		</h1>
+		<h5>
+		
+			By
+			
+			John Doe
+			
+			on
+			
+			under
+			.
+		
+		</h5>
+
+		<header id="header">
+			<nav id="nav">
+
+			    
+			        
+			        
+					<a href="/index.html" class="">Home</a>
+			    
+			        
+			        
+					<a href="/grid" class="">Grid</a>
+			    
+			        
+			        
+					<a href="/type" class="">Type</a>
+			    
+			        
+			        
+					<a href="/blog" class="">Blog</a>
+			    
+			        
+			        
+			            
+			        
+					<a href="/my-collection" class="current">My Collection</a>
+			    
+
+		        <a href="https://github.com/kiriaze/juice/archive/master.zip">Download.</a>
+
+			</nav>
+		</header>
+
+	</div>
+</section>
+
+
+<section>
+	<div class="container">
+
+		
+
+		<article>
+	      <p>Converge assembles some of the best speakers in the industry to inform and inspire you! It’s for the love of the web and the love of our community. This year’s event includes a full schedule of keynotes, sessions, and workshops.</p>
+
+<p><a href="http://convergese.com/">Check it out!</a></p>
+
+	    </article>
+
+	    
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'default';
+    var disqus_identifier = "/my-collection/2015-07-10-project-title/";
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+	</div>
+</section>
+
+		</main>
+		<section class="juice-bg">
+
+	<div class="container text-align-center">
+
+		<div class="row">
+
+			<h2>Start building with Juice.</h2>
+			<p>
+				<a href="https://github.com/kiriaze/juice/archive/master.zip">Download</a>
+				or
+				<a href="https://github.com/kiriaze/juice">View on Github</a>
+			</p>
+
+			<p>Issues can be reported <a href="https://github.com/kiriaze/juice/issues">here</a>.</p>
+
+		</div>
+
+		<div class="row">
+			<!-- Html Elements for Search -->
+			<div id="search-container">
+				<input type="search" id="search-input" placeholder="Search...">
+				<ul id="results-container"></ul>
+			</div>
+		</div>
+
+	</div>
+
+</section>
+
+<footer id="footer">
+
+	<div class="container">
+
+		<div class="row">
+
+			<span class="created-by">
+				Juice created by <a href="http://twitter.com/kiriaze">@kiriaze</a>.
+			</span>
+
+			<span class="footer-meta">
+				<a href="https://github.com/kiriaze/juice/blob/master/LICENSE.md">License</a>
+				<a href="http://twitter.com/kiriaze">@kiriaze</a>
+				<a href="https://github.com/kiriaze/juice">Github Source</a>
+			</span>
+
+		</div>
+
+	</div>
+
+</footer>
+
+		<script src="/assets/js/app.min.js"></script>
+
+
+<script type="text/javascript">
+	var searchInput = document.getElementById('search-input');
+	if ( typeof(searchInput) != 'undefined' && searchInput != null ) {
+		SimpleJekyllSearch({
+			searchInput: document.getElementById('search-input'),
+			resultsContainer: document.getElementById('results-container'),
+			json: '/search.json',
+			searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+			noResultsText: 'No results found',
+			limit: 10,
+			fuzzy: true,
+			exclude: []
+		});
+	}
+</script>
+
+
+
+
+	</body>
+</html>
