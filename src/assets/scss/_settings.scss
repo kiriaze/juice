@@ -20,6 +20,7 @@ $header-line-height:			1.25 !default;
 $header-top-margin:				.2rem !default;
 $header-bottom-margin:			1rem !default;
 
+// px value to rem
 $h1-font-size:					40 !default;
 $h2-font-size:					34 !default;
 $h3-font-size:					30 !default;
@@ -45,7 +46,7 @@ $blockquotes-font-size:			21 !default;
 
 // fonts - core/_fonts.scss
 $body-font:						'Open Sans', helvetica, sans-serif; // bourbon font stacks
-$header-font:					'Open Sans', $body-font; // theme specific
+$header-font:					'Raleway', $body-font; // theme specific
 
 
 

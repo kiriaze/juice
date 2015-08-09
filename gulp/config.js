@@ -36,7 +36,12 @@ module.exports = {
 
 	'scripts': {
 		'src' : 'src/assets/js/**/*.js',
-		'dest': 'dist/assets/js'
+		'dest': 'dist/assets/js',
+		'order': [
+			'**/**/modernizr.js',
+			'**/**/jquery.js',
+			'**/**/*.js'
+		]
 	},
 
 	'vendorjs': 'src/assets/js/vendor/**/*.js',
@@ -46,14 +51,14 @@ module.exports = {
 		'dest': 'dist/assets/images'
 	},
 
-	'video': {
-		'src' : 'src/assets/video/**/*',
-		'dest': 'dist/assets/video'
-	},
-
 	'fonts': {
 		'src' : 'src/assets/fonts/**/*',
 		'dest': 'dist/assets/fonts'
+	},
+
+	'video': {
+		'src' : 'src/assets/video/**/*',
+		'dest': 'dist/assets/video'
 	},
 
 	'gzip': {

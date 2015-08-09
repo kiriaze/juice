@@ -16,7 +16,7 @@ gulp.task('watch', function() {
 	gulp.watch(config.scripts.src, ['js']);
 
 	// Watch image files
-	gulp.watch(config.images.src, ['images'], reload);
+	gulp.watch(config.images.src, ['images']);
 
 	// jekyll build
 	gulp.watch([

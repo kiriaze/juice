@@ -20,6 +20,7 @@ gulp.task('css', function(){
 		.pipe(plugins.sourcemaps.init())
 			.pipe(plugins.sass())
 			.on('error', onError)
+			.pipe(plugins.minifyCss())
 			.pipe(plugins.autoprefixer('last 2 versions'))
 			.pipe(plugins.concat('main.css'))
 			.pipe(plugins.rename({suffix: '.min'}))
