@@ -5,6 +5,10 @@
 
 .container {
 	transition: $transition;
+	.blog &,
+	.single & {
+		max-width: 960px;
+	}
 }
 
 // Juice gh-pages styles
