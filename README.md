@@ -16,32 +16,7 @@ M odular
 A rchitecture
 ```
 
-* No underscores, camelcasing, or double hyphens - umm did people forget proper naming conventions specific to each language?
-	* Although I would prefer using camelcasing over double hypens
-* Scss only, less sucks donkey dick.
-* Minimal ID's, primarily for main elements, e.g. header,nav, main, footer, and for js manipulation.
-* Placeholders galore. ( % incase you didn't know )
-* Prefix free. ( let your compiler handle that jazz )
-* Tabs people, make code readable.
-* No super nesting, 3 levels deep - max.
-* Space out your code. Example:
-```
-	// css
-	.some-element {
-		width: 80%;
-		margin: 0 auto;
-	}
-
-    // js
-	if ( $( '.some-element' ).length ) {
-		console.log('foo');
-	}
-
-	// php
-	if ( isset( $someElement ) ) {
-    	print_r($someElement);
-	}
-```
+Learn more about [SOMA](http://github.com/kiriaze/code-syntax)
 
 It features:
 
@@ -101,9 +76,11 @@ Run Node Package Manager
 
 ### 3. Configure
 
-Set your grid values you wish to your variables in your _settings.scss file. Done!
+1. Set your project values for gulps' config in config.js
 
-Classes are by default, .container, .row, .columns.
+2. Set your grid values you wish to your variables in your _settings.scss file. Done!
+
+	// Classes are by default, .container, .row, .columns.
 
 	$gutter: 			3% !default;
 	$docWidth: 			100% !default;
@@ -282,15 +259,34 @@ By setting the $advanced-usage variable in your _settings.scss to 'true' you can
 	}
 
 
-## Todos and Notes
+## Gulp Tasks
 
-cloudflare
-	A record pointing from ghpages to domain
-leave gzip alone for now within gulp
-update CNAME to reflect domain.com within gh-pages branch
-uncss disabled
-method to restart gulp when a gulp file is updated
-removed html minification, issues, let cloudflare/github handle that ish
+1. gulp runs default build task
+```
+clean - deletes build dir
+jekyll - process jekyll
+css - sass, concatenate with bower, minify, sourcemap, autoprefix
+js - uglfy, concatenate with bower, sourcemap, order
+images - imagemin
+fonts - concatenate with bower, flatten
+video - copy
+browser - sync - live server
+watch - watch for changes
+sitemap - create a sitemap.xml of your site
+info - output size in console
+```
+2. watch task watches for changes in css, js, images, html/md & runs the relative functions as well as a browser reload.
+3. Some tasks are left for you to fire at will
+```
+seo - ping google and bing of updated site
+pagespeed - check results from pagespeed
+```
+4. Run prod task before pushing to live server.
+```
+html - compress/minify html
+uncss - remove unused css and output inline in header
+gzip - output a gzipped file of the site in the root dir
+```
 
 ## License
 
