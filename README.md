@@ -16,7 +16,7 @@ M odular
 A rchitecture
 ```
 
-Learn more about [SOMA](http://github.com/kiriaze/code-syntax)
+Learn more about [SOMA](http://github.com/kiriaze/code-syntax).
 
 It features:
 
@@ -80,6 +80,7 @@ Run Node Package Manager
 
 2. Set your grid values you wish to your variables in your _settings.scss file. Done!
 
+```
 	// Classes are by default, .container, .row, .columns.
 
 	$gutter: 			3% !default;
@@ -93,7 +94,7 @@ Run Node Package Manager
 
 	// Grid check
 	$gridDebug:			false !default; // If true, styles grid/columns for easy visibily while testing
-
+```
 
 ### 4. Build
 
