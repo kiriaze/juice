@@ -38,6 +38,7 @@
     "s-animate": ">=1.0.0",
     "simple-jekyll-search": "~1.0.7",
     "font-awesome": "~4.3.0",
-    "simple-anchors": "*"
+    "simple-anchors": "*",
+    "fitvids": "~1.1.0"
   }
 }

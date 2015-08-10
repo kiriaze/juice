@@ -64,6 +64,9 @@
 		// simpleforms - styles/effects for forms, checkboxes, radio's
 		$('body').simpleforms();
 
+		// fitvids
+		$('body').fitVids();
+
 	};
 
 	$window.load(function() {
