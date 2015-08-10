@@ -81,19 +81,19 @@ Run Node Package Manager
 2. Set your grid values you wish to your variables in your _settings.scss file. Done!
 
 ```
-	// Classes are by default, .container, .row, .columns.
+// Classes are by default, .container, .row, .columns.
 
-	$gutter: 			3% !default;
-	$docWidth: 			100% !default;
+$gutter: 			3% !default;
+$docWidth: 			100% !default;
 
-	// this sets your class names
-	$container-class:	"container" !default; // optional
-	$row-class:			"row" !default;
-	$column-class:		"columns" !default;
-	$max-columns:		12 !default;
+// this sets your class names
+$container-class:	"container" !default; // optional
+$row-class:			"row" !default;
+$column-class:		"columns" !default;
+$max-columns:		12 !default;
 
-	// Grid check
-	$gridDebug:			false !default; // If true, styles grid/columns for easy visibily while testing
+// Grid check
+$gridDebug:			false !default; // If true, styles grid/columns for easy visibily while testing
 ```
 
 ### 4. Build
