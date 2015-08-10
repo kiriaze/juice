@@ -38,9 +38,6 @@
     "s-animate": ">=1.0.0",
     "simple-jekyll-search": "~1.0.7",
     "font-awesome": "~4.3.0",
-    "simple-anchors": "*",
-    "ladda": "~0.9.8",
-    "fitvids": "~1.1.0",
-    "jquery-ui": "~1.11.4"
+    "simple-anchors": "*"
   }
 }
