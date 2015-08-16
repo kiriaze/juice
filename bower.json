@@ -39,6 +39,7 @@
     "simple-jekyll-search": "~1.0.7",
     "font-awesome": "~4.3.0",
     "simple-anchors": "*",
-    "fitvids": "~1.1.0"
+    "fitvids": "~1.1.0",
+    "s-grid": "~1.0.0"
   }
 }

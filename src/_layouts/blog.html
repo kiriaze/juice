@@ -12,7 +12,13 @@ subheading: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 		{% for post in paginator.posts %}
 		<article>
 			<h2>
-				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+				<!-- if yaml front matter has link specified for external pages -->
+				{% if post.link %}
+					{% assign url = post.link %}
+					<a href="{{ post.link }}" target="new">{{ post.title }}</a>
+				{% else %}
+					<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+				{% endif %}
 			</h2>
 			<div class="post-meta">
 				By
@@ -37,6 +43,11 @@ subheading: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 				</span>
 				{% endif %}
 			</div>
+			{% if post.image %}
+			<figure>
+				<img src="{{ post.image }}" alt="">
+			</figure>
+			{% endif %}
 			<p>
 				{{ post.excerpt }}
 			</p>

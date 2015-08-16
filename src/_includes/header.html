@@ -20,8 +20,10 @@
 			{% endif %}
 			on
 			{{ page.date | date: "%b %-d, %Y" }}
+			{% if page.categories.size > 0 %}
 			under
 			{{ page.categories | join: ', ' }}.
+			{% endif %}
 		{% endif %}
 		</h5>
 

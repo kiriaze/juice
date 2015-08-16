@@ -64,8 +64,8 @@
 		// simpleforms - styles/effects for forms, checkboxes, radio's
 		$('body').simpleforms();
 
-		// fitvids
-		$('body').fitVids();
+		// Target your .container, .wrapper, .post, etc.
+		SHORTNAME.elems.body.fitVids();
 
 	};
 
