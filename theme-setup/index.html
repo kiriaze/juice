@@ -1,0 +1,141 @@
+<!doctype html> <html class="no-js" lang="en"> <head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title>Theme Setup</title> <meta name="description" content="An awesome front end web framework.">  <meta name="viewport" content="width=device-width,initial-scale=1">  <meta name="twitter:card" content="summary"> <meta name="twitter:image" content="/juice/assets/images/logo.png"> <meta name="twitter:title" content="Theme Setup"> <meta name="twitter:description" content="Instructions on how to install and customize the modern Jekyll theme Juice."> <meta name="twitter:creator" content="@kiriaze">  <link rel="icon" type="image/png" href="/juice/favicon.ico"> <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->   <link rel="stylesheet" href="/juice/assets/css/main.min.css">   <link rel="canonical" href="/juice/theme-setup/"> <link rel="alternate" type="application/rss+xml" title="Juice" href="/juice/feed.xml"> </head> <body data-simpleforms-color="green" class=""> <main id="main"> <section class="hero"> <div class="container"> <h1> Theme Setup </h1> <h5> By Constantine Kiriaze on </h5> <header id="header"> <nav id="nav"> <a href="/juice/index.html" class="">Home</a> <a href="/juice/grid" class="">Grid</a> <a href="/juice/type" class="">Type</a> <a href="/juice/blog" class="">Blog</a> <a href="/juice/my-collection" class="">My Collection</a> <a href="/juice/theme-setup" class="current">Theme Setup</a> <a href="https://github.com/kiriaze/juice/archive/master.zip">Download.</a> </nav> </header> </div> </section> <section> <div class="container"> <h2 id="installation">Installation</h2> <p><a href="http://jekyllrb.com">Install Jekyll</a>.</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre>gem install jekyll
+</pre></div> </div> </div> <p>Clone <a href="http://github.com/kiriaze/juice">Install Juice</a>.</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre>git clone git@github.com:kiriaze/juice.git
+</pre></div> </div> </div> <p>Run the line below to install all the dependencies for the theme contained in <code>package.json</code> as well as <code>bower.json</code>:</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre>$ bower install &amp;&amp; npm install --global gulp &amp;&amp; npm install
+</pre></div> </div> </div> <p><em>This will install Gulp globally. Depending on your user account, you may need to <a href="https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md">configure your system</a> to install packages globally without administrative privileges.</em></p> <hr> <h2 id="configure">Configure</h2> <p>Enter the desired values in the <code>./assets/scss/_settings.scss</code>, <code>./_config.yml</code>, and <code>./config.js</code> files.<br> <strong>These are just a few of those settings.</strong></p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre>// _settings.scss
+$container-class: 'container';
+$row-class: 'row';
+$column-class: 'columns';
+$number-of-columns: 12;
+$gridDebug: true;
+$gutter: 0;
+
+// _config.yml
+title: Juice
+description: An awesome front end web framework.
+disqus_shortname: kiriaze
+reading_time:     true
+words_per_minute: 200
+search:           true
+simpleforms:      green
+
+// config.js
+module.exports = {
+
+  'serverport': 3000,
+
+  // URL TO YOUR SITEMAP.XML
+  'sitemapURL': 'http://kiriaze.com/sitemap.xml',
+
+  // Google pagespeed
+  'URL'       : 'http://kiriaze.com',
+  'strategy'  : 'mobile'
+
+}
+</pre></div> </div> </div> <hr> <h2 id="build">Build</h2> <p>Gulp will take care of everything for you, even building out Jekyll!</p> <blockquote> <p>How awesome is this? Just one command and your whole site gets built, optimized, served with live reload, and starts watching for changes. Boom.</p> </blockquote> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre>$ gulp
+</pre></div> </div> </div> <p>From the theme’s root, run <code>gulp</code>. Your site will be preprocessed, conacatenating your bower dependcies with you main css/js files, assets will be optimized, jekyll will build out your pages, a sitemap will be generated, the size of your project will be outputted in the console, a server will initiate, and your browser will open up your site and will automatically watch and reload for changes. You can also use <code>gulp prod</code> before uploading to your server or before running <code>gulp gh-pages</code> or <code>gulp deploy</code> to minify html, remove unused css and gzipping the whole site.</p> <hr> <h2 id="folder-structure">Folder Structure</h2> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre>juice/
+├── gulp
+├── src
+|   ├── _data
+|        ├── navigation.yml             # site navigation
+|   ├── _includes
+|        ├── buttons.html               # buttons
+|        ├── disqus.html                # disqus
+|        ├── forms.html                 # site forms
+|        ├── head.html                  # site head
+|        ├── header.html                # site header
+|        ├── footer.html                # site footer
+|        ├── foot.html                  # site foot
+|        ├── main.min.css               # inline stylesheet uncss'd
+|        ├── pagination.html            # pagination
+|        ├── social-share.html          # social-share
+|        ├── typekit.html               # typekit
+|        └── typography.html            # ui kit
+|   ├── _layouts
+|        ├── default.html               # default container layout
+|        ├── blog.html                  # blog page layout
+|        ├── page.html                  # page layout
+|        ├── post.html                  # post layout
+|        └── my-collection.html         # my-collection custom post type layout
+|   ├── _my-collection
+|   ├── _posts
+|   ├── _plugins
+|   ├── assets
+|       ├── vendor                      # vendor assets
+|       ├── fonts                       # fonts
+|       ├── images                      # images
+|       ├── scss                        # scss files
+|       └── js
+|           ├── app.js                  # app js file
+|           └── plugins                 # plugin scripts
+|   ├── blog/                           # blog page
+|   ├── categories/                     # all posts grouped by category
+|   ├── pages/
+|       ├── 404.md                      # 404 page
+|       ├── about.md                    # about page
+|       ├── grid.md                     # grid page
+|       ├── my-collection.md            # my-collection custom post type listings
+|       ├── theme-setup.md              # theme setup page
+|       └── type.md                     # ui kit page
+|   ├── tags/                           # all posts grouped by tag
+|   ├── _config.yml                     # Jekyll options
+|   ├── search.json                     # Search functionality
+|   └── index.html                      # home page
+├── .editorconfig
+├── .gitignore
+├── _config.yml
+├── bower.json
+├── CNAME
+├── config.js
+├── gulpfile.js
+├── LICENSE.md
+├── package.json
+└── README.md
+</pre></div> </div> </div> <hr> <h2 id="customization">Customization</h2> <p>Most of the variables found here are used in the .html files found in <code>_includes</code> if you need to add or remove anything. A good place to start would be to add the <code>title</code>, <code>description</code>, and <code>url</code> for your site. Links are relative and prefixed with <code>{{ site.baseurl }}</code> in the various <code>_includes</code> and <code>_layouts</code>, so remember to properly set <code>baseurl</code> before deploying live and can be left blank/commented out while developing locally.</p> <hr> <h4 id="disqus-comments">Disqus Comments</h4> <p>Create a <a href="http://disqus.com">Disqus</a> account and change <code>disqus_shortname</code> in <code>_config.yml</code> to the Disqus <em>shortname</em> you just setup. By default comments appear on all posts if you assigned a shortname. To disable commenting on a post, add the following to its YAML Front Matter:</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="key">comments</span>: <span class="string"><span class="content">false</span></span>
+</pre></div> </div> </div> <hr> <h4 id="social-share-links">Social Share Links</h4> <p>Social share links are enabled by default on all posts. To disable Facebook, Twitter, and Google+ share links on a post or page, add the following to its front matter:</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="key">share</span>: <span class="string"><span class="content">false</span></span>
+</pre></div> </div> </div> <hr> <h4 id="ownerauthor-information">Owner/Author Information</h4> <p>Change your name, and avatar photo (200x200 pixels or larger), email, and social networking URLs. If you want to link to an external image on Gravatar or something similar you’ll need to edit the path in <code>head.html</code> since it assumes it is located in <code>/images</code>.</p> <hr> <h4 id="google-analytics-and-webmaster-tools">Google Analytics and Webmaster Tools</h4> <p>Your Google Analytics ID goes here along with meta tags for <a href="http://support.google.com/webmasters/bin/answer.py?hl=en&amp;answer=35179">Google Webmaster Tools</a> and <a href="https://ssl.bing.com/webmaster/configure/verify/ownershi">Bing Webmaster Tools</a> site verification.</p> <hr> <h4 id="navigation-links">Navigation Links</h4> <p>To add additional links to the menu edit <code>_config.yml</code>. Use the following format to set the URL and title for as many links as you’d like.</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre>- <span class="string"><span class="content">title: Portfolio</span></span>
+<span class="error">    </span><span class="key">url</span>: <span class="string"><span class="content">/portfolio/</span></span>
+
+- <span class="string"><span class="content">title: Kiriaze</span></span>
+<span class="error">    </span><span class="key">url</span>: <span class="string"><span class="content">http://kiriaze.com</span></span>
+</pre></div> </div> </div> <hr> <h4 id="jekyll-includes">Jekyll _includes</h4> <p>For the most part you can leave these as is since the author/owner details are pulled from <code>_config.yml</code>. That said you’ll probably want to customize the copyright stuff in <code>footer.html</code> to your liking.</p> <hr> <h4 id="reading-time">Reading Time</h4> <p>On by default. To turn off remove <code>reading_time</code> from <code>_config.yml. Default words per minute is set at 200 and can changed by updating </code>words_per_minute<code> in </code>_config.yml`.</p> <hr> <h4 id="feature-images">Feature Images</h4> <p>A good rule of thumb is to keep feature images nice and wide so you don’t push the body text too far down. An image cropped around around 1024 x 256 pixels will keep file size down with an acceptable resolution for most devices. If you want to serve these images responsively I’d suggest looking at the <a href="https://github.com/scottjehl/picturefill">Jekyll Picture Tag</a><sup id="fnref:2"><a href="#fn:2" class="footnote">1</a></sup> plugin.</p> <p>To add a feature image to a post or page just include the path to the file in the front matter like so.</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="key">image</span>: <span class="string"><span class="content">PATH/TO/IMAGE.jpg</span></span>
+</pre></div> </div> </div> <hr> <h4 id="postpage-thumbnails-for-og-and-twitter-cards">Post/Page Thumbnails for OG and Twitter Cards</h4> <p>Post and page thumbnails work the same way. These are used by <a href="https://developers.facebook.com/docs/opengraph/">Open Graph</a> and <a href="https://dev.twitter.com/docs/cards">Twitter Cards</a> meta tags found in <code>head.html</code>. If you don’t assign a thumbnail the image you assigned to <code>site.owner.avatar</code> in <code>_config.yml</code> will be used.</p> <hr> <h4 id="videos">Videos</h4> <p>Video embeds are responsive and scale with the width of the main content block with the help of <a href="http://fitvidsjs.com/">FitVids</a>.</p> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="tag">&lt;iframe</span> <span class="attribute-name">width</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">560</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">height</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">315</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.youtube.com/embed/0oMEuyhBkRo</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">frameborder</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span><span class="tag">&lt;/iframe&gt;</span>
+</pre></div> </div> </div> <hr> <h4 id="twitter-cards">Twitter Cards</h4> <p>Twitter cards make it possible to attach images and post summaries to Tweets that link to your content. Summary Card meta tags have been added to <code>head.html</code> to support this, you just need to <a href="https://dev.twitter.com/docs/cards">validate and apply your domain</a> to turn it on.</p> <hr> <h4 id="link-post-type">Link Post Type</h4> <p>Link blog like a champ by adding <code>link: http://url-you-want-linked</code> to a post’s YAML front matter. Arrow glyph links to the post’s permalink and the the <code>post-title</code> links to the source URL. Here’s an <a href="/blog/sample-link-post/">example of a link post</a> if you need a visual.</p> <hr> <h2 id="setup-for-an-existing-jekyll-site">Setup for an Existing Jekyll site</h2> <ol> <li>Copy the following folders: <code>_includes</code>, <code>_layouts</code>, <code>_my-collection</code>, <code>_plugins</code>, <code>categories</code>, <code>tags</code>, and <code>assets</code>.</li> <li>Clone the following folders/files and personalize content as need: <code>_data</code>, <code>pages/</code>, <code>blog/</code>, <code>posts/</code>, <code>feed.xml</code>. <code>index.html</code>, and <code>search.json</code>.</li> <li>Set the following variables in your <code>_config.yml</code> file:</li> </ol> <div class="highlighter-coderay"><div class="CodeRay"> <div class="code"><pre><span class="key">title</span>:            <span class="string"><span class="content">Site Title</span></span>
+<span class="key">description</span>:      <span class="string"><span class="content">Describe your website here.</span></span>
+<span class="key">disqus_shortname</span>: <span class="string"><span class="content">shortname</span></span>
+<span class="comment"># Uncomment if you are planning to run the blog in a subdirectory</span>
+<span class="comment"># Note - if you enable this, and attempt to view your site locally you have to use the baseurl in your local path.</span>
+<span class="comment"># Example, you must use http://localhost:3000/path/to/blog</span>
+<span class="comment"># baseurl: /path/to/blog</span>
+<span class="comment"># baseurl: /juice # for github pages, uncomment this line, and recomment for local dev env</span>
+
+<span class="comment"># Owner/author information</span>
+<span class="key">owner</span>:
+<span class="error">    </span><span class="key">name</span>:           <span class="string"><span class="content">Your Name</span></span>
+<span class="error">    </span><span class="key">avatar</span>:         <span class="string"><span class="content">avatar.jpg</span></span>
+<span class="error">    </span><span class="key">bio</span>:            <span class="string"><span class="delimiter">&quot;</span><span class="content">Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice.</span><span class="delimiter">&quot;</span></span>
+<span class="error">    </span><span class="key">email</span>:          <span class="string"><span class="content">you@email.com</span></span>
+<span class="error">    </span><span class="comment"># Social networking links used in footer. Update and remove as you like.</span>
+<span class="error">    </span><span class="key">twitter</span>:
+<span class="error">    </span><span class="key">facebook</span>:
+<span class="error">    </span><span class="key">github</span>:
+<span class="error">    </span><span class="key">stackexchange</span>:
+<span class="error">    </span><span class="key">linkedin</span>:
+<span class="error">    </span><span class="key">instagram</span>:
+<span class="error">    </span><span class="key">flickr</span>:
+<span class="error">    </span><span class="key">tumblr</span>:
+<span class="error">    </span><span class="comment"># google plus id, include the '+', eg +kiriaze</span>
+<span class="error">    </span><span class="key">google_plus</span>:    <span class="string"><span class="content">+yourid</span></span>
+
+<span class="comment"># Analytics and webmaster tools stuff goes here</span>
+<span class="key">google_analytics</span>:
+<span class="key">google_verify</span>:
+<span class="comment"># https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here</span>
+<span class="key">bing_verify</span>:
+
+<span class="comment"># http://en.wikipedia.org/wiki/List_of_tz_database_time_zones</span>
+<span class="key">timezone</span>:    <span class="string"><span class="content">America/New_York</span></span>
+<span class="key">future</span>:      <span class="string"><span class="content">true</span></span>
+<span class="key">pygments</span>:    <span class="string"><span class="content">true</span></span>
+<span class="key">markdown</span>:    <span class="string"><span class="content">kramdown</span></span>
+
+</pre></div> </div> </div> <hr> <h2 id="questions">Questions?</h2> <p>Having a problem getting something to work or want to know why I setup something in a certain way? Ping me on Twitter <a href="http://twitter.com/kiriaze">@kiriaze</a> or <a href="https://github.com/kiriaze/juice/issues/new">file a GitHub Issue</a>. And if you make something cool with this theme feel free to let me know.</p> <hr> <h2 id="license">License</h2> <p>This theme is free and open source software, distributed under the <a href="http://opensource.org/licenses/GPL-2.0">GPL v2 License</a> version 2 or later. So feel free to to modify this theme to suit your needs.</p> <hr> <div class="footnotes"> <ol> <li id="fn:2"> <p>If you’re using GitHub Pages to host your site be aware that plugins are disabled. So you’ll need to build your site locally and then manually deploy if you want to use this sweet plugin. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p> </li> </ol> </div> <div class="social-share"> <ul class="socialcount socialcount-small inline-list"> <li class="facebook"><a target="new" href="https://www.facebook.com/sharer/sharer.php?u=/theme-setup/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li> <li class="twitter"><a target="new" href="https://twitter.com/intent/tweet?text=/theme-setup/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li> <li class="googleplus"><a target="new" href="https://plus.google.com/share?url=/theme-setup/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li> </ul> </div> </div> </section> </main> <section class="juice-bg"> <div class="container text-align-center"> <div class="row"> <h2>Start building with Juice.</h2> <p> <a href="https://github.com/kiriaze/juice/archive/master.zip">Download</a> or <a href="https://github.com/kiriaze/juice">View on Github</a> </p> <p>Issues can be reported <a href="https://github.com/kiriaze/juice/issues">here</a>.</p> </div> <div class="row">  <div id="search-container"> <input type="search" id="search-input" placeholder="Search..."> <ul id="results-container"></ul> </div> </div> </div> </section> <footer id="footer"> <div class="container"> <div class="row"> <span class="created-by"> Juice created by <a href="http://twitter.com/kiriaze">@kiriaze</a>. </span> <span class="footer-meta"> <a href="https://github.com/kiriaze/juice/blob/master/LICENSE.md">License</a> <a href="http://twitter.com/kiriaze">@kiriaze</a> <a href="https://github.com/kiriaze/juice">Github Source</a> </span> </div> </div> </footer> <script src="/juice/assets/js/app.min.js"></script><script type="text/javascript">var searchInput=document.getElementById("search-input");"undefined"!=typeof searchInput&&null!=searchInput&&SimpleJekyllSearch({searchInput:document.getElementById("search-input"),resultsContainer:document.getElementById("results-container"),json:"/juice/search.json",searchResultTemplate:'<li><a href="{url}" title="{desc}">{title}</a></li>',noResultsText:"No results found",limit:10,fuzzy:!0,exclude:[]});</script></body></html>

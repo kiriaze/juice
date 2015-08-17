@@ -1,54 +1,6 @@
 [
   
     {
-      "title"    : "Treehouse Meetups",
-      "category" : "meetups",
-      "tags"     : "",
-      "url"      : "/juice/blog/uncategorized/meetups/treehouse-meetups",
-      "date"     : "2015-05-01 00:00:00 -0400"
-    } ,
-  
-    {
-      "title"    : "Camp Sass",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/juice/blog/uncategorized/welcome-to-jekyll",
-      "date"     : "2015-04-29 05:45:36 -0400"
-    } ,
-  
-    {
-      "title"    : "SassConf",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/juice/blog/uncategorized/sass-conf",
-      "date"     : "2015-04-25 00:00:00 -0400"
-    } ,
-  
-    {
-      "title"    : "CSS Summit",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/juice/blog/uncategorized/css-summit",
-      "date"     : "2015-04-15 00:00:00 -0400"
-    } ,
-  
-    {
-      "title"    : "Front-end Design Conf",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/juice/blog/uncategorized/front-end-conf",
-      "date"     : "2015-04-10 00:00:00 -0400"
-    } ,
-  
-    {
-      "title"    : "Converge",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/juice/blog/uncategorized/converge",
-      "date"     : "2015-04-10 00:00:00 -0400"
-    } ,
-  
-    {
       "title"    : "Post with a Background Image",
       "category" : "",
       "tags"     : "sample post",
@@ -77,6 +29,22 @@
       "category" : "",
       "tags"     : "sample post and video",
       "url"      : "/juice/blog/video-post",
+      "date"     : "2013-06-25 00:00:00 -0400"
+    } ,
+  
+    {
+      "title"    : "A Post with music",
+      "category" : "",
+      "tags"     : "sample post and music",
+      "url"      : "/juice/blog/music-post",
+      "date"     : "2013-06-25 00:00:00 -0400"
+    } ,
+  
+    {
+      "title"    : "A Post with a music playlist",
+      "category" : "",
+      "tags"     : "sample post and music",
+      "url"      : "/juice/blog/music-playlist",
       "date"     : "2013-06-25 00:00:00 -0400"
     } ,
   
