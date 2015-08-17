@@ -183,3 +183,41 @@ permalink: /grid/
 		</li>
 	</ul>
 </section>
+
+<section class="stripe text-align-center">
+
+	<div class="container">
+
+		<div class="row island">
+
+			<h2>Basic usage</h2>
+
+			<h5>This is the default usage. The grid is calculated and classes are generated for you to get building quickly.</h5>
+
+		</div>
+
+		<div class="row">
+
+			<script src="https://gist.github.com/kiriaze/463b12ac9958189ae0b4.js"></script>
+
+		</div>
+
+		<br>
+
+		<div class="row island">
+
+			<h2>Advanced usage</h2>
+
+			<h5>By setting custom grid classes within _settings.scss, you can work with Juice more semantically.</h5>
+
+		</div>
+
+		<div class="row">
+
+			<script src="https://gist.github.com/kiriaze/2797fcba02a15200e89c.js"></script>
+
+		</div>
+
+	</div>
+
+</section>

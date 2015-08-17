@@ -1,0 +1,14 @@
+# Menu navigation items
+
+- title: Home
+  url:   /index.html
+- title: Grid
+  url:   /grid
+- title: Type
+  url:   /type
+- title: Blog
+  url:   /blog
+- title: My Collection
+  url:   /my-collection
+- title: Theme Setup
+  url:   /theme-setup

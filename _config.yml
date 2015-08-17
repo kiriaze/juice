@@ -34,10 +34,6 @@ owner:
 # baseurl: /path/to/blog
 # baseurl: /juice # for github pages, uncomment this line, and recomment for local dev env
 
-# Your site's domain goes here (eg: //kiriaze.github.io, http://kiriaze.com, etc)
-# When testing locally leave blank or use http://localhost:3000
-# url:              //kiriaze.github.io
-
 # The directory for category index pages. Change it to something else if
 # for example you want links like /categories/category1 instead of /category1
 category_dir: /
@@ -76,20 +72,6 @@ google_analytics:
 google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
-
-navigation:
- - title: Home
-   url:   /index.html
- - title: Grid
-   url:   /grid
- - title: Type
-   url:   /type
- - title: Blog
-   url:   /blog
- - title: My Collection
-   url:   /my-collection
- - title: Theme Setup
-   url:   /theme-setup
 
 collections:
   my-collection: # name of collection

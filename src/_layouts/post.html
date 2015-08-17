@@ -61,6 +61,8 @@ layout: default
 			<a href="{{page.next.url | prepend: site.baseurl }}" title="next Post:{{page.next.title}}">{{page.next.title}} &raquo; </a>
 		{% endif %}
 
+		{% if page.share != false %}{% include social-share.html %}{% endif %}
+
 	    {% include disqus.html disqus_identifier=page.disqus_identifier %}
 	</div>
 </section>
