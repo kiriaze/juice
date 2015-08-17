@@ -273,39 +273,53 @@ module.exports = {
 <div markdown="1" class="text-align-left">
 
 ~~~ bash
-|-- dist (ignored)
-|-- gulp
-	|-- tasks
-		|-- *
-	|-- index.js
-|-- node_modules (ignored)
-|-- src
-	|-- _data
-		|-- _navigation.yml
-	|-- _includes
-	|-- _layouts
-	|-- _my-collection
-	|-- _plugins
-	|-- _posts
-	|-- assets
-	|-- blog
-	|-- categories
-	|-- pages
-	|-- tags
-	|-- favicon.ico
-	|-- feed.xml
-	|-- index.md
-	|-- search.json
-|-- .editorconfig
-|-- .gitignore
-|-- _config.yml
-|-- bower.json
-|-- CNAME
-|-- config.js
-|-- gulpfile.js
-|-- LICENSE.md
-|-- package.json
-|-- README.md
+juice/
+├── gulp
+├── src
+|   ├── _data
+|        ├── navigation.yml             # site navigation
+|   ├── _includess
+|        ├── disqus.html                # disqus
+|        ├── head.html                  # site head
+|        ├── header.html                # site header
+|        ├── footer.html                # site footer
+|        ├── foot.html                  # site foot
+|        ├── main.min.css               # inline stylesheet uncss'd
+|        ├── pagination.html            # pagination
+|        ├── social-share.html          # social-share
+|        └── typekit.html               # typekit
+|   ├── _layouts
+|        ├── default.html               # default container layout
+|        ├── blog.html                  # blog page layout
+|        ├── page.html                  # page layout
+|        ├── post.html                  # post layout
+|        └── my-collection.html         # my-collection custom post type layout
+|   ├── _my-collection
+|   ├── _posts
+|   ├── _plugins
+|   ├── assets
+|       ├── vendor                      # vendor assets
+|       ├── fonts                       # fonts
+|       ├── images                      # images
+|       ├── scss                        # scss files
+|       └── js
+|           ├── app.js                  # app js file
+|           └── plugins                 # plugin scripts
+|   ├── blog/                           # blog page
+|   ├── categories/                     # all posts grouped by category
+|   ├── pages/
+|       ├── 404.md                      # 404 page
+|       └── my-collection.md            # my-collection custom post type listings
+|   ├── tags/                           # all posts grouped by tag
+|   ├── _config.yml                     # Jekyll options
+|   ├── search.json                     # Search functionality
+|   └── index.html                      # home page
+├── _config.yml
+├── bower.json
+├── CNAME
+├── config.js
+├── gulpfile.js
+└── package.json
 ~~~
 
 </div>

@@ -1,15 +1,12 @@
 # Site settings
 title: Juice
 description: An awesome front end web framework.
-
 disqus_shortname: kiriaze
-
 reading_time:     true
 words_per_minute: 200
-
 search:           true
-
 simpleforms:      green
+logo:             logo.png
 
 # Owner/author information
 owner:
