@@ -5,70 +5,19 @@ description: "Instructions on how to install and customize the modern Jekyll the
 permalink: /theme-setup/
 ---
 
-General notes and suggestions for customizing **Juice**.
+## Installation
 
-## Basic Setup for a new Jekyll site
+[Install Jekyll](http://jekyllrb.com).
 
-1. [Install Jekyll](http://jekyllrb.com) `gem install jekyll`.
-2. Fork [Juice](https://github.com/kiriaze/juice/fork). (Or [Download it](https://github.com/kiriaze/juice/archive/master.zip) and skip to step 4.)
-3. Clone the repo you just forked and rename it.
-4. Edit `_config.yml` to personalize your site.
-5. Check out the sample posts in `_posts` to see examples for pulling in large feature images, assigning categories and tags, and other YAML data.
-6. Read the documentation below for further customization pointers and documentation.
-
----
-
-## Setup for an Existing Jekyll site
-
-1. Copy the following folders: `_includes`, `_layouts`, `_my-collection`, `_plugins`, `categories`, `tags`, and `assets`.
-2. Clone the following folders/files and personalize content as need: `_data`, `pages/`, `blog/`, `posts/`, `feed.xml`. `index.html`, and `search.json`.
-3. Set the following variables in your `_config.yml` file:
-
-~~~ yaml
-title:            Site Title
-description:      Describe your website here.
-disqus_shortname: shortname
-# Uncomment if you are planning to run the blog in a subdirectory
-# Note - if you enable this, and attempt to view your site locally you have to use the baseurl in your local path.
-# Example, you must use http://localhost:3000/path/to/blog
-# baseurl: /path/to/blog
-# baseurl: /juice # for github pages, uncomment this line, and recomment for local dev env
-
-# Owner/author information
-owner:
-	name:           Your Name
-	avatar:         avatar.jpg
-	bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
-	email:          you@email.com
-	# Social networking links used in footer. Update and remove as you like.
-	twitter:
-	facebook:
-	github:
-	stackexchange:
-	linkedin:
-	instagram:
-	flickr:
-	tumblr:
-	# google plus id, include the '+', eg +kiriaze
-	google_plus:    +yourid
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:
-google_verify:
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-future:      true
-pygments:    true
-markdown:    kramdown
-
+~~~ bash
+gem install jekyll
 ~~~
 
----
+Clone [Install Juice](http://github.com/kiriaze/juice).
 
-## Installation
+~~~ bash
+git clone git@github.com:kiriaze/juice.git
+~~~
 
 Run the line below to install all the dependencies for the theme contained in `package.json` as well as `bower.json`:
 
@@ -78,7 +27,45 @@ $ bower install && npm install --global gulp && npm install
 
 *This will install Gulp globally. Depending on your user account, you may need to [configure your system](https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md) to install packages globally without administrative privileges.*
 
-From the theme's root, run `gulp`. Your site will be preprocessed, conacatenating your bower dependcies with you main css/js files, assets will be optimized, jekyll will build out your pages, a sitemap will be generated, the size of your project will be outputted in the console, a server will initiate, and your browser will open up your site and will automatically watch and reload for changes. You can also use `gulp prod` before uploading to your server or before running `gulp gh-pages` or `gulp deploy` to minify html, remove unused css and gzipping the whole site.
+---
+
+## Configure
+
+Enter the desired values in the `./assets/scss/_settings.scss`, `./_config.yml`, and `./config.js` files.
+**These are just a few of those settings.**
+
+~~~ bash
+// _settings.scss
+$container-class: 'container';
+$row-class: 'row';
+$column-class: 'columns';
+$number-of-columns: 12;
+$gridDebug: true;
+$gutter: 0;
+
+// _config.yml
+title: Juice
+description: An awesome front end web framework.
+disqus_shortname: kiriaze
+reading_time:     true
+words_per_minute: 200
+search:           true
+simpleforms:      green
+
+// config.js
+module.exports = {
+
+  'serverport': 3000,
+
+  // URL TO YOUR SITEMAP.XML
+  'sitemapURL': 'http://kiriaze.com/sitemap.xml',
+
+  // Google pagespeed
+  'URL'       : 'http://kiriaze.com',
+  'strategy'  : 'mobile'
+
+}
+~~~
 
 ---
 
@@ -91,6 +78,8 @@ Gulp will take care of everything for you, even building out Jekyll!
 ~~~ bash
 $ gulp
 ~~~
+
+From the theme's root, run `gulp`. Your site will be preprocessed, conacatenating your bower dependcies with you main css/js files, assets will be optimized, jekyll will build out your pages, a sitemap will be generated, the size of your project will be outputted in the console, a server will initiate, and your browser will open up your site and will automatically watch and reload for changes. You can also use `gulp prod` before uploading to your server or before running `gulp gh-pages` or `gulp deploy` to minify html, remove unused css and gzipping the whole site.
 
 ---
 
@@ -260,6 +249,56 @@ Twitter cards make it possible to attach images and post summaries to Tweets tha
 #### Link Post Type
 
 Link blog like a champ by adding `link: http://url-you-want-linked` to a post's YAML front matter. Arrow glyph links to the post's permalink and the the `post-title` links to the source URL. Here's an [example of a link post]({{ site.url }}/blog/sample-link-post/) if you need a visual.
+
+---
+
+## Setup for an Existing Jekyll site
+
+1. Copy the following folders: `_includes`, `_layouts`, `_my-collection`, `_plugins`, `categories`, `tags`, and `assets`.
+2. Clone the following folders/files and personalize content as need: `_data`, `pages/`, `blog/`, `posts/`, `feed.xml`. `index.html`, and `search.json`.
+3. Set the following variables in your `_config.yml` file:
+
+~~~ yaml
+title:            Site Title
+description:      Describe your website here.
+disqus_shortname: shortname
+# Uncomment if you are planning to run the blog in a subdirectory
+# Note - if you enable this, and attempt to view your site locally you have to use the baseurl in your local path.
+# Example, you must use http://localhost:3000/path/to/blog
+# baseurl: /path/to/blog
+# baseurl: /juice # for github pages, uncomment this line, and recomment for local dev env
+
+# Owner/author information
+owner:
+	name:           Your Name
+	avatar:         avatar.jpg
+	bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
+	email:          you@email.com
+	# Social networking links used in footer. Update and remove as you like.
+	twitter:
+	facebook:
+	github:
+	stackexchange:
+	linkedin:
+	instagram:
+	flickr:
+	tumblr:
+	# google plus id, include the '+', eg +kiriaze
+	google_plus:    +yourid
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/New_York
+future:      true
+pygments:    true
+markdown:    kramdown
+
+~~~
 
 ---
 
