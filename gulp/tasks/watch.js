@@ -24,4 +24,10 @@ gulp.task('watch', function() {
 		config.src.root + '/**/*.md'
 	], ['jekyll-rebuild'], reload);
 
+	// styleguide jade watch
+	gulp.watch([
+		config.src.root + '/styleguide/modules/**/*.jade',
+		config.src.root + '/styleguide/modules/**/*.json'
+	], ['styleguide']);
+
 });

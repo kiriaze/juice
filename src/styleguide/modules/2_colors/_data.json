@@ -1,0 +1,27 @@
+{
+    "id": "colors",
+    "name": "Colors",
+    "items": {
+        "intro": ["Brand aesthetic relies on a monochromatic palette with subtle earthy hues. Below are the 3 main colors, with the monochromatic hues below."],
+        "colors": [
+            {
+                "className": "bg-white"
+            },
+            {
+                "className": "bg-whitesmoke"
+            },
+            {
+                "className": "bg-cream"
+            },
+            {
+                "className": "bg-gold"
+            },
+            {
+                "className": "bg-grey-dark"
+            },
+            {
+                "className": "bg-black"
+            }
+        ]
+    }
+}

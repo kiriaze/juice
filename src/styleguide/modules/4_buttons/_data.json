@@ -1,0 +1,23 @@
+{
+	"id": "buttons",
+	"name": "Buttons",
+	"hasScript": "yes",
+	"items": [
+	    {
+	        "buttonName" : "Basic Button",
+	        "className": "button black"
+	    },
+	    {
+	        "buttonName" : "Inverted Button",
+	        "className": "button invert"
+	    },
+	    {
+	        "buttonName" : "Ghost Button",
+	        "className": "button ghost"
+	    },
+	    {
+	        "buttonName" : "Inverted Ghost",
+	        "className": "button invert ghost"
+	    }
+	]
+}

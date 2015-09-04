@@ -1,0 +1,8 @@
+{
+	"id": "introduction",
+	"name": "Introduction",
+	"scripts": ["introduction.js"],
+	"items" : [
+        "Hello!! Welcome to Juice's Styleguide, a guide to ease the creation, maintainence and reference of styleguides. Use the sidebar menu or scroll leisurely to view the cohesive styles and typography established by Brand."
+    ]
+}

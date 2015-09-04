@@ -8,6 +8,7 @@ gulp.task('default', function() {
 	runSequence(
 		'clean',
 		'jekyll',
+		'styleguide',
 		'css',
 		'js',
 		'images',

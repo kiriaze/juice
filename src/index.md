@@ -8,7 +8,7 @@ subheading: A gulp, jekyll, bower &amp; sass powered <br> front-end static site 
 
 {% include header.html %}
 
-<section class="juice-bg text-align-center">
+<section class="juice-bg text-align-center" id="particles-js">
 
 	<div class="container">
 

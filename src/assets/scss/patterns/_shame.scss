@@ -105,6 +105,13 @@ input[type="search"] {
 	}
 }
 
+// juice particle bg animation
+canvas.particles-js-canvas-el {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 #footer {
 	border-top: 1px solid #eee;
 	padding: 5rem 0;

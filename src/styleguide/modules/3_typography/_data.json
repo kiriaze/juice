@@ -1,0 +1,72 @@
+{
+    "id": "typography",
+    "name": "Typography",
+    "hasScript": "yes",
+    "items" : {
+        "fonts": [
+            {
+                "heading": "1",
+                "fontName" : "Oswald",
+                "fontSize": "40px",
+                "className": "font-oswald uppercase",
+                "title": "The quick corrupt politician jumps over the lazy society."
+            },
+            {
+                "heading": "2",
+                "fontName" : "Oswald",
+                "fontSize": "34px",
+                "className": "font-oswald",
+                "title": "The quick corrupt politician jumps over the lazy society."
+            },
+            {
+                "heading": "3",
+                "fontName" : "Oswald",
+                "fontSize": "30px",
+                "className": "font-oswald",
+                "title": "The quick corrupt politician jumps over the lazy society."
+            },
+            {
+                "heading": "4",
+                "fontName" : "Oswald",
+                "fontSize": "26px",
+                "className": "font-oswald",
+                "title": "The quick corrupt politician jumps over the lazy society."
+            },
+            {
+                "heading": "5",
+                "fontName" : "Oswald",
+                "fontSize": "22px",
+                "className": "font-oswald",
+                "title": "The quick corrupt politician jumps over the lazy society."
+            },
+            {
+                "heading": "6",
+                "fontName" : "Oswald",
+                "fontSize": "18px",
+                "className": "font-oswald",
+                "title": "The quick corrupt politician jumps over the lazy society."
+            }
+        ],
+        "paragraphsName": "Paragraphs",
+        "paragraphs": [
+            {
+                "className": "",
+                "fontName": "Lato",
+                "fontSize": "16px",
+                "text": "SEO is a marketing tactic that costs five percent of overall budget but brings in more than 20 percent of revenue for many Fortune 500 companies, and yet very few of them prioritize it. Instead, while slowly changing, too many CMOS still favor paid search, which costs 20 percent and brings in… 20 percent. In search, businesses need to shift priorities. Now."
+            },
+            {
+                "className": "font-libre-baskerville",
+                "fontName": "Libre Baskerville",
+                "fontSize": "16px",
+                "text": "Link volume is one of the most powerful signals search engines use to rank websites. There’s a way to use links to generate better search results, but too many marketers rely on traditional (or even black hat) tactics that just don’t work anymore."
+            },
+            {
+                "className": "p3 small-3",
+                "fontName": "Lato",
+                "fontSize": "16px",
+                "text": "Brand to be recognized at the 2014 “Made in NY” Awards for the company’s contribution to New York’s creative economy."
+            }
+        ]
+    }
+}

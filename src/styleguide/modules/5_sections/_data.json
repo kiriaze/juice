@@ -1,0 +1,12 @@
+{
+	"id": "sections",
+	"name": "Sections",
+	"hasScript": "yes",
+	"items": [
+	    {
+	    	"classes" : "sections gold bg-grey-dark font-oswald",
+	    	"h2" : "Heading",
+	    	"h6" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid blanditiis illum et, laudantium soluta magni, quos neque voluptate dolorum ab perspiciatis illo laboriosam saepe voluptatum quia eos accusantium non modi."
+	    }
+	]
+}

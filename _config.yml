@@ -100,7 +100,7 @@ defaults:
       layout: "my-collection"
       comments: true
 
-exclude: ['node_modules', 'gulpfile.js', 'package.json', 'assets']
+exclude: ['node_modules', 'gulpfile.js', 'package.json', 'assets', 'styleguide/assets', 'styleguide/modules']
 # keep jekyll from removing compiled css dir
 keep_files: ['assets', 'sitemap.xml']
 
