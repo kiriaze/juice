@@ -3,10 +3,10 @@
   <channel>
     <title>Juice</title>
     <description>An awesome front end web framework.</description>
-    <link>/juice/</link>
-    <atom:link href="/juice/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 16 Aug 2015 21:30:12 -0400</pubDate>
-    <lastBuildDate>Sun, 16 Aug 2015 21:30:12 -0400</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 03 Sep 2015 22:54:07 -0400</pubDate>
+    <lastBuildDate>Thu, 03 Sep 2015 22:54:07 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -17,8 +17,8 @@
 
 </description>
         <pubDate>Sat, 26 Oct 2013 00:00:00 -0400</pubDate>
-        <link>/juice/blog/background-image</link>
-        <guid isPermaLink="true">/juice/blog/background-image</guid>
+        <link>/blog/background-image</link>
+        <guid isPermaLink="true">/blog/background-image</guid>
         
         <category>sample post</category>
         
@@ -142,8 +142,8 @@ end&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Fri, 16 Aug 2013 00:00:00 -0400</pubDate>
-        <link>/juice/blog/code-highlighting-post</link>
-        <guid isPermaLink="true">/juice/blog/code-highlighting-post</guid>
+        <link>/blog/code-highlighting-post</link>
+        <guid isPermaLink="true">/blog/code-highlighting-post</guid>
         
         <category>sample post</category>
         
@@ -159,8 +159,8 @@ end&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
         <description>&lt;p&gt;This theme supports &lt;strong&gt;link posts&lt;/strong&gt;, made famous by John Gruber. To use, just add &lt;code&gt;link: http://url-you-want-linked&lt;/code&gt; to the post’s YAML front matter and you’re done.&lt;/p&gt;
 </description>
         <pubDate>Mon, 12 Aug 2013 00:00:00 -0400</pubDate>
-        <link>/juice/blog/sample-link-post</link>
-        <guid isPermaLink="true">/juice/blog/sample-link-post</guid>
+        <link>/blog/sample-link-post</link>
+        <guid isPermaLink="true">/blog/sample-link-post</guid>
         
         <category>sample post</category>
         
@@ -179,8 +179,8 @@ end&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 </description>
         <pubDate>Tue, 25 Jun 2013 00:00:00 -0400</pubDate>
-        <link>/juice/blog/video-post</link>
-        <guid isPermaLink="true">/juice/blog/video-post</guid>
+        <link>/blog/video-post</link>
+        <guid isPermaLink="true">/blog/video-post</guid>
         
         <category>sample post</category>
         
@@ -199,8 +199,8 @@ end&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 </description>
         <pubDate>Tue, 25 Jun 2013 00:00:00 -0400</pubDate>
-        <link>/juice/blog/music-post</link>
-        <guid isPermaLink="true">/juice/blog/music-post</guid>
+        <link>/blog/music-post</link>
+        <guid isPermaLink="true">/blog/music-post</guid>
         
         <category>sample post</category>
         
@@ -219,8 +219,8 @@ end&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 </description>
         <pubDate>Tue, 25 Jun 2013 00:00:00 -0400</pubDate>
-        <link>/juice/blog/music-playlist</link>
-        <guid isPermaLink="true">/juice/blog/music-playlist</guid>
+        <link>/blog/music-playlist</link>
+        <guid isPermaLink="true">/blog/music-playlist</guid>
         
         <category>sample post</category>
         
@@ -273,8 +273,8 @@ end&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.&lt;/p&gt;
 </description>
         <pubDate>Thu, 23 May 2013 00:00:00 -0400</pubDate>
-        <link>/juice/blog/readability-feature-post</link>
-        <guid isPermaLink="true">/juice/blog/readability-feature-post</guid>
+        <link>/blog/readability-feature-post</link>
+        <guid isPermaLink="true">/blog/readability-feature-post</guid>
         
         <category>sample post</category>
         
@@ -359,8 +359,8 @@ end&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 22 May 2013 00:00:00 -0400</pubDate>
-        <link>/juice/blog/sample-post-images</link>
-        <guid isPermaLink="true">/juice/blog/sample-post-images</guid>
+        <link>/blog/sample-post-images</link>
+        <guid isPermaLink="true">/blog/sample-post-images</guid>
         
         <category>sample post</category>
         
@@ -415,8 +415,8 @@ end&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.&lt;/p&gt;
 </description>
         <pubDate>Tue, 22 May 2012 00:00:00 -0400</pubDate>
-        <link>/juice/blog/readability-post</link>
-        <guid isPermaLink="true">/juice/blog/readability-post</guid>
+        <link>/blog/readability-post</link>
+        <guid isPermaLink="true">/blog/readability-post</guid>
         
         <category>sample post</category>
         

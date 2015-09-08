@@ -1,1 +1,401 @@
-<!doctype html> <html class="no-js" lang="en"> <head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title>Grid</title> <meta name="description" content="An awesome front end web framework.">  <meta name="viewport" content="width=device-width,initial-scale=1">  <meta name="twitter:card" content="summary"> <meta name="twitter:image" content="/juice/assets/images/logo.png"> <meta name="twitter:title" content="Grid"> <meta name="twitter:description" content="An awesome front end web framework."> <meta name="twitter:creator" content="@kiriaze">  <link rel="icon" type="image/png" href="/juice/favicon.ico"> <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->   <link rel="stylesheet" href="/juice/assets/css/main.min.css">   <link rel="canonical" href="/juice/grid/"> <link rel="alternate" type="application/rss+xml" title="Juice" href="/juice/feed.xml"> </head> <body data-simpleforms-color="green" class=""> <main id="main"> <section class="hero"> <div class="container"> <h1> The Grid. </h1> <h5> A human friendly, semantic, hybrid grid framework utilizing floats, extends and data attributes. </h5> <header id="header"> <nav id="nav"> <a href="/juice/index.html" class="">Home</a> <a href="/juice/grid" class="current">Grid</a> <a href="/juice/type" class="">Type</a> <a href="/juice/blog" class="">Blog</a> <a href="/juice/my-collection" class="">My Collection</a> <a href="/juice/theme-setup" class="">Theme Setup</a> <a href="https://github.com/kiriaze/juice/archive/master.zip">Download.</a> </nav> </header> </div> </section> <section class="example-grid text-align-center juice-bg"> <div class="container"> <h2 class="text-align-left">Classic Floats yo.</h2> <div class="row"> <div class="columns-12">12</div> <div class="columns-12">12</div> <div class="columns-12">12</div> <div class="columns-12">12</div> <div class="columns-12">12</div> <div class="columns-12">12</div> <div class="columns-12">12</div> <div class="columns-12">12</div> <div class="columns-12">12</div> <div class="columns-12">12</div> <div class="columns-12">12</div> <div class="columns-12">12</div> </div> <div class="row"> <div class="columns-6">6</div> <div class="columns-6">6</div> <div class="columns-6">6</div> <div class="columns-6">6</div> <div class="columns-6">6</div> <div class="columns-6">6</div> </div> <div class="row"> <div class="columns-4">4</div> <div class="columns-4">4</div> <div class="columns-4">4</div> <div class="columns-4">4</div> </div> <div class="row"> <div class="columns-10">10</div> <div class="columns-30">30</div> <div class="columns-40">40</div> <div class="columns-20">20</div> </div> <div class="row"> <div class="columns-2">2 <div class="row"> <div class="columns-2">2</div> <div class="columns-2">2</div> </div> </div> <div class="columns-2">2 <div class="row"> <div class="columns-70">70</div> <div class="columns-30">30</div> </div> </div> </div> </div> </section> <section class="example-grid stripe"> <div class="container"> <h2>Extendable, of course.</h2> <div class="row"> <article class="columns-70"> <h2>Article</h2> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem architecto ipsam dolores ea quas ut dolorem libero reprehenderit est quibusdam ex aperiam, distinctio natus impedit mollitia veniam repellendus commodi atque! </p> </article> <aside class="columns-30"> <h2>Sidebar</h2> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, repudiandae aliquid fuga aperiam, vel veniam quae ipsa expedita magnam odio deserunt alias! Dolores aliquam eum quidem culpa quos, explicabo fugiat.</p> </aside> </div> </div> </section> <section class="example-grid stripe"> <div class="container"> <h2>Vertical Split. .valign &amp; .no-gutter flexbox.</h2> <div class="row valign no-gutter"> <div class="columns-2"> <h2>Article</h2> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem architecto ipsam dolores ea quas ut dolorem libero reprehenderit est quibusdam ex aperiam, distinctio natus impedit mollitia veniam repellendus commodi atque! </p> </div> <div class="columns-2"> <img src="http://placehold.it/600x450" alt=""> </div> </div> </div> </section> <section class="example-grid stripe"> <div class="container"> <h2>[Data Attributes FTW]</h2> <div data-layout="grid"> <div data-columns=".3"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem architecto ipsam dolores ea quas ut dolorem libero reprehenderit est quibusdam ex aperiam, distinctio natus impedit mollitia veniam repellendus commodi atque! </p> </div> <div data-columns=".4"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem architecto ipsam dolores ea quas ut dolorem libero reprehenderit est quibusdam ex aperiam, distinctio natus impedit mollitia veniam repellendus commodi atque! </p> </div> <div data-columns=".3"> <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem architecto ipsam dolores ea quas ut dolorem libero reprehenderit est quibusdam ex aperiam, distinctio natus impedit mollitia veniam repellendus commodi atque! </p> </div> </div> </div> </section> <section class="example-grid stripe"> <div class="container"> <h3>Full Width mannn.</h3> </div> <ul class="row"> <li class="columns-70"> <h2>Columns 7</h2> </li> <li class="columns-30"> <h2>Columns 3</h2> </li> </ul> <ul class="row"> <li class="columns-3"> <h2>Columns 3</h2> </li> <li class="columns-3"> <h2>Columns 3</h2> </li> <li class="columns-3"> <h2>Columns 3</h2> </li> </ul> </section> <section class="example-grid stripe"> <div class="container"> <h3>Full Width. No Gutter. Crazy.</h3> </div> <ul class="row no-gutter"> <li class="columns-2"> <h2>Columns 2</h2> </li> <li class="columns-2"> <h2>Columns 2</h2> </li> </ul> <ul class="row no-gutter"> <li class="columns-3"> <h2>Columns 3</h2> </li> <li class="columns-3"> <h2>Columns 3</h2> </li> <li class="columns-3"> <h2>Columns 3</h2> </li> </ul> </section> <section class="stripe text-align-center"> <div class="container"> <div class="row island"> <h2>Basic usage</h2> <h5>This is the default usage. The grid is calculated and classes are generated for you to get building quickly.</h5> </div> <div class="row"> <script src="https://gist.github.com/kiriaze/463b12ac9958189ae0b4.js"></script></div><br> <div class="row island"> <h2>Advanced usage</h2> <h5>By setting custom grid classes within _settings.scss, you can work with Juice more semantically.</h5> </div> <div class="row"> <script src="https://gist.github.com/kiriaze/2797fcba02a15200e89c.js"></script></div></div></section></main><section class="juice-bg"> <div class="container text-align-center"> <div class="row"> <h2>Start building with Juice.</h2> <p> <a href="https://github.com/kiriaze/juice/archive/master.zip">Download</a> or <a href="https://github.com/kiriaze/juice">View on Github</a> </p> <p>Issues can be reported <a href="https://github.com/kiriaze/juice/issues">here</a>.</p> </div> <div class="row">  <div id="search-container"> <input type="search" id="search-input" placeholder="Search..."> <ul id="results-container"></ul> </div> </div> </div> </section> <footer id="footer"> <div class="container"> <div class="row"> <span class="created-by"> Juice created by <a href="http://twitter.com/kiriaze">@kiriaze</a>. </span> <span class="footer-meta"> <a href="https://github.com/kiriaze/juice/blob/master/LICENSE.md">License</a> <a href="http://twitter.com/kiriaze">@kiriaze</a> <a href="https://github.com/kiriaze/juice">Github Source</a> </span> </div> </div> </footer> <script src="/juice/assets/js/app.min.js"></script><script type="text/javascript">var searchInput=document.getElementById("search-input");"undefined"!=typeof searchInput&&null!=searchInput&&SimpleJekyllSearch({searchInput:document.getElementById("search-input"),resultsContainer:document.getElementById("results-container"),json:"/juice/search.json",searchResultTemplate:'<li><a href="{url}" title="{desc}">{title}</a></li>',noResultsText:"No results found",limit:10,fuzzy:!0,exclude:[]});</script></body></html>
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Grid</title>
+	<meta name="description" content="An awesome front end web framework.">
+
+	
+
+	<!--Mobile Meta-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+
+	
+		<!-- Twitter Cards -->
+		
+			<meta name="twitter:card" content="summary">
+			<meta name="twitter:image" content="/assets/images/logo.png">
+		
+		<meta name="twitter:title" content="Grid">
+		<meta name="twitter:description" content="An awesome front end web framework.">
+		<meta name="twitter:creator" content="@kiriaze">
+	
+
+	
+	
+
+	<!--Favicon-->
+	<link rel="icon" type="image/png" href="/favicon.ico">
+
+	<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+	<!-- <script type="text/javascript" src="//use.typekit.net/dmh1abo.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+ -->
+
+	<!-- CSS - comment out when production build is ran -->
+	<link rel="stylesheet" href="/assets/css/main.min.css">
+	<!-- uncss'd stylesheet below, uncomment when prod build is run -->
+	<!-- <style>/*!
+ *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */.fa{display:inline-block}@font-face{font-family:'FontAwesome';src:url(../fonts/fontawesome-webfont.eot?v=4.3.0);src:url(../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0) format("embedded-opentype"),url(../fonts/fontawesome-webfont.woff2?v=4.3.0) format("woff2"),url(../fonts/fontawesome-webfont.woff?v=4.3.0) format("woff"),url(../fonts/fontawesome-webfont.ttf?v=4.3.0) format("truetype"),url(../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular) format("svg");font-weight:400;font-style:normal}.fa{font:14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0)}.fa-twitter-square:before{content:"\f081"}.fa-facebook-square:before{content:"\f082"}.fa-upload:before{content:"\f093"}.fa-google-plus-square:before{content:"\f0d4"}.file-label .file-input{visibility:hidden}body,button,html,input,select,textarea{color:#333}table{border-collapse:collapse}.btn,a,form input{-webkit-transition:all .35s cubic-bezier(.2,.4,.1,1);transition:all .35s cubic-bezier(.2,.4,.1,1)}@font-face{font-family:'Raleway';font-style:normal;font-weight:300;src:local('Raleway Light'),local('Raleway-Light'),url(http://fonts.gstatic.com/s/raleway/v9/-_Ctzj9b56b8RgXW8FAriS3USBnSvpkopQaUR-2r7iU.ttf) format('truetype')}[class~=container]{position:relative;overflow:hidden;margin-right:auto;margin-left:auto;padding-left:1.5%;padding-right:1.5%}[class~=container]::after{clear:both;content:"";display:table}@media (min-width:768px){[class~=container]{width:768px}}@media (min-width:960px){[class~=container]{width:960px}}@media (min-width:1280px){[class~=container]{width:1280px}}[class~=row],[data-layout=grid]{box-sizing:border-box}@media (min-width:768px){[class~=row],[data-layout=grid]{margin-left:-1.5%;margin-right:-1.5%;padding-left:1.5%}[class~=row]::after,[data-layout=grid]::after{clear:both;content:"";display:table}.no-gutter{margin-left:0;margin-right:0;padding-left:0}.no-gutter::after{clear:both;content:"";display:table}}article,aside,figcaption,figure,footer,header,main,nav,section{display:block}.columns-2{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-2{box-sizing:border-box;position:relative;min-height:1px;width:48.5%;float:left;margin-right:1.5%}.no-gutter .columns-2{width:50%;margin-right:0}}.columns-3{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-3{box-sizing:border-box;position:relative;min-height:1px;width:31.83333%;float:left;margin-right:1.5%}.no-gutter .columns-3{width:33.33333%;margin-right:0}}.columns-4{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-4{box-sizing:border-box;position:relative;min-height:1px;width:23.5%;float:left;margin-right:1.5%}}.columns-6{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-6{box-sizing:border-box;position:relative;min-height:1px;width:15.16667%;float:left;margin-right:1.5%}}@media (min-width:768px){.columns-10{box-sizing:border-box;position:relative;min-height:1px;width:8.5%;float:left;margin-right:1.5%}}.columns-12{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-12{box-sizing:border-box;position:relative;min-height:1px;width:6.83333%;float:left;margin-right:1.5%}}.columns-10{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-10{box-sizing:border-box;position:relative;min-height:1px;width:8.5%;float:left;margin-right:1.5%}}.columns-20{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-20{box-sizing:border-box;position:relative;min-height:1px;width:18.5%;float:left;margin-right:1.5%}}.columns-30,[data-columns='.3']{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-30,[data-columns='.3']{box-sizing:border-box;position:relative;min-height:1px;width:28.5%;float:left;margin-right:1.5%}}.columns-40,[data-columns='.4']{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-40,[data-columns='.4']{box-sizing:border-box;position:relative;min-height:1px;width:38.5%;float:left;margin-right:1.5%}}.columns-70{box-sizing:border-box;position:relative;min-height:1px;width:100%}@media (min-width:768px){.columns-70{box-sizing:border-box;position:relative;min-height:1px;width:68.5%;float:left;margin-right:1.5%}}a{margin:0;padding:0}a,article{border:0;font:inherit;vertical-align:baseline}aside{margin:0;padding:0}aside,blockquote{border:0;font:inherit;vertical-align:baseline}body,cite{margin:0;padding:0}body,cite,code,div,em,figcaption,figure,footer,form{border:0;font:inherit;vertical-align:baseline}div,em,figcaption,figure,footer,form{margin:0;padding:0}h1,h2,h3,h4,h5,h6{padding:0;border:0;font:inherit}h1,h2,h3,h4,h5,h6,header,html,i,iframe{vertical-align:baseline}header,html,i,iframe,img{margin:0;padding:0;border:0;font:inherit}label,li,main,nav,ol{margin:0;vertical-align:baseline}label,li,main,nav,ol,p{padding:0;border:0;font:inherit}p,pre{vertical-align:baseline}pre,section{border:0;font:inherit}section{margin:0}section,span,strong{vertical-align:baseline}span,strong,sup,table,tbody,td,th,thead,time,tr,ul{margin:0;padding:0;border:0;font:inherit}table,tbody,td,th,thead,time,tr,ul{vertical-align:baseline}h1,h2,h3,h4,h5,h6{font-family:"Raleway","Open Sans",helvetica,sans-serif;font-style:normal;font-stretch:normal;word-break:break-word}sup{line-height:0}blockquote,body,p{font-family:"Open Sans",helvetica,sans-serif}body,html{height:100%;font-size:100%}blockquote:after,blockquote:before{content:'';content:none}@media print{blockquote,img,pre,tr{page-break-inside:avoid}*{background:0 0!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href)")"}a[href^="javascript:"]:after,a[href^="#"]:after{content:""}blockquote,pre{border:1px solid #999}thead{display:table-header-group}img{max-width:100%!important}@page{margin:.5cm}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}}.btn,a{text-decoration:none}*,:after,:before{box-sizing:border-box}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;text-rendering:optimizeLegibility}body{line-height:1;-webkit-font-smooth:always;-webkit-font-smoothing:antialiased;text-shadow:0 1px 0 rgba(0,0,0,.01);background:#fff;overflow-scrolling:touch;-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-text-size-adjust:none;-ms-text-size-adjust:none;text-size-adjust:none}::-moz-selection{background:#FF4136;color:#fff;text-shadow:none}::selection{background:#FF4136;color:#fff;text-shadow:none}hr{height:1px;padding:0}.btn i{text-transform:none}.btn{cursor:pointer}img{vertical-align:middle;interpolation-mode:bicubic;max-width:100%;height:auto}pre,pre code{overflow-x:scroll}textarea{resize:vertical}section{background-position:center}pre{font-family:Monaco;padding:.5em 1em;margin:0 0 1rem;border-radius:2px}pre code{border:none;word-wrap:initial;background-color:transparent}section{position:relative;overflow:hidden}h1,h2,h3,h4,h5,h6,p{word-wrap:break-word}code{font-size:.75rem;line-height:1.5;margin:0 2px;padding:0 5px;border:1px solid #eaeaea;background-color:#f7f7f7}[class*=text-align-]{text-align:center}h1{font-size:2.5rem}h1,h2{line-height:1.25;margin:.2rem 0 1rem}h2{font-size:2.125rem}h3{font-size:1.875rem}h3,h4{line-height:1.25;margin:.2rem 0 1rem}h4{font-size:1.625rem}h5{font-size:1.375rem}h5,h6{line-height:1.25;margin:.2rem 0 1rem}h6{font-size:1rem}strong{font-weight:700}p{margin:0 0 1rem}@media (min-width:960px){.text-align-left{text-align:left!important}.text-align-center{text-align:center!important}h1{font-size:2.91667rem}h2{font-size:2.47917rem}h3{font-size:2.1875rem}h4{font-size:1.89583rem}h5{font-size:1.60417rem}h6{font-size:1.16667rem}}p{font-size:1rem;line-height:1.8}a{line-height:inherit;outline:0;color:#FF4136}a:hover{color:#333}sup{font-size:75%;position:relative;vertical-align:baseline;top:-.5em}em{font-style:italic}ol,ul{font-size:initial}ol li,ul li{line-height:1.6;margin-bottom:.5rem}ul{list-style:none inside}ol{list-style:decimal inside}ol li{margin-left:.5rem}blockquote{quotes:none;letter-spacing:2px;font-weight:400;border-left:3px solid;padding:2%;margin:2%}blockquote p{font-size:1.3125rem}blockquote cite{font-size:initial;padding-top:2%;display:block}.btn{display:inline-block;position:relative}@media (min-width:768px){.valign{display:-ms-flexbox;display:-webkit-flex;display:-webkit-box;display:flex;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;align-items:center}}.bg-navy{background-color:#001F3F}.bg-blue{background-color:#3498db}.bg-aqua{background-color:#4fc1e9}.bg-teal{background-color:#39CCCC}.bg-olive{background-color:#3D9970}.bg-green{background-color:#2ECC40}.bg-seafoam{background-color:#2ecc71}.bg-lime{background-color:#01FF70}.bg-yellow{background-color:#fff200}.bg-orange{background-color:#FF851B}.bg-red{background-color:#FF4136}.bg-fuchsia{background-color:#F012BE}.bg-purple{background-color:#B10DC9}.bg-maroon{background-color:#85144B}.bg-white{background-color:#fff}.bg-default{background-color:#ebebeb}h1,h2,h3,h4,h5,h6{font-weight:300}p a{font-weight:500;border-bottom:1px solid #b3b3b3}p a:hover{color:#333;border-color:#333}hr{display:inline-block;border:none;clear:both;margin:44px auto 54px -32.5%;position:relative;width:65%;left:50%;border-bottom:5px solid #f5f5f5}.stripe:nth-child(even) hr{border-color:#fff}section{background-color:#fff;padding:3rem 0;background-repeat:no-repeat}@media (min-width:768px){section{padding-top:5rem;padding-bottom:5rem}}form label,ul li:before{display:inline-block;font-weight:400}section.stripe:nth-child(even){background-color:#f5f5f5}ul li:before{font-family:'FontAwesome';font-style:normal;line-height:1;font-smoothing:antialiased;osx-font-smoothing:grayscale}ul.check li:before{content:"\f00c";padding-right:5px}table{border-spacing:0;width:100%;max-width:100%}table td,table th{padding:1rem;border-bottom:1px solid #434d5a;vertical-align:top}table th{text-align:left}table thead th{border-bottom-width:2px;vertical-align:bottom}body[data-simpleforms-color=green] .simpleforms input:focus:not(.btn),body[data-simpleforms-color=green] .simpleforms textarea:focus{border-color:#2ECC40}form label{padding:0;margin:0 0 6px;color:#383838;font-family:"Open Sans",Helvetica,Arial,sans-serif;font-size:.875rem}form input,form textarea{width:100%;margin:0 0 1.5em;font-family:sans-serif;border:1px solid #d1d1d1;-webkit-appearance:none;background-clip:padding-box;background-color:#fff;outline:0;font-weight:300}form input :-moz-placeholder,form input:-ms-input-placeholder,form input::-moz-placeholder,form textarea :-moz-placeholder,form textarea:-ms-input-placeholder,form textarea::-moz-placeholder{font-weight:300}form input{padding:12px;font-size:.8125rem;border-radius:2px;z-index:1}@media (min-width:960px){form input{font-size:.875rem}}form input[type=checkbox],form input[type=radio]{box-sizing:border-box;padding:0}form textarea{height:114px;padding:10px;font-size:.8125rem;line-height:1.5em;border-radius:2px}@media (min-width:960px){form textarea{font-size:.875rem;padding:12px}}.simpleforms{line-height:1.5}.form-login{margin:0 auto;width:100%;max-width:400px;background-color:#f5f5f5;border-radius:2px;background-clip:padding-box;box-shadow:0 2px 8px rgba(0,0,0,.2)}.form-login.form-login{margin:.5rem auto}.form-login .content{padding:2rem;color:#434d5a}.form-login .options::after{clear:both;content:"";display:table}.form-login .options .btn{float:left;width:50%;margin:0;padding:1.5rem;border-radius:0;line-height:1;cursor:pointer;font-weight:300;-webkit-font-smoothing:antialiased;text-align:center}.file-label .file-input{width:0;height:0;padding:0;border:0;margin:0}.CodeRay .code,.btn{width:100%}.file-label .file-name{color:#3498db}.highlight{margin-bottom:1.5em;font-size:.75rem;color:#d0d0d0;border:1px solid #38404b;background-color:#272822}.highlight pre{position:relative;margin:0;padding:1em;color:#fff;overflow-x:scroll}.highlight pre code{background:0 0;border:none;white-space:nowrap}.gist .gist-data{overflow:hidden!important}.gist .highlight{color:#000;border:none;background:#fff}.gist .gist-file{border:none}.gist .gist-data{border:none!important}.CodeRay{font-family:Monaco;font-size:.75rem;line-height:1.5;color:#d0d0d0;margin-bottom:1.5em;border-radius:3px;word-wrap:normal}.CodeRay .code pre{margin:0;padding:1em;background-color:#272822;border:1px solid #38404b;overflow:auto}.btn,.btn i{vertical-align:middle}.CodeRay .instance-variable,.CodeRay .key{color:#f8f8f2}.CodeRay .attribute-name{color:#a6e22e}.CodeRay .float{color:#ff658b}.CodeRay .string{color:#2dc900}.CodeRay .keyword{color:#66d9ef}.CodeRay .class,.CodeRay .function{color:#a6e22e}.CodeRay .constant,.CodeRay .tag{color:#f92672}.CodeRay .predefined-constant{color:#ff84e4}.CodeRay .comment{color:#75715e}.CodeRay .error{color:#ecc}.CodeRay .content,.CodeRay .delimiter,.CodeRay .inline{color:#e6db74}.btn{background-clip:padding-box;margin-bottom:.5em;-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;text-align:center;white-space:nowrap;outline:0;border-radius:2px;font-weight:400;letter-spacing:1px;padding:0 2em;line-height:3.5;background-color:transparent;color:#111;border:2px solid;font-size:.8125rem}.btn:hover{color:#fff}.btn.small{font-size:.6875rem}.btn.large{font-size:.9375rem}.btn:hover{background-color:#111;border-color:#111}.dark .btn{border-color:#fff}.btn[class*=bg-]{color:#fff}.btn[class*=bg-].bg-white{color:#111}.btn[class*=bg-].bg-white:hover{background:#111;color:#fff;border-color:#111}.btn[class*=bg-aqua]:active,.btn[class*=bg-blue]:active,.btn[class*=bg-navy]:active,.btn[class*=bg-teal]:active,.btn[class*=bg-green]:active,.btn[class*=bg-seafoam]:active,.btn[class*=bg-olive]:active,.btn[class*=bg-lime]:active,.btn[class*=bg-yellow]:active,.btn[class*=bg-red]:active,.btn[class*=bg-fuchsia]:active,.btn[class*=bg-purple]:active,.btn[class*=bg-maroon]:active,.btn[class*=bg-white]:active,.btn[class*=bg-default]:active{box-shadow:inset 0 2px 5px rgba(0,0,0,.25);text-shadow:rgba(255,255,255,.25)0 1px 0}.btn.invert{background-color:#111;border-color:#111;color:#f5f5f5}.btn.invert:hover{background-color:#fff;border-color:#111;color:#111}.dark .btn.invert:hover{border-color:#fff;color:#111}.btn.solid{background-color:#FF4136;border-color:#FF4136;color:#fff}.btn.solid.invert,.btn.solid:hover{background-color:#001F3F;border-color:#001F3F;color:#fff}.btn.solid.invert:hover{background-color:#FF4136;border-color:#FF4136;color:#fff}.btn i,a.button{display:inline-block;font-weight:400;line-height:1}.btn i{font-size:12px;margin-right:.5rem;font-style:normal;font-variant:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;speak:none}.btn[class*=bg-aqua]{background-color:#4fc1e9;border:0}.btn[class*=bg-aqua]:hover{background-color:#66c9ec;border-color:#66c9ec}.btn[class*=bg-aqua]:active{color:#1897c4;background-color:#66c9ec}.btn[class*=bg-blue]{background-color:#3498db;border:0}.btn[class*=bg-blue]:hover{background-color:#4aa3df;border-color:#4aa3df}.btn[class*=bg-blue]:active{color:#1b6698;background-color:#4aa3df}.btn[class*=bg-navy]{background-color:#001F3F;border:0}.btn[class*=bg-navy]:hover{background-color:#002c59;border-color:#002c59}.btn[class*=bg-navy]:active{color:#000;background-color:#002c59}.btn[class*=bg-teal]{background-color:#39CCCC;border:0}.btn[class*=bg-teal]:hover{background-color:#4dd1d1;border-color:#4dd1d1}.btn[class*=bg-teal]:active{color:#238787;background-color:#4dd1d1}.btn[class*=bg-green]{background-color:#2ECC40;border:0}.btn[class*=bg-green]:hover{background-color:#40d451;border-color:#40d451}.btn[class*=bg-green]:active{color:#1d8128;background-color:#40d451}.btn[class*=bg-seafoam]{background-color:#2ecc71;border:0}.btn[class*=bg-seafoam]:hover{background-color:#40d47e;border-color:#40d47e}.btn[class*=bg-seafoam]:active{color:#1d8148;background-color:#40d47e}.btn[class*=bg-olive]{background-color:#3D9970;border:0}.btn[class*=bg-olive]:hover{background-color:#44ab7d;border-color:#44ab7d}.btn[class*=bg-olive]:active{color:#235740;background-color:#44ab7d}.btn[class*=bg-lime]{background-color:#01FF70;border:0}.btn[class*=bg-lime]:hover{background-color:#1bff7e;border-color:#1bff7e}.btn[class*=bg-lime]:active{color:#00a448;background-color:#1bff7e}.btn[class*=bg-yellow]{background-color:#fff200;border:0}.btn[class*=bg-yellow]:hover{background-color:#fff31a;border-color:#fff31a}.btn[class*=bg-yellow]:active{color:#a39b00;background-color:#fff31a}.btn[class*=bg-orange]{background-color:#FF851B;border:0}.btn[class*=bg-orange]:hover{background-color:#ff9335;border-color:#ff9335}.btn[class*=bg-orange]:active{color:#be5800;background-color:#ff9335;box-shadow:inset 0 2px 5px rgba(0,0,0,.25);text-shadow:rgba(255,255,255,.25)0 1px 0}.btn[class*=bg-red]{background-color:#FF4136;border:0}.btn[class*=bg-red]:hover{background-color:#ff5950;border-color:#ff5950}.btn[class*=bg-red]:active{color:#d90c00;background-color:#ff5950}.btn[class*=bg-fuchsia]{background-color:#F012BE;border:0}.btn[class*=bg-fuchsia]:hover{background-color:#f22ac5;border-color:#f22ac5}.btn[class*=bg-fuchsia]:active{color:#9c0a7b;background-color:#f22ac5}.btn[class*=bg-purple]{background-color:#B10DC9;border:0}.btn[class*=bg-purple]:hover{background-color:#c60fe1;border-color:#c60fe1}.btn[class*=bg-purple]:active{color:#650773;background-color:#c60fe1}.btn[class*=bg-maroon]{background-color:#85144B;border:0}.btn[class*=bg-maroon]:hover{background-color:#9b1757;border-color:#9b1757}.btn[class*=bg-maroon]:active{color:#35081e;background-color:#9b1757}.btn[class*=bg-white]{background-color:#fff;border:0}.btn[class*=bg-white]:hover{background-color:#fff;border-color:#fff}.btn[class*=bg-white]:active{color:#d1d1d1;background-color:#fff}.btn[class*=bg-default]{background-color:#ebebeb;border:0}.btn[class*=bg-default]:hover{background-color:#f8f8f8;border-color:#f8f8f8}.btn[class*=bg-default]:active{color:#bdbdbd;background-color:#f8f8f8}.btn.bg-default{color:#666}.btn.bg-default:active{color:#383838}.btn.bg-lime,.btn.bg-yellow{color:#a39b00}a.button{margin-top:15px;margin-bottom:15px;position:relative;z-index:0;color:#171a1c;border:1px solid rgba(23,26,28,.4);background:0 0;padding:15px 25px;font-size:10px;font-family:'Montserrat',sans-serif;text-transform:uppercase;letter-spacing:.2em;-webkit-transition:all .3s;transition:all .3s}a.button:before{-webkit-backface-visibility:hidden;content:"";display:block;position:absolute;z-index:-1;top:100%;left:-1px;bottom:0;right:-1px;background:#171a1c;-webkit-transition:top .3s;transition:top .3s}a.button.dark{color:#fff;border:1px solid rgba(255,255,255,.6);background:0 0}a.button.dark:before{background:#fff}a.button:active,a.button:hover{color:#fff;border:1px solid #171a1c}a.button:active.dark,a.button:hover.dark{color:#171a1c;border:1px solid #fff}.hero,article{border-bottom:1px solid #eee}a.button:active:before,a.button:hover:before{top:-1px}@media (min-width:960px){a.button{padding:18px 30px;font-size:11px}}@media (min-width:1280px){a.button{padding:20px 45px;font-size:11px}}#footer,#nav{font-size:.8rem}.dark{background-color:#434d5a;color:#fff}.container{-webkit-transition:all .35s cubic-bezier(.2,.4,.1,1);transition:all .35s cubic-bezier(.2,.4,.1,1)}.blog .container,.single .container{max-width:960px}#nav{font-weight:600}#nav a{display:block;line-height:38px;margin:10px 0}@media (min-width:480px){#nav a{display:inline;margin:0 1rem 0 0}}#nav a.current,#nav a:hover{color:#434d5a}.example-grid [class*=columns-],.example-grid [data-columns]{background:#FF4136;color:#fff;margin-top:.5rem;margin-bottom:.5rem;font-weight:600;line-height:1.5;padding:1.5rem 0}@media (min-width:768px){.btn{width:auto}.example-grid [class*=columns-],.example-grid [data-columns]{padding:1.5rem}}.example-grid [class*=columns-] p,.example-grid [data-columns] p{font-weight:400}.example-grid [class*=columns-] h2{margin:0}article{margin:0 0 2rem;padding:0 0 2rem}input[type=search]{padding:.8rem 1rem;border:0}input[type=search]:focus{border:0}.juice-bg{background-color:#FF4136;color:#fff}.juice-bg a{color:#fff;border-color:#fff}.juice-bg.example-grid [class*=columns-]{background:#fff;color:#222}.circle{background:#f5f5f5;border-radius:50%;width:100px;height:100px;display:block;margin:0 auto}#footer{border-top:1px solid #eee;padding:5rem 0;font-weight:600;text-align:center}#footer .created-by,#footer .footer-meta a{display:block;line-height:38px;margin:10px 0}@media (min-width:480px){#footer .created-by{display:inline}#footer .footer-meta a{display:inline;margin:0}#footer .created-by,#footer .footer-meta{box-sizing:border-box;position:relative;min-height:1px;float:left}#footer .created-by{text-align:left;width:48.5%;margin:0 1.5% 0 0}#footer .footer-meta{text-align:right;width:48.5%;margin-right:1.5%}#footer .footer-meta a{margin-left:1rem}}@media (min-width:768px){.island{padding:3rem 5rem}}@media (min-width:960px){.island{padding:3rem 7rem}}@media (min-width:1280px){.island{padding:3rem 15rem}}</style> -->
+
+	<link rel="canonical" href="/grid/">
+	<link rel="alternate" type="application/rss+xml" title="Juice" href="/feed.xml" />
+
+</head>
+
+	<body data-simpleforms-color="green" class="">
+		<main id="main">
+			<section class="hero">
+	<div class="container">
+
+		<h1>
+		
+			The Grid.
+		
+		</h1>
+		<h5>
+		
+			A human friendly, semantic, hybrid grid framework utilizing floats, extends and data attributes.
+		
+		</h5>
+
+		<header id="header">
+			<nav id="nav">
+
+			    
+			        
+			        
+					<a href="/index.html" class="">Home</a>
+			    
+			        
+			        
+			            
+			        
+					<a href="/grid" class="current">Grid</a>
+			    
+			        
+			        
+					<a href="/type" class="">Type</a>
+			    
+			        
+			        
+					<a href="/blog" class="">Blog</a>
+			    
+			        
+			        
+					<a href="/my-collection" class="">My Collection</a>
+			    
+			        
+			        
+					<a href="/theme-setup" class="">Theme Setup</a>
+			    
+			        
+			        
+					<a href="/styleguide" class="">Styleguide</a>
+			    
+
+		        <a href="https://github.com/kiriaze/juice/archive/master.zip">Download.</a>
+
+			</nav>
+		</header>
+
+	</div>
+</section>
+
+<section class="example-grid text-align-center juice-bg">
+	<div class="container">
+
+		<h2 class="text-align-left">Classic Floats yo.</h2>
+
+		<div class="row">
+			<div class="columns-12">12</div>
+			<div class="columns-12">12</div>
+			<div class="columns-12">12</div>
+			<div class="columns-12">12</div>
+			<div class="columns-12">12</div>
+			<div class="columns-12">12</div>
+			<div class="columns-12">12</div>
+			<div class="columns-12">12</div>
+			<div class="columns-12">12</div>
+			<div class="columns-12">12</div>
+			<div class="columns-12">12</div>
+			<div class="columns-12">12</div>
+		</div>
+
+		<div class="row">
+			<div class="columns-6">6</div>
+			<div class="columns-6">6</div>
+			<div class="columns-6">6</div>
+			<div class="columns-6">6</div>
+			<div class="columns-6">6</div>
+			<div class="columns-6">6</div>
+		</div>
+
+		<div class="row">
+			<div class="columns-4">4</div>
+			<div class="columns-4">4</div>
+			<div class="columns-4">4</div>
+			<div class="columns-4">4</div>
+		</div>
+
+		<div class="row">
+			<div class="columns-10">10</div>
+			<div class="columns-30">30</div>
+			<div class="columns-40">40</div>
+			<div class="columns-20">20</div>
+		</div>
+
+		<div class="row">
+			<div class="columns-2">2
+	            <div class="row">
+	                <div class="columns-2">2</div>
+	                <div class="columns-2">2</div>
+	            </div>
+	        </div>
+			<div class="columns-2">2
+	            <div class="row">
+	                <div class="columns-70">70</div>
+	                <div class="columns-30">30</div>
+	            </div>
+	        </div>
+		</div>
+
+	</div>
+</section>
+
+<section class="example-grid stripe">
+	<div class="container">
+		<h2>Extendable, of course.</h2>
+		<div class="row">
+			<article class="columns-70">
+				<h2>Article</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem architecto ipsam dolores ea quas ut dolorem libero reprehenderit est quibusdam ex aperiam, distinctio natus impedit mollitia veniam repellendus commodi atque!
+				</p>
+			</article>
+			<aside class="columns-30">
+				<h2>Sidebar</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, repudiandae aliquid fuga aperiam, vel veniam quae ipsa expedita magnam odio deserunt alias! Dolores aliquam eum quidem culpa quos, explicabo fugiat.</p>
+			</aside>
+		</div>
+	</div>
+</section>
+
+<section class="example-grid stripe">
+	<div class="container">
+		<h2>Vertical Split. .valign &amp; .no-gutter flexbox.</h2>
+		<div class="row valign no-gutter">
+			<div class="columns-2">
+				<h2>Article</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem architecto ipsam dolores ea quas ut dolorem libero reprehenderit est quibusdam ex aperiam, distinctio natus impedit mollitia veniam repellendus commodi atque!
+				</p>
+			</div>
+			<div class="columns-2">
+				<img src="http://placehold.it/600x450" alt="" />
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="example-grid stripe">
+	<div class="container">
+		<h2>[Data Attributes FTW]</h2>
+		<div data-layout="grid">
+			<div data-columns=".3">
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem architecto ipsam dolores ea quas ut dolorem libero reprehenderit est quibusdam ex aperiam, distinctio natus impedit mollitia veniam repellendus commodi atque!
+				</p>
+			</div>
+			<div data-columns=".4">
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem architecto ipsam dolores ea quas ut dolorem libero reprehenderit est quibusdam ex aperiam, distinctio natus impedit mollitia veniam repellendus commodi atque!
+				</p>
+			</div>
+			<div data-columns=".3">
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem architecto ipsam dolores ea quas ut dolorem libero reprehenderit est quibusdam ex aperiam, distinctio natus impedit mollitia veniam repellendus commodi atque!
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="example-grid stripe">
+
+	<div class="container">
+		<h3>Full Width mannn.</h3>
+	</div>
+
+	<ul class="row">
+		<li class="columns-70">
+			<h2>Columns 7</h2>
+		</li>
+		<li class="columns-30">
+			<h2>Columns 3</h2>
+		</li>
+	</ul>
+
+	<ul class="row">
+		<li class="columns-3">
+			<h2>Columns 3</h2>
+		</li>
+		<li class="columns-3">
+			<h2>Columns 3</h2>
+		</li>
+		<li class="columns-3">
+			<h2>Columns 3</h2>
+		</li>
+	</ul>
+
+</section>
+
+<section class="example-grid stripe">
+
+	<div class="container">
+		<h3>Full Width. No Gutter. Crazy.</h3>
+	</div>
+
+	<ul class="row no-gutter">
+		<li class="columns-2">
+			<h2>Columns 2</h2>
+		</li>
+		<li class="columns-2">
+			<h2>Columns 2</h2>
+		</li>
+	</ul>
+
+	<ul class="row no-gutter">
+		<li class="columns-3">
+			<h2>Columns 3</h2>
+		</li>
+		<li class="columns-3">
+			<h2>Columns 3</h2>
+		</li>
+		<li class="columns-3">
+			<h2>Columns 3</h2>
+		</li>
+	</ul>
+</section>
+
+<section class="stripe text-align-center">
+
+	<div class="container">
+
+		<div class="row island">
+
+			<h2>Basic usage</h2>
+
+			<h5>This is the default usage. The grid is calculated and classes are generated for you to get building quickly.</h5>
+
+		</div>
+
+		<div class="row">
+
+			<script src="https://gist.github.com/kiriaze/463b12ac9958189ae0b4.js"></script>
+
+		</div>
+
+		<br />
+
+		<div class="row island">
+
+			<h2>Advanced usage</h2>
+
+			<h5>By setting custom grid classes within _settings.scss, you can work with Juice more semantically.</h5>
+
+		</div>
+
+		<div class="row">
+
+			<script src="https://gist.github.com/kiriaze/2797fcba02a15200e89c.js"></script>
+
+		</div>
+
+	</div>
+
+</section>
+
+		</main>
+		<section class="juice-bg">
+
+	<div class="container text-align-center">
+
+		<div class="row">
+
+			<h2>Start building with Juice.</h2>
+			<p>
+				<a href="https://github.com/kiriaze/juice/archive/master.zip">Download</a>
+				or
+				<a href="https://github.com/kiriaze/juice">View on Github</a>
+			</p>
+
+			<p>Issues can be reported <a href="https://github.com/kiriaze/juice/issues">here</a>.</p>
+
+		</div>
+
+		<div class="row">
+			<!-- Html Elements for Search -->
+			<div id="search-container">
+				<input type="search" id="search-input" placeholder="Search...">
+				<ul id="results-container"></ul>
+			</div>
+		</div>
+
+	</div>
+
+</section>
+
+<footer id="footer">
+
+	<div class="container">
+
+		<div class="row">
+
+			<span class="created-by">
+				Juice created by <a href="http://twitter.com/kiriaze">@kiriaze</a>.
+			</span>
+
+			<span class="footer-meta">
+				<a href="https://github.com/kiriaze/juice/blob/master/LICENSE.md">License</a>
+				<a href="http://twitter.com/kiriaze">@kiriaze</a>
+				<a href="https://github.com/kiriaze/juice">Github Source</a>
+			</span>
+
+		</div>
+
+	</div>
+
+</footer>
+
+		<script src="/assets/js/app.min.js"></script>
+
+
+<script type="text/javascript">
+	var searchInput = document.getElementById('search-input');
+	if ( typeof(searchInput) != 'undefined' && searchInput != null ) {
+		SimpleJekyllSearch({
+			searchInput: document.getElementById('search-input'),
+			resultsContainer: document.getElementById('results-container'),
+			json: '/search.json',
+			searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+			noResultsText: 'No results found',
+			limit: 10,
+			fuzzy: true,
+			exclude: []
+		});
+	}
+</script>
+
+
+
+
+	</body>
+</html>
